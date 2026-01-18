@@ -16,7 +16,7 @@ export function BuildPreviewWhatsappFollowup() {
 
             <div className="grid gap-4 md:grid-cols-12">
                 {/* Pipeline Panel - Stacks on mobile */}
-                <PreviewPanel title="Pipeline (Kanban)" className="col-span-12 md:col-span-7 h-auto md:h-64">
+                <PreviewPanel title="Pipeline (Kanban)" className="col-span-12 md:col-span-7">
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 h-full">
                         <KanbanCol title="Nuevo" items={2} color="border-l-blue-400/30" />
                         <KanbanCol title="Seguimiento" items={3} color="border-l-amber-400/30" active />
@@ -25,7 +25,7 @@ export function BuildPreviewWhatsappFollowup() {
                 </PreviewPanel>
 
                 {/* Lead Details Panel */}
-                <PreviewPanel title="Lead seleccionado" className="col-span-12 md:col-span-5 h-auto md:h-64">
+                <PreviewPanel title="Lead seleccionado" className="col-span-12 md:col-span-5">
                     <div className="space-y-2 mt-1">
                         <PreviewRow label="Nombre" value="Juan Pérez" />
                         <PreviewRow label="Estado" value={<PreviewBadge variant="warning">Seguimiento</PreviewBadge>} />
@@ -76,8 +76,8 @@ function KanbanCol({
                     <div
                         key={i}
                         className={`h-8 rounded-lg border flex items-center px-2 ${active && i === 0
-                                ? 'border-accent-purple/40 bg-accent-purple/10'
-                                : 'border-white/5 bg-white/[0.02]'
+                            ? 'border-accent-purple/40 bg-accent-purple/10'
+                            : 'border-white/5 bg-white/[0.02]'
                             }`}
                     >
                         {active && i === 0 && <div className="h-1.5 w-1.5 rounded-full bg-accent-purple mr-2" />}
