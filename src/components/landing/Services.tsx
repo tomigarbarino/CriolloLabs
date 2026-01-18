@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 import { Container } from '@/components/ui/Container'
 import { Card } from '@/components/ui/Card'
 import { CTAButton } from '@/components/ui/CTAButton'
-import { SpotlightHeading } from '@/components/ui/SpotlightHeading'
 import { fadeUp, staggerContainer } from '@/lib/motion'
 import { FileText, Database, Bot, Check } from 'lucide-react'
 import { useNarrative } from '@/context/NarrativeContext'
@@ -63,9 +62,9 @@ export function Services() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <SpotlightHeading as="h2" className="text-3xl md:text-5xl font-bold mb-4">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">
                         {t('title')}
-                    </SpotlightHeading>
+                    </h2>
                     {t.raw('subtitle') && (
                         <p className="text-lg text-white max-w-2xl mx-auto">
                             {t('subtitle')}

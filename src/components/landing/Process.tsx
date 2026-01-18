@@ -4,7 +4,6 @@ import { useRef } from 'react'
 import { useTranslations } from 'next-intl'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { Container } from '@/components/ui/Container'
-import { SpotlightHeading } from '@/components/ui/SpotlightHeading'
 import { useReducedMotion } from '@/lib/hooks/useReducedMotion'
 import { fadeUp, duration, ease } from '@/lib/motion'
 
@@ -48,9 +47,9 @@ export function Process() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <SpotlightHeading as="h2" className="text-3xl md:text-5xl font-bold mb-4">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">
                         {t('title')}
-                    </SpotlightHeading>
+                    </h2>
                     {t.raw('subtitle') && (
                         <p className="text-lg text-white">{t('subtitle')}</p>
                     )}
@@ -111,9 +110,9 @@ export function Process() {
                                 </motion.div>
 
                                 {/* Step content */}
-                                <SpotlightHeading as="h3" className="text-lg font-bold mb-2 text-white">
+                                <h3 className="text-lg font-bold mb-2 text-white">
                                     {step.title}
-                                </SpotlightHeading>
+                                </h3>
                                 <p className="text-sm text-white max-w-xs md:max-w-[200px] leading-relaxed text-pretty">
                                     {step.description}
                                 </p>

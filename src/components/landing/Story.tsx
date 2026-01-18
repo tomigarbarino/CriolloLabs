@@ -4,7 +4,6 @@ import { useRef } from 'react'
 import { useTranslations } from 'next-intl'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { Container } from '@/components/ui/Container'
-import { SpotlightHeading } from '@/components/ui/SpotlightHeading'
 import { CTAButton } from '@/components/ui/CTAButton'
 import { useReducedMotion } from '@/lib/hooks/useReducedMotion'
 import { duration, ease } from '@/lib/motion'
@@ -61,12 +60,9 @@ export function Story() {
             >
                 <Container size="lg">
                     <div className="text-center">
-                        <SpotlightHeading
-                            as="h2"
-                            className="text-[#e9d5ff] font-mono text-xl uppercase tracking-widest font-bold"
-                        >
+                        <h2 className="text-[#e9d5ff] font-mono text-xl uppercase tracking-widest font-bold">
                             {t('title')}
-                        </SpotlightHeading>
+                        </h2>
 
                         <p className="mx-auto mt-4 max-w-2xl text-white leading-relaxed text-pretty">
                             {tt(
@@ -160,12 +156,9 @@ export function Story() {
                                                 : 'hover:border-white/18'
                                         )}
                                     >
-                                        <SpotlightHeading
-                                            as="h3"
-                                            className="text-xl md:text-2xl font-bold mb-3 text-white"
-                                        >
+                                        <h3 className="text-xl md:text-2xl font-bold mb-3 text-white">
                                             {item.title}
-                                        </SpotlightHeading>
+                                        </h3>
 
                                         <p className="text-white leading-relaxed text-pretty">
                                             {item.description}

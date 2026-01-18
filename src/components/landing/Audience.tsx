@@ -4,7 +4,6 @@ import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 import { Container } from '@/components/ui/Container'
 import { Card } from '@/components/ui/Card'
-import { SpotlightHeading } from '@/components/ui/SpotlightHeading'
 import { useReducedMotion } from '@/lib/hooks/useReducedMotion'
 import { slideInLeft, slideInRight, duration, ease } from '@/lib/motion'
 import { Rocket, Building2, CheckCircle2 } from 'lucide-react'
@@ -60,9 +59,9 @@ export function Audience() {
                                             <div className={`p-3 rounded-xl bg-gradient-to-br ${col.gradient}`}>
                                                 <Icon className="text-white" size={28} />
                                             </div>
-                                            <SpotlightHeading as="h3" className="text-xl md:text-2xl font-bold">
+                                            <h3 className="text-xl md:text-2xl font-bold text-white">
                                                 {col.title}
-                                            </SpotlightHeading>
+                                            </h3>
                                         </div>
                                         {/* Items same as below, duplication is tradeoff for simplicity or I should extract content */}
                                         <ul className="space-y-4">
@@ -98,9 +97,9 @@ export function Audience() {
                                         >
                                             <Icon className="text-white" size={28} />
                                         </div>
-                                        <SpotlightHeading as="h3" className="text-xl md:text-2xl font-bold">
+                                        <h3 className="text-xl md:text-2xl font-bold text-white">
                                             {col.title}
-                                        </SpotlightHeading>
+                                        </h3>
                                     </div>
 
                                     {/* Items */}

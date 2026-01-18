@@ -5,7 +5,6 @@ import { useTranslations } from 'next-intl'
 import { motion, useScroll, useTransform, useMotionValueEvent } from 'framer-motion'
 import { CTAButton } from '@/components/ui/CTAButton'
 import { MessageCircle, ArrowRight, ChevronDown } from 'lucide-react'
-import { SpotlightHeading } from '@/components/ui/SpotlightHeading'
 import { Badge } from '@/components/ui/Badge'
 import { useNarrative } from '@/context/NarrativeContext'
 import { useReducedMotion } from '@/lib/hooks/useReducedMotion'
@@ -127,7 +126,7 @@ export function Hero() {
                                 {t('eyebrow')}
                             </div>
                             <h1 className="text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] text-white mb-8 text-balance max-w-5xl mx-auto">
-                                <SpotlightHeading as="span">{t('headline')}</SpotlightHeading>
+                                {t('headline')}
                             </h1>
                             <p className="text-2xl text-white leading-relaxed md:leading-[1.5] mb-12 max-w-3xl mx-auto text-pretty font-light">
                                 {t('subheadline')}

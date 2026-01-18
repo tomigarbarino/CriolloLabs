@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 import { Container } from '@/components/ui/Container'
 import { BuildCard } from '@/components/landing/BuildCard'
 import { CTAButton } from '@/components/ui/CTAButton'
-import { SpotlightHeading } from '@/components/ui/SpotlightHeading'
 import { fadeUp, staggerContainer } from '@/lib/motion'
 import { useNarrative } from '@/context/NarrativeContext'
 
@@ -45,9 +44,9 @@ export function WeeklyBuilds() {
                     >
                         {t('title')}
                     </span>
-                    <SpotlightHeading as="h2" className="text-3xl md:text-5xl font-bold mb-4 text-balance">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance text-white">
                         {t('subtitle')}
-                    </SpotlightHeading>
+                    </h2>
                 </motion.div>
 
                 {/* Cards Grid - Desktop */}
