@@ -69,7 +69,7 @@ export function Audience() {
                                             {col.items.map((item, itemIdx) => (
                                                 <li key={itemIdx} className="flex items-start gap-3">
                                                     <CheckCircle2 className={`${col.color} mt-0.5 flex-shrink-0`} size={18} />
-                                                    <span className="text-white/80 leading-relaxed text-pretty">{item}</span>
+                                                    <span className="text-white leading-relaxed text-pretty">{item}</span>
                                                 </li>
                                             ))}
                                         </ul>
@@ -122,7 +122,7 @@ export function Audience() {
                                                     className={`${col.color} mt-0.5 flex-shrink-0`}
                                                     size={18}
                                                 />
-                                                <span className="text-white/80 leading-relaxed">{item}</span>
+                                                <span className="text-white leading-relaxed">{item}</span>
                                             </motion.li>
                                         ))}
                                     </ul>

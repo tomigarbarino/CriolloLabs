@@ -68,7 +68,7 @@ export function Story() {
                             {t('title')}
                         </SpotlightHeading>
 
-                        <p className="mx-auto mt-4 max-w-2xl text-white/70 leading-relaxed text-pretty">
+                        <p className="mx-auto mt-4 max-w-2xl text-white leading-relaxed text-pretty">
                             {tt(
                                 'subtitle',
                                 'Autodidacta por naturaleza. Constructor por vocación.'
@@ -167,7 +167,7 @@ export function Story() {
                                             {item.title}
                                         </SpotlightHeading>
 
-                                        <p className="text-white/70 leading-relaxed text-pretty">
+                                        <p className="text-white leading-relaxed text-pretty">
                                             {item.description}
                                         </p>
 

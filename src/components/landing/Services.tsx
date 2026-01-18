@@ -67,7 +67,7 @@ export function Services() {
                         {t('title')}
                     </SpotlightHeading>
                     {t.raw('subtitle') && (
-                        <p className="text-lg text-white/60 max-w-2xl mx-auto">
+                        <p className="text-lg text-white max-w-2xl mx-auto">
                             {t('subtitle')}
                         </p>
                     )}
@@ -129,7 +129,7 @@ export function Services() {
                                         </h3>
 
                                         {/* Description */}
-                                        <p className="text-white/60 mb-6 text-sm leading-relaxed text-pretty">
+                                        <p className="text-white mb-6 text-sm leading-relaxed text-pretty">
                                             {service.desc}
                                         </p>
 

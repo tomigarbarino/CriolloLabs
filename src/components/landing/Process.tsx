@@ -52,7 +52,7 @@ export function Process() {
                         {t('title')}
                     </SpotlightHeading>
                     {t.raw('subtitle') && (
-                        <p className="text-lg text-white/60">{t('subtitle')}</p>
+                        <p className="text-lg text-white">{t('subtitle')}</p>
                     )}
                 </motion.div>
 
@@ -114,7 +114,7 @@ export function Process() {
                                 <SpotlightHeading as="h3" className="text-lg font-bold mb-2 text-white">
                                     {step.title}
                                 </SpotlightHeading>
-                                <p className="text-sm text-white/60 max-w-xs md:max-w-[200px] leading-relaxed text-pretty">
+                                <p className="text-sm text-white max-w-xs md:max-w-[200px] leading-relaxed text-pretty">
                                     {step.description}
                                 </p>
 

@@ -129,7 +129,7 @@ export function Hero() {
                             <h1 className="text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] text-white mb-8 text-balance max-w-5xl mx-auto">
                                 <SpotlightHeading as="span">{t('headline')}</SpotlightHeading>
                             </h1>
-                            <p className="text-2xl text-white/80 leading-relaxed md:leading-[1.5] mb-12 max-w-3xl mx-auto text-pretty font-light">
+                            <p className="text-2xl text-white leading-relaxed md:leading-[1.5] mb-12 max-w-3xl mx-auto text-pretty font-light">
                                 {t('subheadline')}
                             </p>
 
@@ -161,7 +161,7 @@ export function Hero() {
                             <h2 className="text-5xl lg:text-7xl font-bold tracking-tight mb-8 text-white text-balance max-w-4xl leading-tight">
                                 {t('beats.b1.headline')}
                             </h2>
-                            <p className="text-2xl lg:text-3xl text-white/80 leading-relaxed max-w-3xl mx-auto text-pretty font-light">
+                            <p className="text-2xl lg:text-3xl text-white leading-relaxed max-w-3xl mx-auto text-pretty font-light">
                                 {t('beats.b1.sub')}
                             </p>
                         </motion.div>
@@ -176,7 +176,7 @@ export function Hero() {
                             <h2 className="text-5xl lg:text-7xl font-bold tracking-tight mb-8 text-white text-balance max-w-4xl leading-tight">
                                 {t('beats.b2.headline')}
                             </h2>
-                            <p className="text-2xl lg:text-3xl text-white/80 leading-relaxed max-w-3xl mx-auto text-pretty font-light">
+                            <p className="text-2xl lg:text-3xl text-white leading-relaxed max-w-3xl mx-auto text-pretty font-light">
                                 {t('beats.b2.sub')}
                             </p>
                         </motion.div>
@@ -191,7 +191,7 @@ export function Hero() {
                             <h2 className="text-5xl lg:text-7xl font-bold tracking-tight mb-8 text-white text-balance max-w-4xl leading-tight">
                                 {t('beats.b3.headline')}
                             </h2>
-                            <p className="text-2xl lg:text-3xl text-white/80 leading-relaxed max-w-3xl mx-auto mb-12 text-pretty font-light">
+                            <p className="text-2xl lg:text-3xl text-white leading-relaxed max-w-3xl mx-auto mb-12 text-pretty font-light">
                                 {t('beats.b3.sub')}
                             </p>
                             <CTAButton href="https://wa.me/5491121925947" variant="outline" size="lg" icon={<MessageCircle size={22} />}>
@@ -215,7 +215,7 @@ export function Hero() {
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] text-white text-balance max-w-4xl">
                         {t('headline')}
                     </h1>
-                    <p className="text-lg md:text-xl text-white/80 leading-relaxed text-balance max-w-2xl mx-auto">{t('subheadline')}</p>
+                    <p className="text-lg md:text-xl text-white leading-relaxed text-balance max-w-2xl mx-auto">{t('subheadline')}</p>
 
                     <div className="flex flex-wrap gap-2 justify-center my-2">
                         {[1, 2, 3].map(i => (
@@ -237,7 +237,7 @@ export function Hero() {
                         <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white text-balance">
                             {t(`beats.b${b}.headline`)}
                         </h3>
-                        <p className="text-white/80 mb-6 leading-relaxed max-w-xl mx-auto text-balance text-lg">
+                        <p className="text-white mb-6 leading-relaxed max-w-xl mx-auto text-balance text-lg">
                             {t(`beats.b${b}.sub`)}
                         </p>
                         {b === 3 && (

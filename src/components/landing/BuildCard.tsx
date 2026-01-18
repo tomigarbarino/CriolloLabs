@@ -52,7 +52,7 @@ export function BuildCard({
                 </div>
 
                 {/* Description */}
-                <p className="text-sm text-white/60 mb-6 flex-grow line-clamp-3">
+                <p className="text-sm text-white mb-6 flex-grow line-clamp-3">
                     {description}
                 </p>
 
