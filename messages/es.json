@@ -77,7 +77,10 @@
       "closingTitle": "¿El resultado de todo esto?",
       "closingDesc": "Un perfil híbrido: la velocidad del hacker y la calidad del ingeniero senior.",
       "ctaProjects": "Ver proyectos",
-      "ctaContact": "Hablemos"
+      "ctaContact": "Hablemos",
+      "cta": {
+        "miniAudit": "Pedir mini-diagnóstico"
+      }
     },
     "builds": {
       "controlTower": {
@@ -214,7 +217,10 @@
           ],
           "demoUrl": "/builds/perf-ux-audit"
         }
-      ]
+      ],
+      "cta": {
+        "miniAudit": "Pedir mini-diagnóstico"
+      }
     },
     "services": {
       "title": "Cómo te ayudo",
@@ -258,7 +264,10 @@
         ],
         "timeline": "5–10 días"
       },
-      "cta": "Me interesa"
+      "cta": {
+        "primary": "Me interesa",
+        "miniAudit": "Pedir mini-diagnóstico"
+      }
     },
     "audience": {
       "title": "¿Para quién es esto?",
@@ -328,6 +337,9 @@
       "q6": {
         "q": "¿Puedo escribirte aunque no tenga experiencia?",
         "a": "Sí, obvio. Yo arranqué de cero también. Lo importante es tener ganas de mejorar."
+      },
+      "cta": {
+        "miniAudit": "Pedir mini-diagnóstico"
       }
     },
     "contact": {

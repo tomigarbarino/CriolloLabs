@@ -167,7 +167,7 @@ export function Services() {
                                             href={`#contact?intent=${encodeURIComponent(service.title)}`}
                                             className="block w-full py-3 rounded-lg bg-white/5 hover:bg-white/10 text-white/80 text-sm font-medium transition-colors text-center border border-white/5"
                                         >
-                                            {t('cta')}
+                                            {t('cta.primary')}
                                         </a>
                                     </div>
                                 </Card>
