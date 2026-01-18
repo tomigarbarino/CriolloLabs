@@ -5,8 +5,7 @@ import {
     useMotionValue,
     useSpring,
     useTransform,
-    AnimatePresence,
-    useReducedMotion
+    AnimatePresence
 } from 'framer-motion'
 import { useEffects } from '@/context/EffectsContext'
 import { cn } from '@/lib/utils'
@@ -15,15 +14,13 @@ import { useId, useState } from 'react'
 export function LightCord() {
     const { toggleEffects, effectsEnabled } = useEffects()
     const [isHovered, setIsHovered] = useState(false)
-
-    const reduceMotion = useReducedMotion()
     const tooltipId = useId()
 
     // --- PHYSICS ENGINE ---
     // Heavier, "premium" feel (higher damping = less bouncy, more mechanical)
     const y = useMotionValue(0)
     const smoothY = useSpring(y, { stiffness: 400, damping: 30, mass: 1.5 })
-    const springY = reduceMotion ? y : smoothY
+    const springY = smoothY
 
     const handleDragEnd = (_: unknown, info: { offset: { y: number } }) => {
         // Threshold to trigger (requires deliberate pull)
@@ -44,7 +41,7 @@ export function LightCord() {
     return (
         <motion.div
             className="fixed top-0 left-6 md:left-10 z-[60] w-0 flex justify-center pointer-events-none select-none origin-top will-change-transform"
-            style={{ rotate: reduceMotion ? 0 : rotateSpring }}
+            style={{ rotate: rotateSpring }}
         >
             {/* 
         1. THE CORD 
@@ -53,7 +50,7 @@ export function LightCord() {
             <motion.div
                 className="absolute top-0 left-1/2 -translate-x-1/2 w-[2px] origin-top rounded-full overflow-hidden"
                 style={{
-                    height: reduceMotion ? 120 : height,
+                    height: height,
                 }}
             >
                 {/* Core tread/fabric texture */}

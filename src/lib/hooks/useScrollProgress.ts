@@ -74,9 +74,7 @@ export function useElementScrollProgress(
 
             // Calculate progress based on element position
             // 0 = element just entered viewport, 1 = element just left viewport
-            const triggerPoint = windowHeight * offset
             const elementTop = rect.top
-            const elementBottom = rect.bottom
 
             // Progress from element entering to leaving viewport
             const totalTravel = windowHeight + elementHeight

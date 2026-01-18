@@ -8,7 +8,6 @@ interface TextScrambleProps {
     className?: string
     chars?: string
     speed?: number
-    revealSpeed?: number
 }
 
 export function TextScramble({
