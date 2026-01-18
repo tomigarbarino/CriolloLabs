@@ -18,7 +18,7 @@ export function BuildPreviewBackofficeAutopilot() {
 
             <div className="grid gap-4 md:grid-cols-12">
                 {/* Workflow Panel */}
-                <PreviewPanel title="Workflow" className="col-span-12 md:col-span-7 h-auto md:h-64">
+                <PreviewPanel title="Workflow" className="col-span-12 md:col-span-7">
                     <div className="flex flex-col items-center justify-center space-y-2 py-2">
                         <Node title="Trigger" subtitle="Pago aprobado (MP/Stripe)" icon="⚡" />
                         <ArrowDown className="text-white/10" size={16} />
@@ -29,7 +29,7 @@ export function BuildPreviewBackofficeAutopilot() {
                 </PreviewPanel>
 
                 {/* Logs Panel */}
-                <PreviewPanel title="Ejecuciones (live logs)" className="col-span-12 md:col-span-5 h-auto md:h-64">
+                <PreviewPanel title="Ejecuciones (live logs)" className="col-span-12 md:col-span-5">
                     <div className="space-y-2 mt-1 overflow-y-auto max-h-[200px] pr-1">
                         <LogItem status="good" text="invoice.create · 1.2s" />
                         <LogItem status="good" text="email.send · 0.4s" />
