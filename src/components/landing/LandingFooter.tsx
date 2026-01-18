@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import { Container } from '@/components/ui/Container'
-import { Linkedin, Youtube, Github } from 'lucide-react'
+import { Linkedin, Github } from 'lucide-react'
 import Image from 'next/image'
 
 export function LandingFooter() {

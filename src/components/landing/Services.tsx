@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 import { Container } from '@/components/ui/Container'
 import { Card } from '@/components/ui/Card'
 import { SpotlightHeading } from '@/components/ui/SpotlightHeading'
-import { useReducedMotion } from '@/lib/hooks/useReducedMotion'
 import { fadeUp, staggerContainer } from '@/lib/motion'
 import { FileText, Database, Bot } from 'lucide-react'
 import { useNarrative } from '@/context/NarrativeContext'
@@ -13,7 +12,6 @@ import { cn } from '@/lib/utils'
 
 export function Services() {
     const t = useTranslations('landing.services')
-    const reducedMotion = useReducedMotion()
     const { setScene } = useNarrative()
 
     const services = [

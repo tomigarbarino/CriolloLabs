@@ -79,6 +79,52 @@
       "ctaProjects": "Ver proyectos",
       "ctaContact": "Hablemos"
     },
+    "builds": {
+      "control-tower": {
+        "title": "Control Tower Dashboard",
+        "subtitle": "Unificá ventas, ops y métricas en un panel con alertas y exportes.",
+        "problem": "Todo vive en Excel/WhatsApp y nadie sabe qué está pasando en tiempo real.",
+        "outcome": "Un panel único para decidir rápido: KPIs, alertas, actividad y reportes.",
+        "bullets": [
+          "KPIs claros + tendencias por canal y período",
+          "Alertas: stock crítico, pagos fallidos, demoras",
+          "Exportes y reportes para finanzas/ops"
+        ]
+      },
+      "whatsapp-followup": {
+        "title": "WhatsApp Follow-Up System",
+        "subtitle": "Pipeline simple + recordatorios automáticos para no perder leads.",
+        "problem": "Los leads se enfrían porque olvidás responder o no tenés un proceso claro.",
+        "outcome": "Seguimiento automático y visualización clara del estado de cada lead.",
+        "bullets": [
+          "Pipeline visual tipo Kanban o lista",
+          "Recordatorios automáticos por inactividad",
+          "Integración directa con WhatsApp Web/API"
+        ]
+      },
+      "backoffice-autopilot": {
+        "title": "Backoffice Autopilot",
+        "subtitle": "Workflows que ejecutan tareas repetitivas: pagos → factura → email.",
+        "problem": "Perdés horas copiando datos de un sistema a otro manualmente.",
+        "outcome": "Procesos que corren solos, 24/7, sin errores humanos.",
+        "bullets": [
+          "Conexión entre MercadoPago, AFIP, Email",
+          "Logs detallados de cada operación",
+          "Alertas ante fallos de integración"
+        ]
+      },
+      "perf-ux-audit": {
+        "title": "Performance & UX Audit",
+        "subtitle": "Diagnóstico + quick wins medibles para velocidad y conversión.",
+        "problem": "Tu sitio carga lento, se siente 'barato' y perdés usuarios.",
+        "outcome": "Un sitio rápido, pulido y optimizado para convertir.",
+        "bullets": [
+          "Análisis profundo de Core Web Vitals",
+          "Review de UX/UI y 'feel' de la app",
+          "Plan de acción priorizado por impacto"
+        ]
+      }
+    },
     "weeklyBuilds": {
       "title": "Build in Public",
       "subtitle": "Hablar es gratis. Yo codeo.",
@@ -92,7 +138,7 @@
             "Charts",
             "Integrations"
           ],
-          "demoUrl": "#",
+          "demoUrl": "/builds/control-tower",
           "repoUrl": "#"
         },
         {
@@ -104,6 +150,7 @@
             "Automations",
             "Calendar"
           ],
+          "demoUrl": "/builds/whatsapp-followup",
           "repoUrl": "#"
         },
         {
@@ -114,7 +161,7 @@
             "Webhooks",
             "Queues"
           ],
-          "demoUrl": "#"
+          "demoUrl": "/builds/backoffice-autopilot"
         },
         {
           "title": "Performance & UX Audit",
@@ -124,6 +171,7 @@
             "Web Vitals",
             "Next Perf"
           ],
+          "demoUrl": "/builds/perf-ux-audit",
           "repoUrl": "#"
         }
       ]

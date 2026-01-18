@@ -22,9 +22,8 @@ export function LightCord() {
     // --- PHYSICS ENGINE ---
     // Heavier, "premium" feel (higher damping = less bouncy, more mechanical)
     const y = useMotionValue(0)
-    const springY = reduceMotion
-        ? y
-        : useSpring(y, { stiffness: 400, damping: 30, mass: 1.5 })
+    const smoothY = useSpring(y, { stiffness: 400, damping: 30, mass: 1.5 })
+    const springY = reduceMotion ? y : smoothY
 
     const handleDragEnd = (_: unknown, info: { offset: { y: number } }) => {
         // Threshold to trigger (requires deliberate pull)
@@ -39,7 +38,7 @@ export function LightCord() {
 
     // --- SUBTLE SWING ---
     // A tiny bit of pendulum motion when interacting
-    const rotateVar = useTransform(springY, [-20, 0, 150, 200], [-3, 0, 2, 0])
+    const rotateVar = useTransform(y, [-20, 0, 150, 200], [-3, 0, 2, 0])
     const rotateSpring = useSpring(rotateVar, { stiffness: 200, damping: 20 })
 
     return (

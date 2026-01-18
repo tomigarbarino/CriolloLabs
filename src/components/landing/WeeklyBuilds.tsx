@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 import { Container } from '@/components/ui/Container'
 import { BuildCard } from '@/components/landing/BuildCard'
 import { SpotlightHeading } from '@/components/ui/SpotlightHeading'
-import { useReducedMotion } from '@/lib/hooks/useReducedMotion'
 import { fadeUp, staggerContainer } from '@/lib/motion'
 import { useNarrative } from '@/context/NarrativeContext'
 
@@ -19,7 +18,6 @@ interface BuildItem {
 
 export function WeeklyBuilds() {
     const t = useTranslations('landing.weeklyBuilds')
-    const reducedMotion = useReducedMotion()
     const { setScene } = useNarrative()
 
     const items = t.raw('items') as BuildItem[]

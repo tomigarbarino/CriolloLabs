@@ -7,9 +7,12 @@ import { useForm } from 'react-hook-form'
 import { Container } from '@/components/ui/Container'
 import { CTAButton } from '@/components/ui/CTAButton'
 import { useReducedMotion } from '@/lib/hooks/useReducedMotion'
-import { fadeUp, slideInLeft, slideInRight, duration, ease } from '@/lib/motion'
+import { slideInLeft, slideInRight, duration, ease } from '@/lib/motion'
 import { MessageCircle, Mail, Send, CheckCircle, Linkedin, Github } from 'lucide-react'
+
 import { useNarrative } from '@/context/NarrativeContext'
+import { useSearchParams } from 'next/navigation'
+import { BUILDS } from '@/lib/builds/catalog'
 
 type FormData = {
     name: string
@@ -18,10 +21,24 @@ type FormData = {
     message: string
 }
 
+import { Suspense } from 'react'
+
 export function Contact() {
+    return (
+        <Suspense fallback={<div className="py-24" />}>
+            <ContactContent />
+        </Suspense>
+    )
+}
+
+function ContactContent() {
     const t = useTranslations('landing.contact')
     const reducedMotion = useReducedMotion()
     const { setScene } = useNarrative()
+    const searchParams = useSearchParams()
+    const intent = searchParams.get('intent')
+    const intentBuild = BUILDS.find(b => b.slug === intent)
+
     const [isSubmitted, setIsSubmitted] = useState(false)
     const {
         register,
@@ -146,6 +163,14 @@ export function Contact() {
                                         <p className="text-white/60 text-sm">{t('audit.description')}</p>
                                     )}
                                 </div>
+
+                                {intentBuild && (
+                                    <div className="p-4 bg-accent-purple/10 border border-accent-purple/20 rounded-xl">
+                                        {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+                                        <p className="text-sm text-accent-purple font-medium">Te interesa: {t(`landing.builds.${intentBuild.slug}.title` as any)}</p>
+                                        <p className="text-xs text-white/50 mt-1">¿Cómo lo estás resolviendo hoy?</p>
+                                    </div>
+                                )}
 
                                 <div className="space-y-4">
                                     <div>

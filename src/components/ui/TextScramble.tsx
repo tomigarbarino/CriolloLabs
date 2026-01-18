@@ -16,10 +16,9 @@ export function TextScramble({
     className,
     chars = '!<>-_\\/[]{}—=+*^?#________',
     speed = 50,
-    revealSpeed = 70,
+
 }: TextScrambleProps) {
     const [displayText, setDisplayText] = useState(children)
-    const [isScrambling, setIsScrambling] = useState(false)
     const reducedMotion = useReducedMotion()
     const intervalRef = useRef<NodeJS.Timeout | null>(null)
 

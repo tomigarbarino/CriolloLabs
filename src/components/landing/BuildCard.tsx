@@ -1,9 +1,11 @@
 'use client'
 
+import React from 'react'
+import { Link } from '@/navigation'
 import { motion } from 'framer-motion'
 import { cn } from '@/lib/utils'
 import { Card } from '@/components/ui/Card'
-import { cardHover, fadeUp, duration, ease } from '@/lib/motion'
+import { fadeUp } from '@/lib/motion'
 import { useReducedMotion } from '@/lib/hooks/useReducedMotion'
 import { ExternalLink, Github } from 'lucide-react'
 
@@ -71,19 +73,33 @@ export function BuildCard({
                 {/* Actions */}
                 <div className="flex gap-3 pt-4 border-t border-white/5 mt-auto">
                     {demoUrl && (
-                        <a
-                            href={demoUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={cn(
-                                'flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-medium transition-all',
-                                'bg-accent-purple/10 text-accent-purple border border-accent-purple/20',
-                                'hover:bg-accent-purple/20 hover:border-accent-purple/30'
-                            )}
-                        >
-                            <ExternalLink size={14} />
-                            <span>Demo</span>
-                        </a>
+                        demoUrl.startsWith('/') ? (
+                            <Link
+                                href={demoUrl}
+                                className={cn(
+                                    'flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-medium transition-all',
+                                    'bg-accent-purple/10 text-accent-purple border border-accent-purple/20',
+                                    'hover:bg-accent-purple/20 hover:border-accent-purple/30'
+                                )}
+                            >
+                                <ExternalLink size={14} />
+                                <span>Demo</span>
+                            </Link>
+                        ) : (
+                            <a
+                                href={demoUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={cn(
+                                    'flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-medium transition-all',
+                                    'bg-accent-purple/10 text-accent-purple border border-accent-purple/20',
+                                    'hover:bg-accent-purple/20 hover:border-accent-purple/30'
+                                )}
+                            >
+                                <ExternalLink size={14} />
+                                <span>Demo</span>
+                            </a>
+                        )
                     )}
                     {repoUrl && (
                         <a

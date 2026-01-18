@@ -78,13 +78,7 @@ export function CTAButton({
         className
     )
 
-    const content = (
-        <>
-            {icon && iconPosition === 'left' && icon}
-            <span>{children}</span>
-            {icon && iconPosition === 'right' && icon}
-        </>
-    )
+
 
     // Motion wrapper with press effect
     const MotionWrapper = reducedMotion ? 'span' : motion.span

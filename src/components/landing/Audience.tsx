@@ -6,7 +6,7 @@ import { Container } from '@/components/ui/Container'
 import { Card } from '@/components/ui/Card'
 import { SpotlightHeading } from '@/components/ui/SpotlightHeading'
 import { useReducedMotion } from '@/lib/hooks/useReducedMotion'
-import { fadeUp, slideInLeft, slideInRight, duration, ease } from '@/lib/motion'
+import { slideInLeft, slideInRight, duration, ease } from '@/lib/motion'
 import { Rocket, Building2, CheckCircle2 } from 'lucide-react'
 import { useNarrative } from '@/context/NarrativeContext'
 

@@ -59,7 +59,7 @@ export function AmbientNarrativeLayer() {
             const isServices = activeScene.startsWith('services')
 
             // Default: Look up directly or fallback to DEFAULT
-            let baseConfig = SCENES[activeScene] || DEFAULT_SCENE
+            // Base config removed as it was unused]
 
             // --- MODE: ANCHOR FOLLOW (Hero & Story) ---
             if (isHero || isStory) {

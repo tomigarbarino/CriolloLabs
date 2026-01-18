@@ -4,7 +4,6 @@ import { useRef } from 'react'
 import { useTranslations } from 'next-intl'
 import { motion, useScroll, useTransform, useMotionValueEvent } from 'framer-motion'
 import { CTAButton } from '@/components/ui/CTAButton'
-import { useReducedMotion } from '@/lib/hooks/useReducedMotion'
 import { MessageCircle, ArrowRight, ChevronDown } from 'lucide-react'
 import { SpotlightHeading } from '@/components/ui/SpotlightHeading'
 import { Badge } from '@/components/ui/Badge'
@@ -25,7 +24,6 @@ const TIMELINE = {
 
 export function Hero() {
     const t = useTranslations('landing.hero')
-    const reducedMotion = useReducedMotion()
     const containerRef = useRef<HTMLElement>(null)
     const { setScene } = useNarrative()
     // --- SCROLL ENGINE ---
