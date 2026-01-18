@@ -185,8 +185,8 @@ function ContactContent() {
                                 {intentBuild && (
                                     <div className="p-4 bg-accent-purple/10 border border-accent-purple/20 rounded-xl">
                                         {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-                                        <p className="text-sm text-accent-purple font-medium">Te interesa: {tBuilds(`${intentBuild.key}.title` as any)}</p>
-                                        <p className="text-xs text-white/50 mt-1">¿Cómo lo estás resolviendo hoy?</p>
+                                        <p className="text-sm text-accent-purple font-medium">{t('contextual.prefix')} {tBuilds(`${intentBuild.key}.title` as any)}</p>
+                                        <p className="text-xs text-white/50 mt-1">{t('contextual.question')}</p>
                                     </div>
                                 )}
 

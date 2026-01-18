@@ -8,9 +8,10 @@ import { MessageCircle, ArrowRight, ChevronDown } from 'lucide-react'
 import { SpotlightHeading } from '@/components/ui/SpotlightHeading'
 import { Badge } from '@/components/ui/Badge'
 import { useNarrative } from '@/context/NarrativeContext'
+import { useReducedMotion } from '@/lib/hooks/useReducedMotion'
+import { cn } from '@/lib/utils'
 
-// --- SHARED TIMELINE CONTEXT ---
-// Defines the exact scroll percentage points where major transitions happen.
+// ... (TIMELINE constants remain same)
 const TIMELINE = {
     START: 0,
     INTRO_END: 0.2,    // Intro fades out
@@ -26,6 +27,8 @@ export function Hero() {
     const t = useTranslations('landing.hero')
     const containerRef = useRef<HTMLElement>(null)
     const { setScene } = useNarrative()
+    const reducedMotion = useReducedMotion()
+
     // --- SCROLL ENGINE ---
     const { scrollYProgress } = useScroll({
         target: containerRef,
@@ -34,21 +37,14 @@ export function Hero() {
 
     // Synchronize Narrative (orbs)
     useMotionValueEvent(scrollYProgress, "change", (latest) => {
-        if (latest < TIMELINE.B1_START) {
-            setScene('hero_beat_0')
-        }
-        else if (latest < TIMELINE.B2_START) {
-            setScene('hero_beat_1')
-        }
-        else if (latest < TIMELINE.B3_START) {
-            setScene('hero_beat_2')
-        }
-        else {
-            setScene('hero_beat_3')
-        }
+        // ... (same logic)
+        if (latest < TIMELINE.B1_START) setScene('hero_beat_0')
+        else if (latest < TIMELINE.B2_START) setScene('hero_beat_1')
+        else if (latest < TIMELINE.B3_START) setScene('hero_beat_2')
+        else setScene('hero_beat_3')
     })
 
-    // --- TEXT ANIMATION CURVES ---
+    // ... (transforms remain defined, but unused if reducedMotion)
     // BEAT 0: INTRO
     const s0_opacity = useTransform(scrollYProgress, [TIMELINE.START, TIMELINE.INTRO_END], [1, 0])
     const s0_y = useTransform(scrollYProgress, [TIMELINE.START, TIMELINE.INTRO_END], [0, -40])
@@ -92,59 +88,23 @@ export function Hero() {
     return (
         <section
             ref={containerRef}
-            className="relative min-h-screen md:h-[600vh]"
+            className={cn(
+                "relative min-h-screen transition-all",
+                !reducedMotion && "md:h-[600vh]"
+            )}
         >
-            {/* Progress Dots (Desktop) */}
+            {/* STICKY CONTAINER (Desktop Only, Hidden on Reduced Motion) */}
+            <div className={cn(
+                "hidden md:flex flex-col justify-center overflow-hidden",
+                !reducedMotion ? "md:sticky md:top-0 md:h-screen" : "hidden"
+            )}>
+                {/* ... (Desktop Content will go here via next chunk, but check logic) */}
+                <div className="w-full h-full items-center justify-center relative z-10 hidden md:flex">
+                    {/* ... (Desktop inner content) */}
+                    {/* Note: I am rewriting this block so I need to be careful with nesting. 
+                        The original code had 'div className="md:sticky..."' then 'div className="hidden md:flex..."'.
+                    */}
 
-
-            {/* STICKY CONTAINER */}
-            <div className="md:sticky md:top-0 md:h-screen flex flex-col justify-center overflow-hidden">
-
-
-                {/* --- MOBILE LAYOUT (Stack, same as before but centered) --- */}
-                <div className="md:hidden pt-32 pb-24 px-6 flex flex-col gap-24 items-center text-center relative z-10">
-                    <div className="flex flex-col gap-6 items-center">
-                        <div className="text-xs font-mono text-accent-purple tracking-widest uppercase opacity-90">{t('eyebrow')}</div>
-                        <h1 className="text-4xl font-bold tracking-tight leading-[1.1] text-white text-balance">
-                            {t('headline')}
-                        </h1>
-                        <p className="text-lg text-white/80 leading-relaxed text-balance max-w-sm mx-auto">{t('subheadline')}</p>
-
-                        <div className="flex flex-wrap gap-2 justify-center my-2">
-                            {[1, 2, 3].map(i => (
-                                <Badge key={i} variant="outline" size="sm" className="bg-white/5 border-white/10 text-white/70">
-                                    {t(`chips.c${i}`)}
-                                </Badge>
-                            ))}
-                        </div>
-
-                        <div className="flex flex-col gap-3 mt-4 w-full px-8">
-                            <CTAButton href="/projects" variant="primary">{t('ctaPrimary')}</CTAButton>
-                            <CTAButton href="https://wa.me/5491121925947" variant="outline">{t('ctaSecondary')}</CTAButton>
-                        </div>
-                    </div>
-
-                    {[1, 2, 3].map((b) => (
-                        <div key={b} className="flex flex-col items-center">
-                            <div className="w-12 h-1 bg-accent-purple mb-6 rounded-full" />
-                            <h3 className="text-3xl font-bold mb-4 text-white text-balance">
-                                {t(`beats.b${b}.headline`)}
-                            </h3>
-                            <p className="text-white/80 mb-6 leading-relaxed max-w-xs mx-auto text-balance">
-                                {t(`beats.b${b}.sub`)}
-                            </p>
-                            {b === 3 && (
-                                <CTAButton href="https://wa.me/5491121925947" variant="ghost" size="sm" icon={<ArrowRight size={16} />}>
-                                    {t('beats.b3.cta')}
-                                </CTAButton>
-                            )}
-                        </div>
-                    ))}
-                </div>
-
-
-                {/* --- DESKTOP LAYOUT (Centered Typography) --- */}
-                <div className="hidden md:flex w-full h-full items-center justify-center relative z-10">
 
                     {/* SCROLL HINT */}
                     <motion.div
@@ -242,6 +202,53 @@ export function Hero() {
                     </div>
                 </div>
             </div>
+
+            {/* --- REDUCED MOTION / MOBILE FALLBACK --- 
+                Visible on Mobile OR if Reduced Motion is ON.
+            */}
+            <div className={cn(
+                "md:hidden pt-32 pb-24 px-6 flex flex-col gap-24 items-center text-center relative z-10",
+                reducedMotion && "md:flex md:pt-32"
+            )}>
+                <div className="flex flex-col gap-6 items-center">
+                    <div className="text-xs font-mono text-accent-purple tracking-widest uppercase opacity-90">{t('eyebrow')}</div>
+                    <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] text-white text-balance max-w-4xl">
+                        {t('headline')}
+                    </h1>
+                    <p className="text-lg md:text-xl text-white/80 leading-relaxed text-balance max-w-2xl mx-auto">{t('subheadline')}</p>
+
+                    <div className="flex flex-wrap gap-2 justify-center my-2">
+                        {[1, 2, 3].map(i => (
+                            <Badge key={i} variant="outline" size="sm" className="bg-white/5 border-white/10 text-white/70">
+                                {t(`chips.c${i}`)}
+                            </Badge>
+                        ))}
+                    </div>
+
+                    <div className="flex flex-col sm:flex-row gap-3 mt-4 w-full px-8 justify-center">
+                        <CTAButton href="/projects" variant="primary">{t('ctaPrimary')}</CTAButton>
+                        <CTAButton href="https://wa.me/5491121925947" variant="outline">{t('ctaSecondary')}</CTAButton>
+                    </div>
+                </div>
+
+                {[1, 2, 3].map((b) => (
+                    <div key={b} className="flex flex-col items-center max-w-3xl">
+                        <div className="w-12 h-1 bg-accent-purple mb-6 rounded-full" />
+                        <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white text-balance">
+                            {t(`beats.b${b}.headline`)}
+                        </h3>
+                        <p className="text-white/80 mb-6 leading-relaxed max-w-xl mx-auto text-balance text-lg">
+                            {t(`beats.b${b}.sub`)}
+                        </p>
+                        {b === 3 && (
+                            <CTAButton href="https://wa.me/5491121925947" variant="ghost" size="sm" icon={<ArrowRight size={16} />}>
+                                {t('beats.b3.cta')}
+                            </CTAButton>
+                        )}
+                    </div>
+                ))}
+            </div>
+
         </section>
     )
 }

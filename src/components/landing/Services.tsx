@@ -163,12 +163,13 @@ export function Services() {
                                         </div>
 
                                         {/* CTA */}
-                                        <a
+                                        <CTAButton
                                             href={`#contact?intent=${encodeURIComponent(service.title)}`}
-                                            className="block w-full py-3 rounded-lg bg-white/5 hover:bg-white/10 text-white/80 text-sm font-medium transition-colors text-center border border-white/5"
+                                            variant="secondary"
+                                            className="w-full justify-center border-white/5 bg-white/5 text-white/80 hover:bg-white/10 hover:text-white"
                                         >
                                             {t('cta.primary')}
-                                        </a>
+                                        </CTAButton>
                                     </div>
                                 </Card>
                             </motion.div>

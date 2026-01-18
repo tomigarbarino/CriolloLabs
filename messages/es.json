@@ -174,7 +174,7 @@
     },
     "weeklyBuilds": {
       "title": "Build in Public",
-      "subtitle": "Hablar es gratis. Yo codeo.",
+      "subtitle": "De la idea al mercado en semanas, no meses.",
       "items": [
         {
           "title": "Control Tower Dashboard",
@@ -346,6 +346,10 @@
       "title": "Empezá con claridad.",
       "subtitle": "El mini-diagnóstico es gratis y te llevás valor aunque no trabajemos juntos.",
       "trust": "Hablás conmigo: Tomás Garbarino. Sin intermediarios.",
+      "contextual": {
+        "prefix": "Te interesa:",
+        "question": "¿Cómo lo estás resolviendo hoy?"
+      },
       "ctaWhatsApp": "WhatsApp",
       "ctaEmail": "Email",
       "audit": {
