@@ -1,0 +1,249 @@
+{
+  "header": {
+    "home": "Inicio",
+    "story": "Mi historia",
+    "builds": "Mis builds",
+    "work": "Qué hago",
+    "audience": "Para quién",
+    "process": "Cómo laburo",
+    "faq": "Preguntas",
+    "contact": "Hablemos"
+  },
+  "landing": {
+    "hero": {
+      "eyebrow": "Criollo Labs · Product Engineering",
+      "headline": "Ingeniería de Producto. Sin humo.",
+      "subheadline": "Transformo problemas complejos en software simple y escalable. Vengo de abajo, aprendí en la trinchera y hoy construyo sistemas para quienes valoran la ejecución real.",
+      "chips": {
+        "c1": "De Caos → Sistema",
+        "c2": "Velocidad de Startup",
+        "c3": "Calidad Artesanal"
+      },
+      "beats": {
+        "b1": {
+          "headline": "Sin atajos.",
+          "sub": "Aprendí a fuerza de curiosidad y disciplina. Ese hambre se traduce en velocidad."
+        },
+        "b2": {
+          "headline": "El caos te cuesta plata.",
+          "sub": "Excel, WhatsApp y parches. Si no escala, te frena."
+        },
+        "b3": {
+          "headline": "Sistemas que dan paz.",
+          "sub": "Ordeno procesos y automatizo lo aburrido. Te devuelvo el control.",
+          "cta": "Contame tu caso (15 min)"
+        }
+      },
+      "ctaPrimary": "Ver qué construyo",
+      "ctaSecondary": "Hablemos",
+      "linkStory": "Mi historia"
+    },
+    "story": {
+      "title": "Origen",
+      "subtitle": "La universidad de la calle, literal y digital.",
+      "intro": "Soy Tomás. Criollo Labs es mi estudio: diseño, construyo y entrego yo.",
+      "timeline": [
+        {
+          "year": "2016",
+          "title": "Mods de Minecraft",
+          "description": "El comienzo. Moddeando juegos aprendí lógica de programación pura por necesidad, no por tarea."
+        },
+        {
+          "year": "2020",
+          "title": "Menús QR en pandemia",
+          "description": "Cuando todo cerró, abrí puertas digitales. Mi primer SaaS real que facturó y ayudó a negocios locales."
+        },
+        {
+          "year": "2022",
+          "title": "Consultoría Global",
+          "description": "El salto a las ligas mayores. Estándares de Silicon Valley, code reviews estrictos y arquitectura a escala."
+        },
+        {
+          "year": "2023",
+          "title": "Startup de IA (México)",
+          "description": "Me sumé a un producto de visión artificial. Del orden corporativo al caos hermoso de una startup. Crecimiento, velocidad y desafíos técnicos reales."
+        },
+        {
+          "year": "2026",
+          "title": "El layoff",
+          "description": "El golpe necesario. Entendí que la seguridad no te la da un empleo, sino tu capacidad de construir."
+        },
+        {
+          "year": "Hoy",
+          "title": "CriolloLabs",
+          "description": "Capitalizo todo eso (lo técnico y lo de negocio) para ayudar a otros a ordenarse y crecer. Sin humo, con experiencia real."
+        }
+      ],
+      "closingTitle": "¿El resultado de todo esto?",
+      "closingDesc": "Un perfil híbrido: la velocidad del hacker y la calidad del ingeniero senior.",
+      "ctaProjects": "Ver proyectos",
+      "ctaContact": "Hablemos"
+    },
+    "weeklyBuilds": {
+      "title": "Build in Public",
+      "subtitle": "Hablar es gratis. Yo codeo.",
+      "items": [
+        {
+          "title": "Control Tower Dashboard",
+          "description": "Unificá ventas, operaciones y métricas en un panel con alertas y exportes. Menos Excel, más control.",
+          "tech": [
+            "Next.js",
+            "TS",
+            "Charts",
+            "Integrations"
+          ],
+          "demoUrl": "#",
+          "repoUrl": "#"
+        },
+        {
+          "title": "WhatsApp Follow-Up System",
+          "description": "Pipeline simple + recordatorios automáticos para no perder leads. Seguimiento claro, sin esfuerzo.",
+          "tech": [
+            "Next.js",
+            "TS",
+            "Automations",
+            "Calendar"
+          ],
+          "repoUrl": "#"
+        },
+        {
+          "title": "Backoffice Autopilot",
+          "description": "Workflows que ejecutan tareas repetitivas: pagos → factura → email → reporte. Con logs y monitoreo.",
+          "tech": [
+            "Node",
+            "Webhooks",
+            "Queues"
+          ],
+          "demoUrl": "#"
+        },
+        {
+          "title": "Performance & UX Audit",
+          "description": "Diagnóstico + quick wins medibles para que tu producto cargue rápido y se sienta premium.",
+          "tech": [
+            "Lighthouse",
+            "Web Vitals",
+            "Next Perf"
+          ],
+          "repoUrl": "#"
+        }
+      ]
+    },
+    "services": {
+      "title": "Cómo te ayudo",
+      "subtitle": "Soluciones de alto impacto, bajo 'bloat'.",
+      "card1": {
+        "title": "MVP Sprint (0→1)",
+        "desc": "Prototipo funcional en 7–14 días para validar sin quemar meses.",
+        "deliverable": "MVP deployado + backlog"
+      },
+      "card2": {
+        "title": "Sistemas a Medida (Para Negocios)",
+        "desc": "Centralizá operaciones, ventas y métricas en un solo lugar. Menos caos, más decisiones claras.",
+        "deliverable": "WebApp, Dashboard o Panel Admin"
+      },
+      "card3": {
+        "title": "Automatización de Procesos",
+        "desc": "Bots que trabajan por vos. Conecto tus herramientas para que el software haga el trabajo repetitivo.",
+        "deliverable": "Workflows 24/7 con monitoreo"
+      },
+      "cta": "Me interesa"
+    },
+    "audience": {
+      "title": "¿Para quién es esto?",
+      "cols": {
+        "startups": {
+          "title": "Startups & Equipos ágiles",
+          "items": [
+            "Necesitan validar rápido (0→1)",
+            "Buscan velocidad de ejecución",
+            "Quieren evitar la deuda técnica inicial"
+          ]
+        },
+        "business": {
+          "title": "Founders y dueños-operadores",
+          "items": [
+            "Tu negocio creció pero tus sistemas no",
+            "Perdés tiempo en tareas repetitivas",
+            "Querés datos, no sensaciones"
+          ]
+        }
+      }
+    },
+    "process": {
+      "title": "Cómo trabajamos",
+      "subtitle": "Un sistema predecible: sabés qué pasa y cuándo.",
+      "steps": [
+        {
+          "title": "Diagnóstico (15 min)",
+          "description": "Sin compromiso. Entiendo tu contexto y te digo si puedo ayudarte (y cómo)."
+        },
+        {
+          "title": "Propuesta fija",
+          "description": "Alcance cerrado, precio cerrado. Sabés exactamente qué vas a recibir."
+        },
+        {
+          "title": "Sprint de construcción",
+          "description": "Ejecución rápida con feedback. No desaparezco un mes: iteramos juntos."
+        },
+        {
+          "title": "Entrega y handover",
+          "description": "Te doy las llaves: video, documentación y todo listo para operar."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas que siempre me hacen",
+      "q1": {
+        "q": "¿Cuánto tardás?",
+        "a": "Depende. Una revisión de CV puede estar en 48 horas. Un sistema simple, una o dos semanas."
+      },
+      "q2": {
+        "q": "¿Laburás remoto?",
+        "a": "Sí, todo remoto. Nos manejamos por WhatsApp, meet o como te quede cómodo."
+      },
+      "q3": {
+        "q": "¿Y si no sé bien qué necesito?",
+        "a": "Escribime igual. Charlamos 10 minutos y vemos si puedo ayudarte o no."
+      },
+      "q4": {
+        "q": "¿Tenés paquetes o es a medida?",
+        "a": "Generalmente a medida. Escucho tu problema y te propongo algo que tenga sentido para vos."
+      },
+      "q5": {
+        "q": "¿Soy solo yo o una agencia?",
+        "a": "Soy un estudio unipersonal. Hablás conmigo, diseño yo, codeo yo. Sin teléfono descompuesto. Para cosas muy grandes, escalo con mi red de confianza."
+      },
+      "q6": {
+        "q": "¿Puedo escribirte aunque no tenga experiencia?",
+        "a": "Sí, obvio. Yo arranqué de cero también. Lo importante es tener ganas de mejorar."
+      }
+    },
+    "contact": {
+      "title": "Empezá con claridad.",
+      "subtitle": "El mini-diagnóstico es gratis y te llevás valor aunque no trabajemos juntos.",
+      "trust": "Hablás conmigo: Tomás Garbarino. Sin intermediarios.",
+      "ctaWhatsApp": "WhatsApp",
+      "ctaEmail": "Email",
+      "audit": {
+        "title": "Mini-diagnóstico gratis",
+        "description": "Contame qué estás intentando ordenar (y qué te está frenando).",
+        "name": "Tu nombre",
+        "profile": "Link a tu perfil o web",
+        "goal": "¿Qué querés lograr?",
+        "message": "Contame un poco más",
+        "submit": "Enviar",
+        "success": "¡Llegó! Te respondo pronto.",
+        "fallback": "Si preferís, mandame un mail directo"
+      },
+      "documentation": {
+        "title": "Lo voy contando acá",
+        "link": "Seguime"
+      }
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Privacidad",
+    "terms": "Términos"
+  }
+}

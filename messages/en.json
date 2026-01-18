@@ -1,0 +1,132 @@
+{
+  "header": {
+    "home": "Inicio",
+    "story": "Historia",
+    "work": "Qué hago",
+    "audience": "Para quién",
+    "process": "Proceso",
+    "faq": "FAQs",
+    "contact": "Contacto"
+  },
+  "landing": {
+    "hero": {
+      "headline": "CriolloLabs: presencia + sistemas para gente que construye.",
+      "subheadline": "Soy Tomás. Vengo de la villa, aprendí a programar desde cero y hoy construyo productos reales. Estoy documentando el proceso y comparto lo que me funcionó.",
+      "ctaWhatsApp": "Hablame por WhatsApp",
+      "ctaEmail": "Enviar email",
+      "trustChips": {
+        "cv": "CV/LinkedIn",
+        "web": "Web/Software",
+        "automation": "Automatización",
+        "documenting": "Documentando en público"
+      }
+    },
+    "story": {
+      "title": "Historia",
+      "content": "Pasé de vivir en la villa y hacer mods de Minecraft a crear menús QR en pandemia para sobrevivir. De ahí salté a la consultoría, trabajé en proyectos globales, entré a una startup de AI y, tras un layoff, fundé CriolloLabs. Hoy construyo software real, sin humo."
+    },
+    "services": {
+      "title": "Qué hago",
+      "card1": {
+        "title": "CV/LinkedIn que convierte",
+        "desc": "Te posiciono para que los recruiters te busquen a vos. Narrativa de entrevista lista.",
+        "deliverable": "Ej: Perfil optimizado + Estrategia de búsqueda"
+      },
+      "card2": {
+        "title": "Sistemas para negocios",
+        "desc": "Webs, dashboards y herramientas internas para dejar de usar Excel para todo.",
+        "deliverable": "Ej: Web institucional o Panel de control"
+      },
+      "card3": {
+        "title": "Automatizaciones simples",
+        "desc": "Conecto tus herramientas para que ahorres horas de trabajo manual repetitivo.",
+        "deliverable": "Ej: Bot de WhatsApp o Email automático"
+      }
+    },
+    "audience": {
+      "cols": {
+        "devs": {
+          "title": "Para Desarrolladores",
+          "items": [
+            "Búsqueda de trabajo estratégica",
+            "Narrativa y Storytelling personal",
+            "Outreach a recruiters efectivo"
+          ]
+        },
+        "business": {
+          "title": "Para Negocios / PyMEs",
+          "items": [
+            "Presencia web profesional",
+            "Catálogo de productos online",
+            "Automatización de procesos clave"
+          ]
+        }
+      }
+    },
+    "process": {
+      "title": "Cómo trabajamos",
+      "steps": [
+        "1) Te escucho",
+        "2) Diagnóstico",
+        "3) Construimos",
+        "4) Te dejo un sistema"
+      ]
+    },
+    "socialProof": {
+      "title": "Mini-Casos",
+      "case1": "Antes: CV genérico de 5 hojas → Después: 1 hoja con bullets de impacto + palabras clave tech.",
+      "case2": "Antes: Pedidos por WhatsApp anotados en papel → Después: Web simple con catálogo y pedidos al WhatsApp ordenados.",
+      "case3": "Antes: 'Hago de todo' → Después: 'Soy experto en X y resuelvo Y'."
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "q1": {
+        "q": "¿Cuánto tarda?",
+        "a": "Depende del proyecto. Una revisión de CV puede ser 48h. Un sistema simple, 1-2 semanas."
+      },
+      "q2": {
+        "q": "¿Trabajás remoto?",
+        "a": "Sí, 100% remoto y asíncrono la mayor parte del tiempo para avanzar rápido."
+      },
+      "q3": {
+        "q": "¿Qué necesito para empezar?",
+        "a": "Tener un objetivo claro (conseguir trabajo o mejorar un proceso). Si no lo tenés, lo charlamos."
+      },
+      "q4": {
+        "q": "¿Hacés pack o algo a medida?",
+        "a": "Generalmente a medida. Escucho tu problema y te propongo una solución justa."
+      },
+      "q5": {
+        "q": "¿Qué pasa si no sé por dónde arrancar?",
+        "a": "Escribime igual. El diagnóstico inicial sirve justamente para aclarar el panorama."
+      },
+      "q6": {
+        "q": "¿Podés ayudarme aunque no tenga experiencia?",
+        "a": "Sí. Todos empezamos de cero. Lo importante es la actitud de querer construir."
+      }
+    },
+    "contact": {
+      "title": "¿Lo hacemos realidad?",
+      "subtitle": "Si querés aplicarlo a tu caso, escribime y lo charlamos.",
+      "ctaWhatsApp": "Hablame por WhatsApp",
+      "ctaEmail": "Enviar email",
+      "audit": {
+        "title": "Mini-audit gratis",
+        "name": "Nombre",
+        "profile": "Perfil / Link",
+        "goal": "Objetivo",
+        "message": "Mensaje",
+        "submit": "Enviar solicitud",
+        "success": "¡Recibido! Te voy a estar respondiendo pronto.",
+        "fallback": "Si preferís, enviame un email directo"
+      },
+      "documentation": {
+        "title": "Documentando el proceso",
+        "link": "Seguime en redes"
+      }
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}
