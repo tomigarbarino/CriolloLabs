@@ -1,111 +1,90 @@
 'use client'
 
-import { cn } from '@/lib/utils'
+import React from 'react'
+import {
+    PreviewFrame,
+    PreviewHeader,
+    PreviewPanel,
+    PreviewRow,
+    PreviewBadge,
+} from '@/components/builds/ui/PreviewUI'
 
 export function BuildPreviewWhatsappFollowup() {
     return (
-        <div className="rounded-3xl border border-white/10 bg-white/[0.02] backdrop-blur-sm p-4 md:p-6 overflow-hidden">
-            <Header slug="whatsapp-followup" />
+        <PreviewFrame>
+            <PreviewHeader slug="whatsapp-followup" />
 
-            <div className="mt-5 grid gap-4 md:grid-cols-12">
-                <Panel title="Pipeline" className="md:col-span-7 h-56">
-                    <div className="mt-3 grid grid-cols-3 gap-2">
-                        <KanbanCol title="Nuevo" items={2} />
-                        <KanbanCol title="Interesado" items={3} />
-                        <KanbanCol title="Cerrado" items={1} />
+            <div className="grid gap-4 md:grid-cols-12">
+                {/* Pipeline Panel - Stacks on mobile */}
+                <PreviewPanel title="Pipeline (Kanban)" className="col-span-12 md:col-span-7 h-auto md:h-64">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 h-full">
+                        <KanbanCol title="Nuevo" items={2} color="border-l-blue-400/30" />
+                        <KanbanCol title="Seguimiento" items={3} color="border-l-amber-400/30" active />
+                        <KanbanCol title="Cerrado" items={1} color="border-l-emerald-400/30" />
                     </div>
-                </Panel>
+                </PreviewPanel>
 
-                <Panel title="Lead seleccionado" className="md:col-span-5 h-56">
-                    <div className="mt-3 space-y-2">
-                        <Row label="Nombre" value="Juan Pérez" />
-                        <Row label="Estado" value="Interesado" />
-                        <Row label="Próxima acción" value="Follow-up hoy 18:00" />
-                        <div className="mt-3 rounded-xl border border-white/10 bg-white/[0.02] p-3">
-                            <p className="text-xs font-mono text-white/45 uppercase tracking-wider">Último mensaje</p>
-                            <p className="mt-1 text-sm text-white/70 leading-relaxed">
+                {/* Lead Details Panel */}
+                <PreviewPanel title="Lead seleccionado" className="col-span-12 md:col-span-5 h-auto md:h-64">
+                    <div className="space-y-2 mt-1">
+                        <PreviewRow label="Nombre" value="Juan Pérez" />
+                        <PreviewRow label="Estado" value={<PreviewBadge variant="warning">Seguimiento</PreviewBadge>} />
+                        <PreviewRow label="Próxima acción" value="Follow-up hoy 18:00" />
+
+                        {/* Chat bubble simulation */}
+                        <div className="mt-4 p-3 rounded-2xl rounded-tl-none border border-white/5 bg-white/[0.02]">
+                            <p className="text-[10px] font-mono text-white/30 uppercase tracking-wider mb-1">Último mensaje</p>
+                            <p className="text-sm text-white/70 italic leading-relaxed">
                                 “Dale, pasame precio y si podemos arrancar esta semana.”
                             </p>
                         </div>
                     </div>
-                </Panel>
+                </PreviewPanel>
 
-                <Panel title="Automations" className="md:col-span-12 h-40">
-                    <div className="mt-3 grid md:grid-cols-3 gap-2">
-                        <Chip>Si 24h sin respuesta → recordatorio</Chip>
-                        <Chip>Si “precio” → enviar plantilla</Chip>
-                        <Chip>Si “ok” → agendar reunión</Chip>
+                {/* Automations Badge Panel */}
+                <PreviewPanel title="Automations activas" className="col-span-12">
+                    <div className="flex flex-wrap gap-2 mt-1">
+                        <PreviewBadge variant="outline">🕒 24h sin respuesta → recordatorio</PreviewBadge>
+                        <PreviewBadge variant="outline">🏷️ Si “precio” → enviar PDF</PreviewBadge>
+                        <PreviewBadge variant="outline">📅 Si “ok” → link Calendly</PreviewBadge>
                     </div>
-                </Panel>
+                </PreviewPanel>
             </div>
-        </div>
+        </PreviewFrame>
     )
 }
 
-function Header({ slug }: { slug: string }) {
-    return (
-        <div className="flex items-center justify-between">
-            <p className="text-sm text-white/70">
-                Preview · <span className="text-white/45 font-mono">{slug}</span>
-            </p>
-            <div className="flex gap-2">
-                <span className="h-2 w-2 rounded-full bg-white/20" />
-                <span className="h-2 w-2 rounded-full bg-white/20" />
-                <span className="h-2 w-2 rounded-full bg-white/20" />
-            </div>
-        </div>
-    )
-}
-
-function Panel({
+function KanbanCol({
     title,
-    className,
-    children,
+    items,
+    color,
+    active = false
 }: {
-    title: string
-    className?: string
-    children?: React.ReactNode
+    title: string;
+    items: number;
+    color?: string;
+    active?: boolean;
 }) {
     return (
-        <div
-            className={cn(
-                'rounded-2xl border border-white/10 bg-white/[0.03] p-4',
-                'shadow-[0_40px_120px_-90px_rgba(0,0,0,0.95)]',
-                className
-            )}
-        >
-            <p className="text-xs font-mono text-white/45 uppercase tracking-wider">{title}</p>
-            {children}
-        </div>
-    )
-}
-
-function KanbanCol({ title, items }: { title: string; items: number }) {
-    return (
-        <div className="rounded-xl border border-white/10 bg-white/[0.02] p-3">
-            <p className="text-xs font-mono text-white/45 uppercase tracking-wider">{title}</p>
-            <div className="mt-2 space-y-2">
+        <div className={`rounded-xl border border-white/5 bg-white/[0.01] p-3 flex flex-col ${color} border-l-2`}>
+            <div className="flex justify-between items-center mb-2">
+                <p className="text-[10px] font-mono text-white/45 uppercase tracking-wider">{title}</p>
+                <span className="text-[10px] text-white/30">{items}</span>
+            </div>
+            <div className="space-y-2 flex-1">
                 {Array.from({ length: items }).map((_, i) => (
-                    <div key={i} className="h-8 rounded-lg border border-white/10 bg-white/[0.03]" />
+                    <div
+                        key={i}
+                        className={`h-8 rounded-lg border flex items-center px-2 ${active && i === 0
+                                ? 'border-accent-purple/40 bg-accent-purple/10'
+                                : 'border-white/5 bg-white/[0.02]'
+                            }`}
+                    >
+                        {active && i === 0 && <div className="h-1.5 w-1.5 rounded-full bg-accent-purple mr-2" />}
+                        <div className="h-1.5 w-12 rounded-full bg-white/10" />
+                    </div>
                 ))}
             </div>
-        </div>
-    )
-}
-
-function Row({ label, value }: { label: string; value: string }) {
-    return (
-        <div className="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.02] px-3 py-2">
-            <span className="text-sm text-white/60">{label}</span>
-            <span className="text-xs font-mono text-white/45">{value}</span>
-        </div>
-    )
-}
-
-function Chip({ children }: { children: React.ReactNode }) {
-    return (
-        <div className="rounded-xl border border-white/10 bg-white/[0.02] px-3 py-2 text-sm text-white/70">
-            {children}
         </div>
     )
 }
