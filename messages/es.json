@@ -102,38 +102,71 @@
         "ctaWantThis": "Quiero algo así",
         "ctaAudit": "Pedir mini-diagnóstico"
       },
-      "whatsapp-followup": {
+      "whatsappFollowup": {
+        "eyebrow": "Product Demo",
         "title": "WhatsApp Follow-Up System",
-        "subtitle": "Pipeline simple + recordatorios automáticos para no perder leads.",
-        "problem": "Los leads se enfrían porque olvidás responder o no tenés un proceso claro.",
-        "outcome": "Seguimiento automático y visualización clara del estado de cada lead.",
+        "subtitle": "Seguimiento simple y automático para no perder leads entre WhatsApp, notas y “después lo veo”.",
+        "problemLabel": "Problema",
+        "problem": "Los leads se enfrían porque no hay pipeline ni recordatorios claros. Todo queda en la cabeza.",
+        "outcomeLabel": "Resultado",
+        "outcome": "Un pipeline liviano + automations que te empujan a cerrar: seguimiento, agenda y próximos pasos.",
+        "whatItDoesLabel": "Qué hace",
         "bullets": [
-          "Pipeline visual tipo Kanban o lista",
-          "Recordatorios automáticos por inactividad",
-          "Integración directa con WhatsApp Web/API"
-        ]
+          "Pipeline Kanban por estado (Nuevo → Interesado → Cerrado)",
+          "Recordatorios automáticos si no hubo respuesta en X horas",
+          "Ficha de lead con historial, próxima acción y notas",
+          "Agenda/turnos y mensajes plantilla para cerrar más rápido"
+        ],
+        "stackLabel": "Stack & Integraciones",
+        "techLabel": "Tech",
+        "integrationsLabel": "Integraciones típicas",
+        "ctaBack": "← Volver",
+        "ctaWantThis": "Quiero algo así",
+        "ctaAudit": "Pedir mini-diagnóstico"
       },
-      "backoffice-autopilot": {
+      "backofficeAutopilot": {
+        "eyebrow": "Product Demo",
         "title": "Backoffice Autopilot",
-        "subtitle": "Workflows que ejecutan tareas repetitivas: pagos → factura → email.",
-        "problem": "Perdés horas copiando datos de un sistema a otro manualmente.",
-        "outcome": "Procesos que corren solos, 24/7, sin errores humanos.",
+        "subtitle": "Workflows que hacen el trabajo sucio: pagos → factura → mail → reporte. Con logs y control.",
+        "problemLabel": "Problema",
+        "problem": "Tareas repetitivas consumen horas: copiar/pegar, armar reportes, perseguir estados y errores.",
+        "outcomeLabel": "Resultado",
+        "outcome": "Automations 24/7 con observabilidad: sabés qué corrió, qué falló y por qué.",
+        "whatItDoesLabel": "Qué hace",
         "bullets": [
-          "Conexión entre MercadoPago, AFIP, Email",
-          "Logs detallados de cada operación",
-          "Alertas ante fallos de integración"
-        ]
+          "Workflows por evento (pago aprobado, pedido creado, stock bajo)",
+          "Logs + reintentos + alertas de fallos",
+          "Conectores típicos (pagos, sheets, mail, slack)",
+          "Panel de ejecuciones y estados para auditar"
+        ],
+        "stackLabel": "Stack & Integraciones",
+        "techLabel": "Tech",
+        "integrationsLabel": "Integraciones típicas",
+        "ctaBack": "← Volver",
+        "ctaWantThis": "Quiero algo así",
+        "ctaAudit": "Pedir mini-diagnóstico"
       },
-      "perf-ux-audit": {
+      "perfUxAudit": {
+        "eyebrow": "Product Demo",
         "title": "Performance & UX Audit",
-        "subtitle": "Diagnóstico + quick wins medibles para velocidad y conversión.",
-        "problem": "Tu sitio carga lento, se siente 'barato' y perdés usuarios.",
-        "outcome": "Un sitio rápido, pulido y optimizado para convertir.",
+        "subtitle": "Diagnóstico + quick wins medibles para que tu producto cargue rápido y se sienta premium.",
+        "problemLabel": "Problema",
+        "problem": "Tu sitio carga lento, se siente “pesado” y la experiencia no convierte como debería.",
+        "outcomeLabel": "Resultado",
+        "outcome": "Un plan accionable con prioridades, before/after y cambios concretos para subir performance y claridad.",
+        "whatItDoesLabel": "Qué hace",
         "bullets": [
-          "Análisis profundo de Core Web Vitals",
-          "Review de UX/UI y 'feel' de la app",
-          "Plan de acción priorizado por impacto"
-        ]
+          "Reporte de Web Vitals (LCP, CLS, INP) + Lighthouse",
+          "Lista priorizada: quick wins → cambios estructurales",
+          "Before/After con métricas y recomendaciones específicas",
+          "Checklist de entrega + handoff para mantenerlo"
+        ],
+        "stackLabel": "Stack & Integraciones",
+        "techLabel": "Tech",
+        "integrationsLabel": "Integraciones típicas",
+        "ctaBack": "← Volver",
+        "ctaWantThis": "Quiero algo así",
+        "ctaAudit": "Pedir mini-diagnóstico"
       }
     },
     "weeklyBuilds": {
@@ -159,8 +192,7 @@
             "Automations",
             "Calendar"
           ],
-          "demoUrl": "/builds/whatsapp-followup",
-          "repoUrl": "#"
+          "demoUrl": "/builds/whatsapp-followup"
         },
         {
           "title": "Backoffice Autopilot",
@@ -180,8 +212,7 @@
             "Web Vitals",
             "Next Perf"
           ],
-          "demoUrl": "/builds/perf-ux-audit",
-          "repoUrl": "#"
+          "demoUrl": "/builds/perf-ux-audit"
         }
       ]
     },

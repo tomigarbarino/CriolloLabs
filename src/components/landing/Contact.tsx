@@ -31,8 +31,10 @@ export function Contact() {
     )
 }
 
+
 function ContactContent() {
     const t = useTranslations('landing.contact')
+    const tBuilds = useTranslations('landing.builds')
     const reducedMotion = useReducedMotion()
     const { setScene } = useNarrative()
     const searchParams = useSearchParams()
@@ -167,7 +169,7 @@ function ContactContent() {
                                 {intentBuild && (
                                     <div className="p-4 bg-accent-purple/10 border border-accent-purple/20 rounded-xl">
                                         {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-                                        <p className="text-sm text-accent-purple font-medium">Te interesa: {t(`landing.builds.${intentBuild.slug}.title` as any)}</p>
+                                        <p className="text-sm text-accent-purple font-medium">Te interesa: {tBuilds(`${intentBuild.key}.title` as any)}</p>
                                         <p className="text-xs text-white/50 mt-1">¿Cómo lo estás resolviendo hoy?</p>
                                     </div>
                                 )}
