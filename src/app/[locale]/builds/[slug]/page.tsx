@@ -18,6 +18,25 @@ export async function generateStaticParams() {
     return []
 }
 
+export async function generateMetadata({ params }: Props) {
+    const build = BUILDS.find((b) => b.slug === params.slug)
+    if (!build) return {}
+
+    const t = await getTranslations({ locale: params.locale, namespace: 'landing.builds' })
+    const title = t(`${build.key}.title`)
+    const description = t(`${build.key}.subtitle`)
+
+    return {
+        title: `${title} | Criollo Labs`,
+        description,
+        openGraph: {
+            title: `${title} | Criollo Labs`,
+            description,
+            type: 'website',
+        },
+    }
+}
+
 export default async function BuildPage({ params }: Props) {
     const build = BUILDS.find((b) => b.slug === params.slug)
 

@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { Container } from '@/components/ui/Container'
 import { SpotlightHeading } from '@/components/ui/SpotlightHeading'
+import { CTAButton } from '@/components/ui/CTAButton'
 import { useReducedMotion } from '@/lib/hooks/useReducedMotion'
 import { duration, ease } from '@/lib/motion'
 import { cn } from '@/lib/utils'
@@ -180,6 +181,18 @@ export function Story() {
                     })}
 
 
+                </div>
+
+                {/* Closing CTA */}
+                <div className="mt-20 flex justify-center">
+                    <CTAButton
+                        href="#contact?intent=mini-audit-story"
+                        variant="secondary"
+                        size="sm"
+                        className="text-white/70 hover:text-white"
+                    >
+                        {t('cta.miniAudit')}
+                    </CTAButton>
                 </div>
             </Container>
         </motion.section>

@@ -164,6 +164,22 @@ function ContactContent() {
                                     {t.raw('audit.description') && (
                                         <p className="text-white/60 text-sm">{t('audit.description')}</p>
                                     )}
+
+                                    {/* Trust Bullets */}
+                                    <div className="mt-4 mb-2 space-y-2">
+                                        <div className="flex items-center gap-2 text-sm text-white/70">
+                                            <CheckCircle size={14} className="text-accent-green/80 shrink-0" />
+                                            <span>{t('audit.proof.time')}</span>
+                                        </div>
+                                        <div className="flex items-center gap-2 text-sm text-white/70">
+                                            <CheckCircle size={14} className="text-accent-green/80 shrink-0" />
+                                            <span>{t('audit.proof.value')}</span>
+                                        </div>
+                                        <div className="flex items-center gap-2 text-sm text-white/70">
+                                            <CheckCircle size={14} className="text-accent-green/80 shrink-0" />
+                                            <span>{t('audit.proof.speed')}</span>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 {intentBuild && (

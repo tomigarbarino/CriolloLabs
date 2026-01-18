@@ -222,17 +222,41 @@
       "card1": {
         "title": "MVP Sprint (0→1)",
         "desc": "Prototipo funcional en 7–14 días para validar sin quemar meses.",
-        "deliverable": "MVP deployado + backlog"
+        "deliverable": "MVP deployado + backlog",
+        "idealFor": "Para validar ideas rápido",
+        "includes": [
+          "Diseño UX/UI simple",
+          "Desarrollo Next.js",
+          "Base de datos + Auth",
+          "Analytics integrado"
+        ],
+        "timeline": "7–14 días"
       },
       "card2": {
         "title": "Sistemas a Medida (Para Negocios)",
         "desc": "Centralizá operaciones, ventas y métricas en un solo lugar. Menos caos, más decisiones claras.",
-        "deliverable": "WebApp, Dashboard o Panel Admin"
+        "deliverable": "WebApp, Dashboard o Panel Admin",
+        "idealFor": "Para negocios en crecimiento",
+        "includes": [
+          "Dashboard de métricas",
+          "Gestión de usuarios y roles",
+          "Reportes automáticos",
+          "Integración con tu ERP/CRM"
+        ],
+        "timeline": "3–6 semanas"
       },
       "card3": {
         "title": "Automatización de Procesos",
         "desc": "Bots que trabajan por vos. Conecto tus herramientas para que el software haga el trabajo repetitivo.",
-        "deliverable": "Workflows 24/7 con monitoreo"
+        "deliverable": "Workflows 24/7 con monitoreo",
+        "idealFor": "Para equipos operativos",
+        "includes": [
+          "Bots de WhatsApp/Slack",
+          "Conexión de APIs",
+          "Procesamiento de Docs AI",
+          "Alertas de errores"
+        ],
+        "timeline": "5–10 días"
       },
       "cta": "Me interesa"
     },
@@ -321,6 +345,11 @@
         "message": "Contame un poco más",
         "submit": "Enviar",
         "success": "¡Llegó! Te respondo pronto.",
+        "proof": {
+          "time": "15 min, sin compromiso",
+          "value": "Te llevás un plan aunque no trabajemos",
+          "speed": "Respuesta en 24–48h"
+        },
         "fallback": "Si preferís, mandame un mail directo"
       },
       "documentation": {

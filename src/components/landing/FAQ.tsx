@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Container } from '@/components/ui/Container'
+import { CTAButton } from '@/components/ui/CTAButton'
 import { SpotlightHeading } from '@/components/ui/SpotlightHeading'
 import { useReducedMotion } from '@/lib/hooks/useReducedMotion'
 import { fadeUp, duration, ease } from '@/lib/motion'
@@ -60,8 +61,20 @@ export function FAQ() {
                         </motion.div>
                     ))}
                 </div>
+
+                {/* Closing CTA */}
+                <div className="mt-12 flex justify-center">
+                    <CTAButton
+                        href="#contact?intent=mini-audit-faq"
+                        variant="secondary"
+                        size="sm"
+                        className="text-white/70 hover:text-white"
+                    >
+                        {t('cta.miniAudit')}
+                    </CTAButton>
+                </div>
             </Container>
-        </section>
+        </section >
     )
 }
 

@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 import { Container } from '@/components/ui/Container'
 import { BuildCard } from '@/components/landing/BuildCard'
+import { CTAButton } from '@/components/ui/CTAButton'
 import { SpotlightHeading } from '@/components/ui/SpotlightHeading'
 import { fadeUp, staggerContainer } from '@/lib/motion'
 import { useNarrative } from '@/context/NarrativeContext'
@@ -104,7 +105,19 @@ export function WeeklyBuilds() {
                         />
                     ))}
                 </div>
+
+                {/* Closing CTA */}
+                <div className="mt-12 flex justify-center">
+                    <CTAButton
+                        href="#contact?intent=mini-audit-builds"
+                        variant="secondary"
+                        size="sm"
+                        className="text-white/70 hover:text-white"
+                    >
+                        {t('cta.miniAudit')}
+                    </CTAButton>
+                </div>
             </Container>
-        </section>
+        </section >
     )
 }
