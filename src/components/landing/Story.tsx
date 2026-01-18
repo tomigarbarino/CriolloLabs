@@ -70,7 +70,7 @@ export function Story() {
                         <p className="mx-auto mt-4 max-w-2xl text-white/70 leading-relaxed text-pretty">
                             {tt(
                                 'subtitle',
-                                'La universidad de la calle, literal y digital.'
+                                'Autodidacta por naturaleza. Constructor por vocación.'
                             )}
                         </p>
                         <p className="mx-auto mt-4 max-w-2xl text-white/90 font-medium">
