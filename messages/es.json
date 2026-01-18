@@ -80,16 +80,27 @@
       "ctaContact": "Hablemos"
     },
     "builds": {
-      "control-tower": {
+      "controlTower": {
+        "eyebrow": "Product Demo",
         "title": "Control Tower Dashboard",
-        "subtitle": "Unificá ventas, ops y métricas en un panel con alertas y exportes.",
+        "subtitle": "Unificá ventas, operaciones y métricas en un panel con alertas y exportes.",
+        "problemLabel": "Problema",
         "problem": "Todo vive en Excel/WhatsApp y nadie sabe qué está pasando en tiempo real.",
+        "outcomeLabel": "Resultado",
         "outcome": "Un panel único para decidir rápido: KPIs, alertas, actividad y reportes.",
+        "whatItDoesLabel": "Qué hace",
         "bullets": [
           "KPIs claros + tendencias por canal y período",
-          "Alertas: stock crítico, pagos fallidos, demoras",
+          "Alertas: stock crítico, pagos fallidos y demoras operativas",
+          "Actividad reciente + búsqueda + filtros",
           "Exportes y reportes para finanzas/ops"
-        ]
+        ],
+        "stackLabel": "Stack & Integraciones",
+        "techLabel": "Tech",
+        "integrationsLabel": "Integraciones típicas",
+        "ctaBack": "← Volver",
+        "ctaWantThis": "Quiero algo así",
+        "ctaAudit": "Pedir mini-diagnóstico"
       },
       "whatsapp-followup": {
         "title": "WhatsApp Follow-Up System",
@@ -131,15 +142,13 @@
       "items": [
         {
           "title": "Control Tower Dashboard",
-          "description": "Unificá ventas, operaciones y métricas en un panel con alertas y exportes. Menos Excel, más control.",
+          "description": "Unificá ventas, ops y métricas en un panel con alertas y exportes.",
           "tech": [
             "Next.js",
-            "TS",
-            "Charts",
-            "Integrations"
+            "TypeScript",
+            "Charts"
           ],
-          "demoUrl": "/builds/control-tower",
-          "repoUrl": "#"
+          "demoUrl": "/builds/control-tower"
         },
         {
           "title": "WhatsApp Follow-Up System",
