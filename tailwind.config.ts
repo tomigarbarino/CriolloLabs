@@ -38,7 +38,7 @@ const config: Config = {
       animation: {
         'float': 'float 6s ease-in-out infinite',
         'glow': 'glow 2s ease-in-out infinite alternate',
-        'gradient': 'gradient 3s ease infinite',
+        'gradient': 'gradient 8s ease infinite',
       },
       keyframes: {
         float: {
