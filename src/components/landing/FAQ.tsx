@@ -5,7 +5,6 @@ import { useTranslations } from 'next-intl'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Container } from '@/components/ui/Container'
 import { CTAButton } from '@/components/ui/CTAButton'
-import { SpotlightHeading } from '@/components/ui/SpotlightHeading'
 import { useReducedMotion } from '@/lib/hooks/useReducedMotion'
 import { fadeUp, duration, ease } from '@/lib/motion'
 import { Plus, Minus } from 'lucide-react'
@@ -34,9 +33,9 @@ export function FAQ() {
                     viewport={{ once: true }}
                     className="text-center mb-12"
                 >
-                    <SpotlightHeading as="h2" className="text-3xl md:text-5xl font-bold mb-4 text-balance">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance text-white">
                         {t('title')}
-                    </SpotlightHeading>
+                    </h2>
                 </motion.div>
 
                 {/* Accordion */}

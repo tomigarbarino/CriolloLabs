@@ -1,7 +1,6 @@
 import { getTranslations } from 'next-intl/server'
 import { Link } from '@/navigation'
 import { Container } from '@/components/ui/Container'
-import { SpotlightHeading } from '@/components/ui/SpotlightHeading'
 import { Card } from '@/components/ui/Card'
 import { BuildPreviewControlTower } from '@/components/builds/BuildPreviewControlTower'
 
@@ -34,12 +33,9 @@ export default async function ControlTowerBuildPage() {
                         {t('eyebrow')}
                     </span>
 
-                    <SpotlightHeading
-                        as="h1"
-                        className="mt-3 text-3xl md:text-5xl font-bold text-balance"
-                    >
+                    <h1 className="mt-3 text-3xl md:text-5xl font-bold text-balance text-white">
                         {t('title')}
-                    </SpotlightHeading>
+                    </h1>
 
                     <p className="mt-4 text-base md:text-lg text-white/65 leading-relaxed">
                         {t('subtitle')}

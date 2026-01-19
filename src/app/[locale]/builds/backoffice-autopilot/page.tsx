@@ -1,7 +1,6 @@
 import { getTranslations } from 'next-intl/server'
 import { Link } from '@/navigation'
 import { Container } from '@/components/ui/Container'
-import { SpotlightHeading } from '@/components/ui/SpotlightHeading'
 import { Card } from '@/components/ui/Card'
 import { BuildPreviewBackofficeAutopilot } from '@/components/builds/BuildPreviewBackofficeAutopilot'
 
@@ -30,9 +29,8 @@ export default async function BackofficeAutopilotBuildPage() {
                         {t('eyebrow')}
                     </span>
 
-                    <SpotlightHeading as="h1" className="mt-3 text-3xl md:text-5xl font-bold text-balance">
-                        {t('title')}
-                    </SpotlightHeading>
+
+                    {t('title')}
 
                     <p className="mt-4 text-base md:text-lg text-white/65 leading-relaxed">
                         {t('subtitle')}

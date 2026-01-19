@@ -2,7 +2,6 @@ import { notFound } from 'next/navigation'
 import { Link } from '@/navigation'
 import { getTranslations } from 'next-intl/server'
 import { Container } from '@/components/ui/Container'
-import { SpotlightHeading } from '@/components/ui/SpotlightHeading'
 import { Card } from '@/components/ui/Card'
 import { BUILDS } from '@/lib/builds/catalog'
 import { BuildPreview } from '@/components/builds/BuildPreview'
@@ -74,9 +73,7 @@ export default async function BuildPage({ params }: Props) {
                         Product Demo
                     </span>
 
-                    <SpotlightHeading as="h1" className="mt-3 text-3xl md:text-5xl font-bold text-balance">
-                        {title}
-                    </SpotlightHeading>
+                    {title}
 
                     <p className="mt-4 text-base md:text-lg text-white/65 leading-relaxed">
                         {subtitle}
