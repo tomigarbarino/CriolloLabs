@@ -5,7 +5,6 @@ import {
     PreviewFrame,
     PreviewHeader,
     PreviewPanel,
-    PreviewRow,
     PreviewBadge,
     StatusDot,
 } from '@/components/builds/ui/PreviewUI'

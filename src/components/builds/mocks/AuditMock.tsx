@@ -1,6 +1,6 @@
 'use client'
 
-import { Zap, Layout, Monitor, Timer } from 'lucide-react'
+import { Zap, Layout, Timer } from 'lucide-react'
 
 export function AuditMock() {
     return (
