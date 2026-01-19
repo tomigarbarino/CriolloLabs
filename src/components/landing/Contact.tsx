@@ -83,7 +83,7 @@ function ContactContent() {
 
                         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
                             <CTAButton
-                                href="https://wa.me/5491121925947"
+                                href="https://calendly.com/tomasgarbarino-dev"
                                 variant="primary"
                                 size="lg"
                                 icon={<MessageCircle size={20} />}

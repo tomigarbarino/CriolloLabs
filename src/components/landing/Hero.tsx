@@ -144,7 +144,7 @@ export function Hero() {
                                 <CTAButton href="/projects" variant="primary" size="lg" icon={<ArrowRight size={20} />}>
                                     {t('ctaPrimary')}
                                 </CTAButton>
-                                <CTAButton href="https://wa.me/5491121925947" variant="ghost" size="lg">
+                                <CTAButton href="https://calendly.com/tomasgarbarino-dev" variant="ghost" size="lg">
                                     {t('ctaSecondary')}
                                 </CTAButton>
                             </div>
@@ -193,7 +193,7 @@ export function Hero() {
                             <p className="text-2xl lg:text-3xl text-white leading-relaxed max-w-3xl mx-auto mb-12 text-pretty font-light">
                                 {t('beats.b3.sub')}
                             </p>
-                            <CTAButton href="https://wa.me/5491121925947" variant="outline" size="lg" icon={<MessageCircle size={22} />}>
+                            <CTAButton href="https://calendly.com/tomasgarbarino-dev" variant="outline" size="lg" icon={<MessageCircle size={22} />}>
                                 {t('beats.b3.cta')}
                             </CTAButton>
                         </motion.div>
@@ -226,7 +226,7 @@ export function Hero() {
 
                     <div className="flex flex-col sm:flex-row gap-3 mt-4 w-full px-8 justify-center">
                         <CTAButton href="/projects" variant="primary">{t('ctaPrimary')}</CTAButton>
-                        <CTAButton href="https://wa.me/5491121925947" variant="outline">{t('ctaSecondary')}</CTAButton>
+                        <CTAButton href="https://calendly.com/tomasgarbarino-dev" variant="outline">{t('ctaSecondary')}</CTAButton>
                     </div>
                 </div>
 
@@ -240,7 +240,7 @@ export function Hero() {
                             {t(`beats.b${b}.sub`)}
                         </p>
                         {b === 3 && (
-                            <CTAButton href="https://wa.me/5491121925947" variant="ghost" size="sm" icon={<ArrowRight size={16} />}>
+                            <CTAButton href="https://calendly.com/tomasgarbarino-dev" variant="ghost" size="sm" icon={<ArrowRight size={16} />}>
                                 {t('beats.b3.cta')}
                             </CTAButton>
                         )}
