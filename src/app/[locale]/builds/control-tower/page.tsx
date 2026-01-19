@@ -15,14 +15,14 @@ export default async function ControlTowerBuildPage() {
                 <div className="flex items-center justify-between gap-4">
                     <Link
                         href="/#builds"
-                        className="text-sm text-white/60 hover:text-white transition"
+                        className="text-sm text-white hover:text-white transition"
                     >
                         {t('ctaBack')}
                     </Link>
 
                     <Link
                         href="/#contact?intent=control-tower"
-                        className="rounded-full bg-white/10 px-4 py-2 text-sm text-white/85 border border-white/15 hover:bg-white/12 hover:border-white/25 transition"
+                        className="rounded-full bg-white/10 px-4 py-2 text-sm text-white border border-white/15 hover:bg-white/12 hover:border-white/25 transition"
                     >
                         {t('ctaWantThis')}
                     </Link>
@@ -37,25 +37,25 @@ export default async function ControlTowerBuildPage() {
                         {t('title')}
                     </h1>
 
-                    <p className="mt-4 text-base md:text-lg text-white/65 leading-relaxed">
+                    <p className="mt-4 text-base md:text-lg text-white leading-relaxed">
                         {t('subtitle')}
                     </p>
 
                     <div className="mt-6 grid gap-3">
                         <div className="rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm p-4">
-                            <p className="text-xs font-mono text-white/45 uppercase tracking-wider">
+                            <p className="text-xs font-mono text-white uppercase tracking-wider">
                                 {t('problemLabel')}
                             </p>
-                            <p className="mt-1 text-white/75 leading-relaxed">
+                            <p className="mt-1 text-white leading-relaxed">
                                 {t('problem')}
                             </p>
                         </div>
 
                         <div className="rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm p-4">
-                            <p className="text-xs font-mono text-white/45 uppercase tracking-wider">
+                            <p className="text-xs font-mono text-white uppercase tracking-wider">
                                 {t('outcomeLabel')}
                             </p>
-                            <p className="mt-1 text-white/75 leading-relaxed">
+                            <p className="mt-1 text-white leading-relaxed">
                                 {t('outcome')}
                             </p>
                         </div>
@@ -69,11 +69,11 @@ export default async function ControlTowerBuildPage() {
 
                 <div className="mt-10 grid md:grid-cols-2 gap-6">
                     <Card className="p-6">
-                        <p className="text-xs font-mono text-white/45 uppercase tracking-wider">
+                        <p className="text-xs font-mono text-white uppercase tracking-wider">
                             {t('whatItDoesLabel')}
                         </p>
 
-                        <ul className="mt-4 space-y-2 text-white/70 leading-relaxed list-disc pl-5">
+                        <ul className="mt-4 space-y-2 text-white leading-relaxed list-disc pl-5">
                             {bullets.map((b, i) => (
                                 <li key={i}>{b}</li>
                             ))}
@@ -81,17 +81,17 @@ export default async function ControlTowerBuildPage() {
                     </Card>
 
                     <Card className="p-6">
-                        <p className="text-xs font-mono text-white/45 uppercase tracking-wider">
+                        <p className="text-xs font-mono text-white uppercase tracking-wider">
                             {t('stackLabel')}
                         </p>
 
                         <div className="mt-4">
-                            <p className="text-sm text-white/60">{t('techLabel')}</p>
+                            <p className="text-sm text-white">{t('techLabel')}</p>
                             <div className="mt-2 flex flex-wrap gap-2">
                                 {['Next.js', 'TypeScript', 'Charts', 'RBAC'].map((x) => (
                                     <span
                                         key={x}
-                                        className="rounded-full px-3 py-1 text-xs bg-white/5 border border-white/10 text-white/70"
+                                        className="rounded-full px-3 py-1 text-xs bg-white/5 border border-white/10 text-white"
                                     >
                                         {x}
                                     </span>
@@ -100,12 +100,12 @@ export default async function ControlTowerBuildPage() {
                         </div>
 
                         <div className="mt-5">
-                            <p className="text-sm text-white/60">{t('integrationsLabel')}</p>
+                            <p className="text-sm text-white">{t('integrationsLabel')}</p>
                             <div className="mt-2 flex flex-wrap gap-2">
                                 {['Google Sheets', 'MercadoPago', 'Shopify/Woo', 'Notion'].map((x) => (
                                     <span
                                         key={x}
-                                        className="rounded-full px-3 py-1 text-xs bg-white/5 border border-white/10 text-white/70"
+                                        className="rounded-full px-3 py-1 text-xs bg-white/5 border border-white/10 text-white"
                                     >
                                         {x}
                                     </span>
@@ -116,7 +116,7 @@ export default async function ControlTowerBuildPage() {
                         <div className="mt-6">
                             <Link
                                 href="/#contact?intent=control-tower"
-                                className="inline-flex rounded-full bg-white/10 px-4 py-2 text-sm text-white/85 border border-white/15 hover:bg-white/12 hover:border-white/25 transition"
+                                className="inline-flex rounded-full bg-white/10 px-4 py-2 text-sm text-white border border-white/15 hover:bg-white/12 hover:border-white/25 transition"
                             >
                                 {t('ctaAudit')}
                             </Link>

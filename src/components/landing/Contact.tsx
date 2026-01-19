@@ -104,7 +104,7 @@ function ContactContent() {
 
                         {/* Social Links */}
                         <div className="pt-12 border-t border-white/10">
-                            <h3 className="text-sm font-bold uppercase tracking-widest text-white/50 mb-4">
+                            <h3 className="text-sm font-bold uppercase tracking-widest text-white mb-4">
                                 {t('documentation.title')}
                             </h3>
                             <div className="flex gap-4">
@@ -162,20 +162,20 @@ function ContactContent() {
                                 <div>
                                     <h3 className="text-2xl font-bold mb-2">{t('audit.title')}</h3>
                                     {t.raw('audit.description') && (
-                                        <p className="text-white/60 text-sm">{t('audit.description')}</p>
+                                        <p className="text-white text-sm">{t('audit.description')}</p>
                                     )}
 
                                     {/* Trust Bullets */}
                                     <div className="mt-4 mb-2 space-y-2">
-                                        <div className="flex items-center gap-2 text-sm text-white/70">
+                                        <div className="flex items-center gap-2 text-sm text-white">
                                             <CheckCircle size={14} className="text-accent-green/80 shrink-0" />
                                             <span>{t('audit.proof.time')}</span>
                                         </div>
-                                        <div className="flex items-center gap-2 text-sm text-white/70">
+                                        <div className="flex items-center gap-2 text-sm text-white">
                                             <CheckCircle size={14} className="text-accent-green/80 shrink-0" />
                                             <span>{t('audit.proof.value')}</span>
                                         </div>
-                                        <div className="flex items-center gap-2 text-sm text-white/70">
+                                        <div className="flex items-center gap-2 text-sm text-white">
                                             <CheckCircle size={14} className="text-accent-green/80 shrink-0" />
                                             <span>{t('audit.proof.speed')}</span>
                                         </div>
@@ -186,7 +186,7 @@ function ContactContent() {
                                     <div className="p-4 bg-accent-purple/10 border border-accent-purple/20 rounded-xl">
                                         {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                                         <p className="text-sm text-accent-purple font-medium">{t('contextual.prefix')} {tBuilds(`${intentBuild.key}.title` as any)}</p>
-                                        <p className="text-xs text-white/50 mt-1">{t('contextual.question')}</p>
+                                        <p className="text-xs text-white mt-1">{t('contextual.question')}</p>
                                     </div>
                                 )}
 
@@ -256,11 +256,11 @@ function ContactContent() {
                                     )}
                                 </CTAButton>
 
-                                <p className="text-center text-xs text-white/40">
+                                <p className="text-center text-xs text-white">
                                     {t('audit.fallback')}{' '}
                                     <a
                                         href="mailto:tomasgarbarino.dev@gmail.com"
-                                        className="text-white/60 hover:text-white underline underline-offset-2 transition-colors"
+                                        className="text-white hover:text-white underline underline-offset-2 transition-colors"
                                     >
                                         email
                                     </a>

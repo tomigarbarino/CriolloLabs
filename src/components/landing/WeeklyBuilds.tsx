@@ -111,7 +111,7 @@ export function WeeklyBuilds() {
                         href="#contact?intent=mini-audit-builds"
                         variant="secondary"
                         size="sm"
-                        className="text-white/70 hover:text-white"
+                        className="text-white hover:text-white"
                     >
                         {t('cta.miniAudit')}
                     </CTAButton>

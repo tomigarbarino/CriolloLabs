@@ -147,14 +147,14 @@ export function Services() {
                                         <div className="pt-6 border-t border-white/5 mt-auto mb-6 space-y-4">
                                             {/* Deliverable */}
                                             <div>
-                                                <p className="text-xs font-mono text-white/60 uppercase tracking-wider mb-1">
+                                                <p className="text-xs font-mono text-white uppercase tracking-wider mb-1">
                                                     Entregable
                                                 </p>
                                                 <p className="text-sm font-medium text-white">{service.deliverable}</p>
                                             </div>
                                             {/* Timeline */}
                                             <div className="flex items-center gap-2">
-                                                <p className="text-xs font-mono text-white/60 uppercase tracking-wider">
+                                                <p className="text-xs font-mono text-white uppercase tracking-wider">
                                                     Tiempo:
                                                 </p>
                                                 <p className="text-sm font-bold text-accent-orange">{service.timeline}</p>

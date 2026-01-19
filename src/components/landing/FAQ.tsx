@@ -67,7 +67,7 @@ export function FAQ() {
                         href="#contact?intent=mini-audit-faq"
                         variant="secondary"
                         size="sm"
-                        className="text-white/70 hover:text-white"
+                        className="text-white hover:text-white"
                     >
                         {t('cta.miniAudit')}
                     </CTAButton>
@@ -116,7 +116,7 @@ function AccordionItem({
                     {isOpen ? (
                         <Minus className="text-accent-orange" size={20} />
                     ) : (
-                        <Plus className="text-white/50" size={20} />
+                        <Plus className="text-white" size={20} />
                     )}
                 </motion.div>
             </button>
