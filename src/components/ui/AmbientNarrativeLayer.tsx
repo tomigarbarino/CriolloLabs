@@ -203,8 +203,7 @@ export function AmbientNarrativeLayer() {
                 </AnimatePresence>
             </div>
 
-            {/* Global Scrim for readability */}
-            <div className="absolute inset-0 bg-dark/20 backdrop-blur-[0.5px]" />
+
         </div>
     )
 }
