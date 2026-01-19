@@ -12,7 +12,7 @@ export function LanguageSwitcher() {
   const switchLocale = (newLocale: string) => {
     // Remove current locale from pathname if present
     const pathWithoutLocale = pathname.replace(/^\/(es|en)/, '') || '/'
-    
+
     // Navigate to new locale
     const newPath = newLocale === 'es' ? pathWithoutLocale : `/${newLocale}${pathWithoutLocale}`
     router.push(newPath)
@@ -26,10 +26,9 @@ export function LanguageSwitcher() {
           onClick={() => switchLocale(loc)}
           className={`
             px-3 py-1.5 rounded-full text-sm font-medium transition-all
-            ${
-              locale === loc
-                ? 'bg-gradient-to-r from-accent-cyan to-accent-green text-white'
-                : 'bg-white/5 text-white/60 hover:bg-white/10 hover:text-white'
+            ${locale === loc
+              ? 'bg-gradient-to-r from-accent-cyan to-accent-green text-white'
+              : 'bg-white/5 text-white hover:bg-white/10 hover:text-white'
             }
           `}
           aria-label={`Switch to ${loc === 'es' ? 'Español' : 'English'}`}

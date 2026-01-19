@@ -107,7 +107,7 @@ export function Hero() {
 
                     {/* SCROLL HINT */}
                     <motion.div
-                        className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/30 flex flex-col items-center gap-2 text-xs uppercase tracking-widest"
+                        className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white flex flex-col items-center gap-2 text-xs uppercase tracking-widest"
                         style={{ opacity: scrollHintOpacity }}
                     >
                         <span className="opacity-50">Scroll to explore</span>
@@ -134,7 +134,7 @@ export function Hero() {
 
                             <div className="flex flex-wrap justify-center gap-4 mb-12">
                                 {[1, 2, 3].map(i => (
-                                    <Badge key={i} variant="outline" size="md" className="bg-white/5 border-white/10 hover:border-white/20 transition-colors text-white/70 px-6 py-2.5 text-sm">
+                                    <Badge key={i} variant="outline" size="md" className="bg-white/5 border-white/10 hover:border-white/20 transition-colors text-white px-6 py-2.5 text-sm">
                                         {t(`chips.c${i}`)}
                                     </Badge>
                                 ))}
@@ -218,7 +218,7 @@ export function Hero() {
 
                     <div className="flex flex-wrap gap-2 justify-center my-2">
                         {[1, 2, 3].map(i => (
-                            <Badge key={i} variant="outline" size="sm" className="bg-white/5 border-white/10 text-white/70">
+                            <Badge key={i} variant="outline" size="sm" className="bg-white/5 border-white/10 text-white">
                                 {t(`chips.c${i}`)}
                             </Badge>
                         ))}

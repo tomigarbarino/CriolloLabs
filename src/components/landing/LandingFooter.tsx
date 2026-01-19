@@ -32,7 +32,7 @@ export function LandingFooter() {
                             </span>
                             Labs
                         </span>
-                        <span className="text-sm text-white/40 ml-2">
+                        <span className="text-sm text-white ml-2">
                             © {new Date().getFullYear()}
                         </span>
                     </div>
@@ -45,7 +45,7 @@ export function LandingFooter() {
                                 <a
                                     key={link.label}
                                     href={link.href}
-                                    className="p-2 text-white/40 hover:text-accent-purple hover:bg-white/5 rounded-lg transition-all duration-200"
+                                    className="p-2 text-white hover:text-accent-purple hover:bg-white/5 rounded-lg transition-all duration-200"
                                     aria-label={link.label}
                                 >
                                     <Icon size={18} />
@@ -55,7 +55,7 @@ export function LandingFooter() {
                     </div>
 
                     {/* Legal Links */}
-                    <div className="flex gap-6 text-sm text-white/40">
+                    <div className="flex gap-6 text-sm text-white">
                         <a href="#" className="hover:text-white transition-colors">
                             {t('privacy')}
                         </a>

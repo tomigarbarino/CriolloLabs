@@ -66,7 +66,7 @@ export function CTAButton({
             'hover:bg-white/5 hover:border-white/30'
         ),
         ghost: cn(
-            'text-white/70',
+            'text-white',
             'hover:text-white hover:bg-white/5'
         ),
     }

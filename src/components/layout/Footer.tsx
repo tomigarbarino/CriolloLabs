@@ -26,7 +26,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold mb-4">Criollo Labs</h3>
-            <p className="text-white/60 max-w-sm mb-6">
+            <p className="text-white max-w-sm mb-6">
               Landing pages listas para convertir para ofertas premium. Entrega en 48h. Precio fijo.
             </p>
             <a
@@ -37,7 +37,7 @@ export function Footer() {
             >
               Agendar llamada
             </a>
-            <p className="text-sm text-white/50 mt-4">
+            <p className="text-sm text-white mt-4">
               📧 <a href="mailto:tomasgarbarino.dev@gmail.com" className="hover:text-accent-cyan transition-colors">tomasgarbarino.dev@gmail.com</a>
             </p>
           </div>
@@ -50,7 +50,7 @@ export function Footer() {
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className="text-white/60 hover:text-white transition-colors text-sm"
+                      className="text-white hover:text-white transition-colors text-sm"
                     >
                       {link.label}
                     </Link>
@@ -63,18 +63,18 @@ export function Footer() {
 
         <div className="pt-8 border-t border-dark-border flex flex-col md:flex-row justify-between items-center gap-4">
           <div>
-            <p className="text-sm text-white/40 mb-2">
+            <p className="text-sm text-white mb-2">
               © {new Date().getFullYear()} Criollo Labs. All rights reserved.
             </p>
-            <p className="text-xs text-white/30">
+            <p className="text-xs text-white">
               Términos: Alcance fijo • 2 rondas de cambios • 50% seña
             </p>
           </div>
           <div className="flex gap-6">
-            <Link href="#" className="text-sm text-white/40 hover:text-white transition-colors">
+            <Link href="#" className="text-sm text-white hover:text-white transition-colors">
               Privacy
             </Link>
-            <Link href="#" className="text-sm text-white/40 hover:text-white transition-colors">
+            <Link href="#" className="text-sm text-white hover:text-white transition-colors">
               Terms
             </Link>
           </div>

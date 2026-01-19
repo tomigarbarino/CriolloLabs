@@ -62,7 +62,7 @@ export function BuildCard({
                         {tech.map((t) => (
                             <span
                                 key={t}
-                                className="px-2 py-0.5 text-xs font-mono bg-white/5 text-white/50 rounded"
+                                className="px-2 py-0.5 text-xs font-mono bg-white/5 text-white rounded"
                             >
                                 {t}
                             </span>
@@ -108,7 +108,7 @@ export function BuildCard({
                             rel="noopener noreferrer"
                             className={cn(
                                 'flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-medium transition-all',
-                                'bg-white/5 text-white/60 border border-white/5',
+                                'bg-white/5 text-white border border-white/5',
                                 'hover:bg-white/10 hover:text-white hover:border-white/10'
                             )}
                         >

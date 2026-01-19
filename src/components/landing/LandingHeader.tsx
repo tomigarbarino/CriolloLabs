@@ -95,7 +95,7 @@ export function LandingHeader() {
             href="https://www.linkedin.com/in/tomas-garbarino/"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-2 p-2 text-white/60 hover:text-white hover:bg-white/10 rounded-full transition-all"
+            className="ml-2 p-2 text-white hover:text-white hover:bg-white/10 rounded-full transition-all"
             aria-label="LinkedIn"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect width="4" height="12" x="2" y="9" /><circle cx="4" cy="4" r="2" /></svg>
@@ -124,7 +124,7 @@ export function LandingHeader() {
               key={link.href}
               href={link.href}
               onClick={(e) => handleScrollTo(e, link.href)}
-              className="text-lg font-medium text-white/80 hover:text-white py-2 px-3 rounded-lg hover:bg-white/5 transition-colors"
+              className="text-lg font-medium text-white hover:text-white py-2 px-3 rounded-lg hover:bg-white/5 transition-colors"
             >
               {link.label}
             </a>
@@ -150,7 +150,7 @@ function NavLink({
     <motion.a
       href={href}
       onClick={onClick}
-      className="relative px-4 py-2 text-sm font-medium text-white/70 hover:text-white transition-colors"
+      className="relative px-4 py-2 text-sm font-medium text-white hover:text-white transition-colors"
       whileHover="hover"
       initial="rest"
     >

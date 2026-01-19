@@ -70,7 +70,7 @@ export function Story() {
                                 'Autodidacta por naturaleza. Constructor por vocación.'
                             )}
                         </p>
-                        <p className="mx-auto mt-4 max-w-2xl text-white/90 font-medium">
+                        <p className="mx-auto mt-4 max-w-2xl text-white font-medium">
                             {tt('intro', 'Soy Tomás. Criollo Labs es mi estudio: diseño, construyo y entrego yo.')}
                         </p>
                     </div>
@@ -131,7 +131,7 @@ export function Story() {
                                     <span
                                         className={cn(
                                             'text-[10px] md:text-xs font-mono font-bold',
-                                            isLast ? 'text-accent-orange' : 'text-white/60'
+                                            isLast ? 'text-accent-orange' : 'text-white'
                                         )}
                                     >
                                         {item.year}
@@ -182,7 +182,7 @@ export function Story() {
                         href="#contact?intent=mini-audit-story"
                         variant="secondary"
                         size="sm"
-                        className="text-white/70 hover:text-white"
+                        className="text-white hover:text-white"
                     >
                         {t('cta.miniAudit')}
                     </CTAButton>

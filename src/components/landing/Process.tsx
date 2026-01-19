@@ -95,7 +95,7 @@ export function Process() {
                     group-hover:border-accent-purple/50
                   `}
                                 >
-                                    <span className="text-2xl font-bold text-white/80">
+                                    <span className="text-2xl font-bold text-white">
                                         {idx + 1}
                                     </span>
 

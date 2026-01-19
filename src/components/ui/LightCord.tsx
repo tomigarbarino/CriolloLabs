@@ -180,10 +180,10 @@ export function LightCord() {
                                 {/* Tiny Arrow */}
                                 <div className="absolute left-0 top-1/2 -translate-x-[4px] -translate-y-1/2 w-2 h-2 bg-dark/90 rotate-45 border-l border-b border-white/10" />
 
-                                <span className="text-[11px] font-medium tracking-wide text-white/90">
+                                <span className="text-[11px] font-medium tracking-wide text-white">
                                     {effectsEnabled ? "Apagar ambiente" : "Encender ambiente"}
                                 </span>
-                                <kbd className="hidden md:inline-flex items-center gap-0.5 text-[9px] font-mono text-white/40 border border-white/10 rounded px-1 min-h-[16px]">
+                                <kbd className="hidden md:inline-flex items-center gap-0.5 text-[9px] font-mono text-white/60 border border-white/10 rounded px-1 min-h-[16px]">
                                     CLICK
                                 </kbd>
                             </div>

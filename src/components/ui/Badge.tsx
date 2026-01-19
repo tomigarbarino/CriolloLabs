@@ -30,8 +30,8 @@ export function Badge({
     }
 
     const variantStyles = {
-        default: 'bg-white/5 border border-white/10 text-white/60 hover:text-white/90 hover:border-white/20',
-        outline: 'border border-white/20 text-white/70 hover:bg-white/5',
+        default: 'bg-white/5 border border-white/10 text-white hover:text-white/90 hover:border-white/20',
+        outline: 'border border-white/20 text-white hover:bg-white/5',
         glow: 'bg-white/5 border border-accent-purple/30 text-accent-purple-light hover:border-accent-purple/50',
     }
 
