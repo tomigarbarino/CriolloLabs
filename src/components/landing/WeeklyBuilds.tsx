@@ -44,7 +44,7 @@ export function WeeklyBuilds() {
                     >
                         {t('title')}
                     </span>
-                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance text-white">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance text-white-solid">
                         {t('subtitle')}
                     </h2>
                 </motion.div>

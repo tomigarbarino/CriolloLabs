@@ -33,7 +33,7 @@ export function FAQ() {
                     viewport={{ once: true }}
                     className="text-center mb-12"
                 >
-                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance text-white">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance text-white-solid">
                         {t('title')}
                     </h2>
                 </motion.div>

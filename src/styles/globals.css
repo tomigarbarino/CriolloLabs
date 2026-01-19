@@ -6,7 +6,7 @@
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 10, 10, 10;
   --background-end-rgb: 10, 10, 10;
-  
+
   /* Brand colors */
   --accent-purple: #6610be;
   --accent-purple-light: #8b3dd9;
@@ -25,17 +25,15 @@
 
   body {
     color: rgb(var(--foreground-rgb));
-    background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    background: linear-gradient(to bottom,
+        transparent,
+        rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
     font-feature-settings: 'cv11', 'ss01';
     font-variation-settings: 'opsz' 32;
   }
 
   @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
@@ -49,6 +47,12 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Force solid white text - override any inherited opacity */
+  .text-white-solid {
+    color: rgb(255, 255, 255) !important;
+    opacity: 1 !important;
   }
 
   /* Grain/Noise effect */
@@ -92,12 +96,10 @@
     inset: -1px;
     padding: 1px;
     border-radius: inherit;
-    background: linear-gradient(
-      90deg,
-      rgba(102, 16, 190, 0.5),
-      rgba(139, 61, 217, 0.5),
-      rgba(255, 81, 18, 0.5)
-    );
+    background: linear-gradient(90deg,
+        rgba(102, 16, 190, 0.5),
+        rgba(139, 61, 217, 0.5),
+        rgba(255, 81, 18, 0.5));
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;

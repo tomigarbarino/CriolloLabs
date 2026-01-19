@@ -47,7 +47,7 @@ export function Process() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white text-balance">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white-solid text-balance">
                         {t('title')}
                     </h2>
                     {t.raw('subtitle') && (
