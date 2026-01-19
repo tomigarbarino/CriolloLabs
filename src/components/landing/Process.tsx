@@ -47,11 +47,11 @@ export function Process() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white text-balance">
                         {t('title')}
                     </h2>
                     {t.raw('subtitle') && (
-                        <p className="text-lg text-white">{t('subtitle')}</p>
+                        <p className="text-lg text-white leading-relaxed">{t('subtitle')}</p>
                     )}
                 </motion.div>
 
@@ -110,7 +110,7 @@ export function Process() {
                                 </motion.div>
 
                                 {/* Step content */}
-                                <h3 className="text-lg font-bold mb-2 text-white">
+                                <h3 className="text-lg font-bold mb-2 text-white text-balance">
                                     {step.title}
                                 </h3>
                                 <p className="text-sm text-white max-w-xs md:max-w-[200px] leading-relaxed text-pretty">

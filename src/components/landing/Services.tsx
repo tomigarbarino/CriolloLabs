@@ -62,11 +62,11 @@ export function Services() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white text-balance">
                         {t('title')}
                     </h2>
                     {t.raw('subtitle') && (
-                        <p className="text-lg text-white max-w-2xl mx-auto">
+                        <p className="text-lg text-white max-w-2xl mx-auto leading-relaxed">
                             {t('subtitle')}
                         </p>
                     )}
@@ -123,7 +123,7 @@ export function Services() {
                                         </div>
 
                                         {/* Title */}
-                                        <h3 className="text-xl font-bold mb-3 group-hover:text-white transition-colors">
+                                        <h3 className="text-xl font-bold mb-3 group-hover:text-white transition-colors text-balance">
                                             {service.title}
                                         </h3>
 

@@ -76,7 +76,7 @@ function ContactContent() {
                         className="space-y-8"
                     >
                         <div>
-                            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t('title')}</h2>
+                            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">{t('title')}</h2>
                             <p className="text-xl text-white leading-relaxed text-pretty">{t('subtitle')}</p>
                             <p className="text-sm font-medium text-accent-purple mt-4">{t('trust')}</p>
                         </div>

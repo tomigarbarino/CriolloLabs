@@ -46,13 +46,13 @@ export function BuildCard({
             <div className="relative flex flex-col h-full z-10">
                 {/* Header */}
                 <div className="mb-4">
-                    <h3 className="text-lg font-bold text-white group-hover:text-accent-purple transition-colors">
+                    <h3 className="text-lg font-bold text-white group-hover:text-accent-purple transition-colors text-balance">
                         {title}
                     </h3>
                 </div>
 
                 {/* Description */}
-                <p className="text-sm text-white mb-6 flex-grow line-clamp-3">
+                <p className="text-sm text-white mb-6 flex-grow line-clamp-3 leading-relaxed">
                     {description}
                 </p>
 

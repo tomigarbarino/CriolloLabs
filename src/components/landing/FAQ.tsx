@@ -107,7 +107,7 @@ function AccordionItem({
         `}
                 aria-expanded={isOpen}
             >
-                <span className="text-lg font-medium pr-8 text-white">{question}</span>
+                <span className="text-lg font-medium pr-8 text-white leading-snug">{question}</span>
                 <motion.div
                     animate={{ rotate: isOpen ? 180 : 0 }}
                     transition={{ duration: reducedMotion ? 0 : 0.2 }}
