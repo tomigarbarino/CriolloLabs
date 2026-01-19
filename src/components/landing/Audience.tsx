@@ -59,7 +59,7 @@ export function Audience() {
                                             <div className={`p-3 rounded-xl bg-gradient-to-br ${col.gradient}`}>
                                                 <Icon className="text-white" size={28} />
                                             </div>
-                                            <h3 className="text-xl md:text-2xl font-bold text-white">
+                                            <h3 className="text-xl md:text-2xl font-bold text-white text-balance">
                                                 {col.title}
                                             </h3>
                                         </div>
@@ -97,7 +97,7 @@ export function Audience() {
                                         >
                                             <Icon className="text-white" size={28} />
                                         </div>
-                                        <h3 className="text-xl md:text-2xl font-bold text-white">
+                                        <h3 className="text-xl md:text-2xl font-bold text-white text-balance">
                                             {col.title}
                                         </h3>
                                     </div>
