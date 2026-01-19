@@ -77,7 +77,7 @@ function ContactContent() {
                     >
                         <div>
                             <h2 className="text-4xl md:text-5xl font-bold mb-4">{t('title')}</h2>
-                            <p className="text-xl text-white/70 leading-relaxed text-pretty">{t('subtitle')}</p>
+                            <p className="text-xl text-white leading-relaxed text-pretty">{t('subtitle')}</p>
                             <p className="text-sm font-medium text-accent-purple mt-4">{t('trust')}</p>
                         </div>
 
@@ -192,7 +192,7 @@ function ContactContent() {
 
                                 <div className="space-y-4">
                                     <div>
-                                        <label className="block text-sm font-medium mb-1.5 text-white/80">
+                                        <label className="block text-sm font-medium mb-1.5 text-white">
                                             {t('audit.name')}
                                         </label>
                                         <input
@@ -204,7 +204,7 @@ function ContactContent() {
                                         />
                                     </div>
                                     <div>
-                                        <label className="block text-sm font-medium mb-1.5 text-white/80">
+                                        <label className="block text-sm font-medium mb-1.5 text-white">
                                             {t('audit.profile')}
                                         </label>
                                         <input
@@ -216,7 +216,7 @@ function ContactContent() {
                                         />
                                     </div>
                                     <div>
-                                        <label className="block text-sm font-medium mb-1.5 text-white/80">
+                                        <label className="block text-sm font-medium mb-1.5 text-white">
                                             {t('audit.goal')}
                                         </label>
                                         <input
@@ -228,7 +228,7 @@ function ContactContent() {
                                         />
                                     </div>
                                     <div>
-                                        <label className="block text-sm font-medium mb-1.5 text-white/80">
+                                        <label className="block text-sm font-medium mb-1.5 text-white">
                                             {t('audit.message')}
                                         </label>
                                         <textarea
