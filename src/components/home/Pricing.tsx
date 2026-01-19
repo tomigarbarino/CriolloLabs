@@ -51,7 +51,7 @@ export function Pricing() {
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-display-md font-bold mb-4">Planes</h2>
-          <p className="text-xl text-white/60 max-w-2xl mx-auto">
+          <p className="text-xl text-white max-w-2xl mx-auto">
             Elegí un plan. Reservá un cupo. Recibí v1 en 24h.
           </p>
         </div>
@@ -69,7 +69,7 @@ export function Pricing() {
                 <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
                 <div className="flex items-baseline gap-2 mb-2">
                   <span className="text-4xl font-bold gradient-text">{plan.price}</span>
-                  <span className="text-white/50">/ {plan.duration}</span>
+                  <span className="text-white">/ {plan.duration}</span>
                 </div>
               </div>
 
@@ -79,7 +79,7 @@ export function Pricing() {
                     <span className="w-5 h-5 rounded-full bg-accent-cyan/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <span className="w-2 h-2 rounded-full bg-accent-cyan" />
                     </span>
-                    <span className="text-white/80 text-sm">{feature}</span>
+                    <span className="text-white text-sm">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -93,7 +93,7 @@ export function Pricing() {
                 Reservar cupo
               </a>
 
-              <p className="text-xs text-white/40 text-center mt-4">
+              <p className="text-xs text-white text-center mt-4">
                 50% de seña para reservar. 50% antes del handoff.
               </p>
             </Card>
@@ -109,7 +109,7 @@ export function Pricing() {
               </div>
               <div className="text-left">
                 <p className="font-semibold">Entrega en tiempo o 20% off</p>
-                <p className="text-sm text-white/60">Entregamos rápido o pagás menos</p>
+                <p className="text-sm text-white">Entregamos rápido o pagás menos</p>
               </div>
             </div>
 
@@ -121,14 +121,14 @@ export function Pricing() {
               </div>
               <div className="text-left">
                 <p className="font-semibold">v1 en 24h o cancelás</p>
-                <p className="text-sm text-white/60">Recibís la seña si no hay v1 en el día 1</p>
+                <p className="text-sm text-white">Recibís la seña si no hay v1 en el día 1</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Scarcity */}
-        <div className="flex items-center justify-center gap-2 text-white/50 text-sm mt-8">
+        <div className="flex items-center justify-center gap-2 text-white text-sm mt-8">
           <Icon icon={AlertCircle} size={16} />
           <p>Solo 2 cupos por semana disponibles</p>
         </div>

@@ -199,7 +199,7 @@ function ContactContent() {
                                             {...register('name', { required: true })}
                                             className="w-full bg-dark border border-white/10 rounded-lg px-4 py-3 
                         focus:ring-2 focus:ring-accent-purple/50 focus:border-accent-purple 
-                        outline-none transition-all placeholder:text-white/30"
+                        outline-none transition-all placeholder:text-white"
                                             placeholder="Tomás"
                                         />
                                     </div>
@@ -211,7 +211,7 @@ function ContactContent() {
                                             {...register('profile', { required: true })}
                                             className="w-full bg-dark border border-white/10 rounded-lg px-4 py-3 
                         focus:ring-2 focus:ring-accent-purple/50 focus:border-accent-purple 
-                        outline-none transition-all placeholder:text-white/30"
+                        outline-none transition-all placeholder:text-white"
                                             placeholder="linkedin.com/in/..."
                                         />
                                     </div>
@@ -223,7 +223,7 @@ function ContactContent() {
                                             {...register('goal')}
                                             className="w-full bg-dark border border-white/10 rounded-lg px-4 py-3 
                         focus:ring-2 focus:ring-accent-purple/50 focus:border-accent-purple 
-                        outline-none transition-all placeholder:text-white/30"
+                        outline-none transition-all placeholder:text-white"
                                             placeholder="Conseguir trabajo, vender más..."
                                         />
                                     </div>
@@ -236,7 +236,7 @@ function ContactContent() {
                                             rows={4}
                                             className="w-full bg-dark border border-white/10 rounded-lg px-4 py-3 
                         focus:ring-2 focus:ring-accent-purple/50 focus:border-accent-purple 
-                        outline-none transition-all resize-none placeholder:text-white/30"
+                        outline-none transition-all resize-none placeholder:text-white"
                                         />
                                     </div>
                                 </div>

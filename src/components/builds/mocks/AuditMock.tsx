@@ -8,12 +8,12 @@ export function AuditMock() {
             {/* Lighthouse Circle */}
             <div className="relative w-40 h-40 flex items-center justify-center">
                 <svg className="w-full h-full -rotate-90">
-                    <circle cx="80" cy="80" r="70" stroke="currentColor" strokeWidth="8" fill="transparent" className="text-white/5" />
+                    <circle cx="80" cy="80" r="70" stroke="currentColor" strokeWidth="8" fill="transparent" className="text-white" />
                     <circle cx="80" cy="80" r="70" stroke="currentColor" strokeWidth="8" fill="transparent" strokeDasharray="440" strokeDashoffset="44" className="text-emerald-500" strokeLinecap="round" />
                 </svg>
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
                     <span className="text-4xl font-bold text-emerald-500">92</span>
-                    <span className="text-xs uppercase tracking-widest text-white/40 mt-1">Score</span>
+                    <span className="text-xs uppercase tracking-widest text-white mt-1">Score</span>
                 </div>
             </div>
 
@@ -24,7 +24,7 @@ export function AuditMock() {
                 <Metric label="Interaction to Next Paint (INP)" value="240ms" status="warn" icon={<Timer size={16} />} />
 
                 <div className="mt-4 pt-4 border-t border-white/5">
-                    <p className="text-xs text-white/40 uppercase tracking-widest mb-3">Priority Fixes</p>
+                    <p className="text-xs text-white uppercase tracking-widest mb-3">Priority Fixes</p>
                     <div className="space-y-2">
                         <FixItem text="Defer offscreen images" save="~400ms" />
                         <FixItem text="Minimize main thread work" save="~150ms" />
@@ -52,7 +52,7 @@ function Metric({ label, value, status, icon }: MetricProps) {
                 <div className={`p-2 rounded-md ${bg} ${color}`}>
                     {icon}
                 </div>
-                <span className="text-sm text-white/70">{label}</span>
+                <span className="text-sm text-white">{label}</span>
             </div>
             <span className={`text-base font-bold ${color}`}>{value}</span>
         </div>
@@ -67,7 +67,7 @@ interface FixItemProps {
 function FixItem({ text, save }: FixItemProps) {
     return (
         <div className="flex items-center justify-between text-xs group cursor-default">
-            <span className="text-white/60 group-hover:text-white transition-colors">→ {text}</span>
+            <span className="text-white group-hover:text-white transition-colors">→ {text}</span>
             <span className="font-mono text-accent-green/70">{save}</span>
         </div>
     )

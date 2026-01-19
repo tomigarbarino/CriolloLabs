@@ -21,9 +21,9 @@ export function BuildPreviewBackofficeAutopilot() {
                 <PreviewPanel title="Workflow" className="col-span-12 md:col-span-7">
                     <div className="flex flex-col items-center justify-center space-y-2 py-2">
                         <Node title="Trigger" subtitle="Pago aprobado (MP/Stripe)" icon="⚡" />
-                        <ArrowDown className="text-white/10" size={16} />
+                        <ArrowDown className="text-white" size={16} />
                         <Node title="Action" subtitle="Generar factura + guardar (AFIP)" icon="📄" />
-                        <ArrowDown className="text-white/10" size={16} />
+                        <ArrowDown className="text-white" size={16} />
                         <Node title="Action" subtitle="Enviar email + notificar Slack" icon="🔔" />
                     </div>
                 </PreviewPanel>
@@ -61,8 +61,8 @@ function Node({ title, subtitle, icon }: { title: string; subtitle: string; icon
                 {icon}
             </div>
             <div>
-                <p className="text-[10px] font-mono text-white/45 uppercase tracking-wider">{title}</p>
-                <p className="text-sm text-white/70">{subtitle}</p>
+                <p className="text-[10px] font-mono text-white uppercase tracking-wider">{title}</p>
+                <p className="text-sm text-white">{subtitle}</p>
             </div>
         </div>
     )
@@ -71,7 +71,7 @@ function Node({ title, subtitle, icon }: { title: string; subtitle: string; icon
 function LogItem({ status, text }: { status: 'good' | 'bad' | 'warn'; text: string }) {
     return (
         <div className="flex items-center justify-between rounded-lg px-2 py-1.5 hover:bg-white/[0.02] transition-colors">
-            <span className="text-xs font-mono text-white/60">{text}</span>
+            <span className="text-xs font-mono text-white">{text}</span>
             <StatusDot status={status} />
         </div>
     )

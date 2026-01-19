@@ -27,7 +27,7 @@ export function Services() {
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-display-md font-bold mb-4">What we do</h2>
-          <p className="text-xl text-white/60 max-w-2xl mx-auto">
+          <p className="text-xl text-white max-w-2xl mx-auto">
             End-to-end web development with design-first thinking
           </p>
         </div>
@@ -36,11 +36,11 @@ export function Services() {
           {services.map((service, i) => (
             <Card key={i} hoverable>
               <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
-              <p className="text-white/70 mb-6">{service.description}</p>
+              <p className="text-white mb-6">{service.description}</p>
               
               <ul className="space-y-2">
                 {service.features.map((feature, j) => (
-                  <li key={j} className="flex items-center gap-2 text-sm text-white/60">
+                  <li key={j} className="flex items-center gap-2 text-sm text-white">
                     <span className="w-1.5 h-1.5 rounded-full bg-accent-cyan" />
                     {feature}
                   </li>

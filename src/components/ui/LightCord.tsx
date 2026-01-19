@@ -183,7 +183,7 @@ export function LightCord() {
                                 <span className="text-[11px] font-medium tracking-wide text-white">
                                     {effectsEnabled ? "Apagar ambiente" : "Encender ambiente"}
                                 </span>
-                                <kbd className="hidden md:inline-flex items-center gap-0.5 text-[9px] font-mono text-white/60 border border-white/10 rounded px-1 min-h-[16px]">
+                                <kbd className="hidden md:inline-flex items-center gap-0.5 text-[9px] font-mono text-white border border-white/10 rounded px-1 min-h-[16px]">
                                     CLICK
                                 </kbd>
                             </div>

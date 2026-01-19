@@ -20,31 +20,31 @@ export function AutopilotMock() {
             {/* Logs Console */}
             <div className="flex-1 rounded-xl border border-white/10 bg-[#0A0A0A] font-mono text-xs overflow-hidden">
                 <div className="flex items-center justify-between px-4 py-2 border-b border-white/5 bg-white/[0.02]">
-                    <span className="text-white/40">Execution Logs</span>
+                    <span className="text-white">Execution Logs</span>
                     <div className="flex gap-1.5">
                         <div className="w-2.5 h-2.5 rounded-full bg-red-500/20" />
                         <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/20" />
                         <div className="w-2.5 h-2.5 rounded-full bg-green-500/20" />
                     </div>
                 </div>
-                <div className="p-4 space-y-2 text-white/60">
+                <div className="p-4 space-y-2 text-white">
                     <div className="flex gap-3">
-                        <span className="text-white/30">10:42:01</span>
+                        <span className="text-white">10:42:01</span>
                         <span className="text-emerald-400">[INFO]</span>
                         <span>Webhook received: order_created (id_9283)</span>
                     </div>
                     <div className="flex gap-3">
-                        <span className="text-white/30">10:42:03</span>
+                        <span className="text-white">10:42:03</span>
                         <span className="text-emerald-400">[INFO]</span>
                         <span>PDF generated successfully (240kb)</span>
                     </div>
                     <div className="flex gap-3">
-                        <span className="text-white/30">10:42:05</span>
+                        <span className="text-white">10:42:05</span>
                         <span className="text-blue-400">[EXEC]</span>
                         <span>Sending email via Resend API...</span>
                     </div>
                     <div className="flex gap-3 animate-pulse">
-                        <span className="text-white/30">10:42:06</span>
+                        <span className="text-white">10:42:06</span>
                         <span className="text-amber-400">[WAIT]</span>
                         <span>Waiting for confirmation...</span>
                     </div>
@@ -71,7 +71,7 @@ function Node({ icon, label, status, active }: NodeProps) {
                     : 'bg-dark border-white/10 group-hover:border-white/30'
                 }
             `}>
-                <div className={active ? 'text-accent-purple' : 'text-white/60'}>
+                <div className={active ? 'text-accent-purple' : 'text-white'}>
                     {icon}
                 </div>
                 {status === 'success' && (
@@ -80,7 +80,7 @@ function Node({ icon, label, status, active }: NodeProps) {
                     </div>
                 )}
             </div>
-            <span className={`text-xs font-medium ${active ? 'text-white' : 'text-white/40'}`}>
+            <span className={`text-xs font-medium ${active ? 'text-white' : 'text-white'}`}>
                 {label}
             </span>
         </div>
@@ -90,7 +90,7 @@ function Node({ icon, label, status, active }: NodeProps) {
 function Step() {
     return (
         <div className="relative z-10 w-6 h-6 rounded-full bg-dark border border-white/10 flex items-center justify-center">
-            <Play size={8} className="text-white/20 ml-0.5" fill="currentColor" />
+            <Play size={8} className="text-white ml-0.5" fill="currentColor" />
         </div>
     )
 }

@@ -85,7 +85,7 @@ export function Hero() {
 
         <p 
           ref={subtitleRef} 
-          className="text-xl md:text-2xl text-white/70 max-w-3xl mx-auto mb-12 text-balance"
+          className="text-xl md:text-2xl text-white max-w-3xl mx-auto mb-12 text-balance"
           style={{ opacity: prefersReducedMotion ? 1 : undefined }}
         >
           Landings listas para convertir en 48h. Automatizaciones que eliminan lo manual. Software a medida que ordena tu operación.

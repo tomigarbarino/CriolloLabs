@@ -9,7 +9,7 @@ export function WhatsappMock() {
             <div className="flex items-center justify-between mb-6 px-1">
                 <div className="flex items-center gap-3">
                     <h3 className="text-lg font-bold text-white">Pipeline</h3>
-                    <span className="px-2 py-0.5 rounded-full bg-white/10 text-xs text-white/50">12 Active</span>
+                    <span className="px-2 py-0.5 rounded-full bg-white/10 text-xs text-white">12 Active</span>
                 </div>
                 <button className="h-8 w-8 rounded-full bg-accent-green/20 text-accent-green flex items-center justify-center hover:bg-accent-green/30 transition">
                     <Plus size={16} />
@@ -31,7 +31,7 @@ export function WhatsappMock() {
 
                 <Column title="Closed" count={5} color="bg-emerald-500/20 text-emerald-400">
                     <div className="p-3 rounded-lg border border-white/5 bg-white/[0.02] opacity-50 flex items-center justify-center h-24 border-dashed">
-                        <span className="text-xs text-white/20 uppercase tracking-widest">+5 Archived</span>
+                        <span className="text-xs text-white uppercase tracking-widest">+5 Archived</span>
                     </div>
                 </Column>
             </div>
@@ -49,7 +49,7 @@ interface ColumnProps {
 function Column({ title, count, children, color }: ColumnProps) {
     return (
         <div className="flex flex-col gap-3">
-            <div className="flex items-center justify-between text-xs font-medium uppercase tracking-wider text-white/40 mb-1">
+            <div className="flex items-center justify-between text-xs font-medium uppercase tracking-wider text-white mb-1">
                 <span>{title}</span>
                 <span className={`px-1.5 py-0.5 rounded ${color}`}>{count}</span>
             </div>
@@ -76,20 +76,20 @@ function Card({ name, msg, time, tag, active }: CardProps) {
         `}>
             <div className="flex justify-between items-start mb-2">
                 <div className="flex items-center gap-2">
-                    <div className="w-6 h-6 rounded-full bg-gradient-to-br from-white/10 to-white/5 flex items-center justify-center text-[10px] text-white/70 font-bold">
+                    <div className="w-6 h-6 rounded-full bg-gradient-to-br from-white/10 to-white/5 flex items-center justify-center text-[10px] text-white font-bold">
                         {name[0]}
                     </div>
-                    <span className="text-sm font-medium text-white/90">{name}</span>
+                    <span className="text-sm font-medium text-white">{name}</span>
                 </div>
                 {active && <div className="h-1.5 w-1.5 rounded-full bg-accent-green" />}
             </div>
-            <p className="text-xs text-white/50 mb-3 line-clamp-1">
+            <p className="text-xs text-white mb-3 line-clamp-1">
                 <MessageCircle size={10} className="inline mr-1 -mt-0.5" />
                 &quot;{msg}&quot;
             </p>
             <div className="flex items-center justify-between pt-2 border-t border-white/5">
-                <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/5 text-white/40">{tag}</span>
-                <div className="flex items-center gap-1 text-[10px] text-white/30">
+                <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/5 text-white">{tag}</span>
+                <div className="flex items-center gap-1 text-[10px] text-white">
                     <Clock size={10} />
                     <span>{time}</span>
                 </div>

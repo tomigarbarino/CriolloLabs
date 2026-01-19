@@ -30,7 +30,7 @@ export function Testimonials() {
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-display-md font-bold mb-4">Lo que dicen nuestros clientes</h2>
-          <p className="text-xl text-white/60 max-w-2xl mx-auto">
+          <p className="text-xl text-white max-w-2xl mx-auto">
             Experiencias reales de quienes trabajaron con nosotros
           </p>
         </div>
@@ -39,14 +39,14 @@ export function Testimonials() {
           {testimonials.map((testimonial, i) => (
             <Card key={i} hoverable>
               <div className="flex flex-col h-full">
-                <p className="text-lg text-white/80 mb-6 flex-1">
+                <p className="text-lg text-white mb-6 flex-1">
                   &ldquo;{testimonial.quote}&rdquo;
                 </p>
                 
                 <div className="border-t border-dark-border pt-4">
                   <p className="font-semibold mb-1">{testimonial.author}</p>
-                  <p className="text-sm text-white/60">{testimonial.role}</p>
-                  <p className="text-xs text-white/40 mt-2 italic">{testimonial.note}</p>
+                  <p className="text-sm text-white">{testimonial.role}</p>
+                  <p className="text-xs text-white mt-2 italic">{testimonial.note}</p>
                 </div>
               </div>
             </Card>

@@ -65,7 +65,7 @@ export function Solutions() {
           <h2 className="text-display-md font-bold mb-4">
             3 formas de hacer crecer tu negocio
           </h2>
-          <p className="text-xl text-white/60 max-w-2xl mx-auto">
+          <p className="text-xl text-white max-w-2xl mx-auto">
             Elegí el servicio que necesitás. Precio fijo. Entrega rápida.
           </p>
         </div>
@@ -79,7 +79,7 @@ export function Solutions() {
               <h3 className="text-2xl font-bold mb-4">
                 {solution.title}
               </h3>
-              <p className="text-white/70 mb-6">
+              <p className="text-white mb-6">
                 {solution.description}
               </p>
               
@@ -89,7 +89,7 @@ export function Solutions() {
                     <span className="w-5 h-5 rounded-full bg-accent-cyan/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <span className="w-2 h-2 rounded-full bg-accent-cyan" />
                     </span>
-                    <span className="text-white/80 text-sm">
+                    <span className="text-white text-sm">
                       {bullet}
                     </span>
                   </li>

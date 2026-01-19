@@ -177,7 +177,7 @@ export function AmbientNarrativeLayer() {
                             }}
                             exit={{ opacity: 0, scale: 0.8, rotate: 15 }}
                             transition={{ duration: 0.4 }}
-                            className="absolute w-16 h-16 text-white/30 flex items-center justify-center p-2"
+                            className="absolute w-16 h-16 text-white flex items-center justify-center p-2"
                         >
                             {/* Render Artifact Glyphs */}
                             {targetState.artifact === 'circle' && (

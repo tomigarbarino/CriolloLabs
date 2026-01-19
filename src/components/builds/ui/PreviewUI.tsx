@@ -27,8 +27,8 @@ export function PreviewFrame({
 export function PreviewHeader({ slug }: { slug: string }) {
     return (
         <div className="flex items-center justify-between mb-5">
-            <p className="text-xs md:text-sm text-white/70">
-                Preview · <span className="text-white/45 font-mono">{slug}</span>
+            <p className="text-xs md:text-sm text-white">
+                Preview · <span className="text-white font-mono">{slug}</span>
             </p>
             <div className="flex gap-1.5 md:gap-2">
                 <span className="h-2 w-2 rounded-full bg-white/20" />
@@ -61,7 +61,7 @@ export function PreviewPanel({
             )}
         >
             {title && (
-                <p className="text-[10px] md:text-xs font-mono text-white/45 uppercase tracking-wider mb-2 shrink-0">
+                <p className="text-[10px] md:text-xs font-mono text-white uppercase tracking-wider mb-2 shrink-0">
                     {title}
                 </p>
             )}
@@ -81,8 +81,8 @@ export function PreviewBadge({
     className?: string
 }) {
     const variants = {
-        default: 'bg-white/5 border-white/10 text-white/70',
-        outline: 'border-white/10 text-white/60 bg-transparent',
+        default: 'bg-white/5 border-white/10 text-white',
+        outline: 'border-white/10 text-white bg-transparent',
         success: 'bg-emerald-500/10 border-emerald-500/20 text-emerald-400',
         warning: 'bg-amber-500/10 border-amber-500/20 text-amber-400',
         error: 'bg-red-500/10 border-red-500/20 text-red-400',
@@ -118,8 +118,8 @@ export function PreviewRow({
                 className
             )}
         >
-            <span className="text-xs md:text-sm text-white/60 truncate mr-2">{label}</span>
-            <span className="text-xs font-mono text-white/80 truncate">{value}</span>
+            <span className="text-xs md:text-sm text-white truncate mr-2">{label}</span>
+            <span className="text-xs font-mono text-white truncate">{value}</span>
         </div>
     )
 }

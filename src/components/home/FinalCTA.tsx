@@ -11,7 +11,7 @@ export function FinalCTA() {
         <h2 className="text-display-lg font-bold mb-6">
           ¿Listo para convertir tráfico en consultas?
         </h2>
-        <p className="text-xl text-white/70 max-w-2xl mx-auto mb-12">
+        <p className="text-xl text-white max-w-2xl mx-auto mb-12">
           Reservá una llamada de 30 minutos. Sin pitch, solo una charla rápida sobre tu oferta y cómo convertir visitantes.
         </p>
         

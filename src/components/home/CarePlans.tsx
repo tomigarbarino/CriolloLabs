@@ -54,10 +54,10 @@ export function CarePlans() {
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-display-md font-bold mb-4">Planes de mantenimiento</h2>
-          <p className="text-xl text-white/60 max-w-2xl mx-auto mb-4">
+          <p className="text-xl text-white max-w-2xl mx-auto mb-4">
             Elegimos el plan según criticidad y tipo de solución.
           </p>
-          <p className="text-sm text-white/50 max-w-xl mx-auto">
+          <p className="text-sm text-white max-w-xl mx-auto">
             El precio final depende de criticidad y volumen.
           </p>
         </div>
@@ -74,9 +74,9 @@ export function CarePlans() {
               <div className="mb-6">
                 <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
                 <div className="flex items-baseline gap-2 mb-2">
-                  <span className="text-sm text-white/50">{plan.priceNote}</span>
+                  <span className="text-sm text-white">{plan.priceNote}</span>
                   <span className="text-4xl font-bold gradient-text">{plan.price}</span>
-                  <span className="text-white/50">/ mes</span>
+                  <span className="text-white">/ mes</span>
                 </div>
               </div>
 
@@ -86,7 +86,7 @@ export function CarePlans() {
                     <span className={`w-5 h-5 rounded-full bg-accent-${plan.color}/20 flex items-center justify-center flex-shrink-0 mt-0.5`}>
                       <span className={`w-2 h-2 rounded-full bg-accent-${plan.color}`} />
                     </span>
-                    <span className="text-white/80 text-sm">{feature}</span>
+                    <span className="text-white text-sm">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -107,7 +107,7 @@ export function CarePlans() {
         <div className="max-w-2xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-6 py-3 glass rounded-full">
             <Icon icon={Gift} size={20} className="text-accent-green" />
-            <p className="text-sm text-white/80">
+            <p className="text-sm text-white">
               <span className="font-semibold">Descuento primer mes:</span> Si lo sumás al contratar el proyecto: <span className="gradient-text font-bold">-20%</span>
             </p>
           </div>

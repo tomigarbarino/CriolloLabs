@@ -15,7 +15,7 @@ export function FeaturedWork() {
         <div className="flex items-end justify-between">
           <div>
             <h2 className="text-display-md font-bold mb-4">Trabajos Destacados</h2>
-            <p className="text-xl text-white/60">Casos de estudio seleccionados</p>
+            <p className="text-xl text-white">Casos de estudio seleccionados</p>
           </div>
           <Button href="/work" variant="outline">
             Ver Todos
@@ -51,7 +51,7 @@ export function FeaturedWork() {
                   </span>
                 </div>
                 <h3 className="text-3xl font-bold mb-2">{project.title}</h3>
-                <p className="text-white/70">{project.subtitle}</p>
+                <p className="text-white">{project.subtitle}</p>
               </div>
             </div>
           </Link>

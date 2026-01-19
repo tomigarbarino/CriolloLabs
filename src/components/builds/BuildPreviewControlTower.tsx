@@ -122,10 +122,10 @@ function Kpi({
                 className
             )}
         >
-            <p className="text-[10px] md:text-xs font-mono text-white/45 uppercase tracking-wider">{title}</p>
+            <p className="text-[10px] md:text-xs font-mono text-white uppercase tracking-wider">{title}</p>
             <div className="mt-2 flex items-end justify-between gap-2">
-                <p className="text-lg md:text-xl font-semibold text-white/85">{value}</p>
-                <p className={cn("text-xs", isPos ? "text-emerald-400/80" : "text-white/55")}>{delta}</p>
+                <p className="text-lg md:text-xl font-semibold text-white">{value}</p>
+                <p className={cn("text-xs", isPos ? "text-emerald-400/80" : "text-white")}>{delta}</p>
             </div>
         </div>
     )
@@ -136,11 +136,11 @@ function ActivityRow({ left, right, time }: { left: string; right: string; time:
         <div className="flex items-center justify-between rounded-xl border border-white/5 bg-white/[0.01] px-3 py-2.5 hover:bg-white/[0.03] transition-colors group">
             <div className="flex items-center gap-3 overflow-hidden">
                 <div className="h-1.5 w-1.5 rounded-full bg-white/20 group-hover:bg-accent-purple/50 transition-colors shrink-0" />
-                <span className="text-xs md:text-sm text-white/70 truncate">{left}</span>
+                <span className="text-xs md:text-sm text-white truncate">{left}</span>
             </div>
             <div className="flex items-center gap-3 shrink-0">
-                <span className="text-xs font-mono text-white/45 hidden sm:inline-block">{right}</span>
-                <span className="text-[10px] text-white/30">{time}</span>
+                <span className="text-xs font-mono text-white hidden sm:inline-block">{right}</span>
+                <span className="text-[10px] text-white">{time}</span>
             </div>
         </div>
     )

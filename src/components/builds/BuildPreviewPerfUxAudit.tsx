@@ -62,7 +62,7 @@ function ScoreCard({ title, value, color }: { title: string; value: string; colo
     return (
         <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4 flex flex-col items-center justify-center text-center">
             <div className={cn("text-3xl md:text-4xl font-bold mb-1", color)}>{value}</div>
-            <p className="text-[10px] font-mono text-white/45 uppercase tracking-wider">{title}</p>
+            <p className="text-[10px] font-mono text-white uppercase tracking-wider">{title}</p>
         </div>
     )
 }
@@ -70,11 +70,11 @@ function ScoreCard({ title, value, color }: { title: string; value: string; colo
 function DeltaMetric({ label, before, after }: { label: string; before: string; after: string }) {
     return (
         <div className="rounded-xl border border-white/5 bg-white/[0.01] p-3 flex flex-col">
-            <p className="text-xs text-white/50 mb-2">{label}</p>
+            <p className="text-xs text-white mb-2">{label}</p>
             <div className="flex items-center gap-3">
-                <span className="text-sm text-white/40 line-through decoration-white/20">{before}</span>
-                <span className="text-white/20">→</span>
-                <span className="text-lg font-semibold text-white/90">{after}</span>
+                <span className="text-sm text-white line-through decoration-white/20">{before}</span>
+                <span className="text-white">→</span>
+                <span className="text-lg font-semibold text-white">{after}</span>
             </div>
         </div>
     )

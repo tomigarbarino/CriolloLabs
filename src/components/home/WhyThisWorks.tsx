@@ -33,7 +33,7 @@ export function WhyThisWorks() {
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-display-md font-bold mb-4">Por qué funciona</h2>
-          <p className="text-xl text-white/60 max-w-2xl mx-auto">
+          <p className="text-xl text-white max-w-2xl mx-auto">
             Landing pages que convierten se construyen distinto
           </p>
         </div>
@@ -45,7 +45,7 @@ export function WhyThisWorks() {
                 <Icon icon={benefit.icon} size={32} className="text-accent-cyan" />
               </div>
               <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
-              <p className="text-white/60">{benefit.description}</p>
+              <p className="text-white">{benefit.description}</p>
             </div>
           ))}
         </div>

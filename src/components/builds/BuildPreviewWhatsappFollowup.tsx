@@ -33,8 +33,8 @@ export function BuildPreviewWhatsappFollowup() {
 
                         {/* Chat bubble simulation */}
                         <div className="mt-4 p-3 rounded-2xl rounded-tl-none border border-white/5 bg-white/[0.02]">
-                            <p className="text-[10px] font-mono text-white/30 uppercase tracking-wider mb-1">Último mensaje</p>
-                            <p className="text-sm text-white/70 italic leading-relaxed">
+                            <p className="text-[10px] font-mono text-white uppercase tracking-wider mb-1">Último mensaje</p>
+                            <p className="text-sm text-white italic leading-relaxed">
                                 “Dale, pasame precio y si podemos arrancar esta semana.”
                             </p>
                         </div>
@@ -68,8 +68,8 @@ function KanbanCol({
     return (
         <div className={`rounded-xl border border-white/5 bg-white/[0.01] p-3 flex flex-col ${color} border-l-2`}>
             <div className="flex justify-between items-center mb-2">
-                <p className="text-[10px] font-mono text-white/45 uppercase tracking-wider">{title}</p>
-                <span className="text-[10px] text-white/30">{items}</span>
+                <p className="text-[10px] font-mono text-white uppercase tracking-wider">{title}</p>
+                <span className="text-[10px] text-white">{items}</span>
             </div>
             <div className="space-y-2 flex-1">
                 {Array.from({ length: items }).map((_, i) => (

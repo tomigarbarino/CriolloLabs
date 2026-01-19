@@ -82,7 +82,7 @@ export function Process() {
       <div className="container-custom max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-display-md font-bold mb-4">Cómo trabajamos</h2>
-          <p className="text-xl text-white/60 max-w-2xl mx-auto">
+          <p className="text-xl text-white max-w-2xl mx-auto">
             Proceso simple para entregar resultados rápido.
           </p>
         </div>
@@ -128,7 +128,7 @@ export function Process() {
                       {step.number}
                     </span>
                     <h3 className="text-2xl font-bold mb-3">{step.title}</h3>
-                    <p className="text-white/70">{step.description}</p>
+                    <p className="text-white">{step.description}</p>
                   </div>
                 </Card>
               </div>

@@ -4,7 +4,7 @@ import { ArrowUpRight, ArrowDownRight, DollarSign, Users, Activity, Search } fro
 
 export function ControlTowerMock() {
     return (
-        <div className="flex flex-col gap-6 text-white/80 h-full w-full">
+        <div className="flex flex-col gap-6 text-white h-full w-full">
             {/* Header / Stats Row */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <StatCard
@@ -34,18 +34,18 @@ export function ControlTowerMock() {
             <div className="flex-1 rounded-xl border border-white/10 bg-white/[0.03] overflow-hidden flex flex-col min-h-[300px]">
                 {/* Simulated Toolbar */}
                 <div className="p-4 border-b border-white/10 flex justify-between items-center bg-white/[0.02]">
-                    <div className="flex items-center gap-2 text-white/40 text-sm">
+                    <div className="flex items-center gap-2 text-white text-sm">
                         <Search size={14} />
                         <span>Search orders...</span>
                     </div>
                     <div className="flex gap-2">
                         <div className="h-2 w-2 rounded-full bg-accent-green animate-pulse" />
-                        <span className="text-xs text-white/40 uppercase tracking-widest">Live</span>
+                        <span className="text-xs text-white uppercase tracking-widest">Live</span>
                     </div>
                 </div>
 
                 {/* Table Header */}
-                <div className="grid grid-cols-4 gap-4 px-4 py-3 border-b border-white/5 text-xs font-mono text-white/40 uppercase tracking-wider">
+                <div className="grid grid-cols-4 gap-4 px-4 py-3 border-b border-white/5 text-xs font-mono text-white uppercase tracking-wider">
                     <div>Customer</div>
                     <div>Status</div>
                     <div>Amount</div>
@@ -77,8 +77,8 @@ function StatCard({ label, value, trend, trendUp, icon }: StatCardProps) {
     return (
         <div className="p-4 rounded-xl border border-white/10 bg-white/[0.03]">
             <div className="flex justify-between items-start mb-2">
-                <span className="text-xs text-white/40 font-medium uppercase tracking-wider">{label}</span>
-                <span className="text-white/20">{icon}</span>
+                <span className="text-xs text-white font-medium uppercase tracking-wider">{label}</span>
+                <span className="text-white">{icon}</span>
             </div>
             <div className="flex items-end justify-between">
                 <span className="text-2xl font-bold text-white">{value}</span>
@@ -102,10 +102,10 @@ interface RowProps {
 function Row({ customer, status, amount, time, statusColor }: RowProps) {
     return (
         <div className="grid grid-cols-4 gap-4 px-4 py-3 text-sm hover:bg-white/[0.02] transition-colors cursor-default">
-            <div className="text-white/80 font-medium truncate">{customer}</div>
+            <div className="text-white font-medium truncate">{customer}</div>
             <div className={statusColor}>{status}</div>
-            <div className="text-white/60 font-mono">{amount}</div>
-            <div className="text-right text-white/30 text-xs">{time}</div>
+            <div className="text-white font-mono">{amount}</div>
+            <div className="text-right text-white text-xs">{time}</div>
         </div>
     )
 }
