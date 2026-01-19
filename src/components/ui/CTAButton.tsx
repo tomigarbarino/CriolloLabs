@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { motion, useMotionValue, useMotionTemplate } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { cn } from '@/lib/utils'
 import { buttonPress, duration, ease } from '@/lib/motion'
 import { useReducedMotion } from '@/lib/hooks/useReducedMotion'
@@ -94,40 +94,13 @@ export function CTAButton({
             },
         }
 
-    // Spotlight Logic
-    const mouseX = useMotionValue(0)
-    const mouseY = useMotionValue(0)
-
-    function handleMouseMove({ currentTarget, clientX, clientY }: React.MouseEvent) {
-        const { left, top } = currentTarget.getBoundingClientRect()
-        mouseX.set(clientX - left)
-        mouseY.set(clientY - top)
-    }
-
-    const spotlightOverlay = !reducedMotion && (
-        <motion.div
-            className="absolute inset-0 pointer-events-none z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            style={{
-                background: useMotionTemplate`
-                    radial-gradient(
-                        150px circle at ${mouseX}px ${mouseY}px,
-                        rgba(255, 255, 255, 0.15),
-                        transparent 80%
-                    )
-                `,
-            }}
-        />
-    )
-
     if (href) {
         return (
             <MotionWrapper {...motionProps} className="inline-block relative group">
                 <Link
                     href={href}
                     className={combinedClassName}
-                    onMouseMove={handleMouseMove}
                 >
-                    {spotlightOverlay}
                     <span className="relative z-20 flex items-center gap-2">
                         {icon && iconPosition === 'left' && icon}
                         <span>{children}</span>
@@ -145,9 +118,7 @@ export function CTAButton({
                 onClick={onClick}
                 disabled={disabled}
                 className={combinedClassName}
-                onMouseMove={handleMouseMove}
             >
-                {spotlightOverlay}
                 <span className="relative z-20 flex items-center gap-2">
                     {icon && iconPosition === 'left' && icon}
                     <span>{children}</span>
