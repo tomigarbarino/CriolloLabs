@@ -107,7 +107,7 @@ function AccordionItem({
         `}
                 aria-expanded={isOpen}
             >
-                <span className="text-lg font-medium pr-8">{question}</span>
+                <span className="text-lg font-medium pr-8 text-white">{question}</span>
                 <motion.div
                     animate={{ rotate: isOpen ? 180 : 0 }}
                     transition={{ duration: reducedMotion ? 0 : 0.2 }}
@@ -132,7 +132,7 @@ function AccordionItem({
                             ease: ease.smooth,
                         }}
                     >
-                        <div className="px-6 pb-6 text-white/70 leading-relaxed">
+                        <div className="px-6 pb-6 text-white leading-relaxed">
                             {answer}
                         </div>
                     </motion.div>
