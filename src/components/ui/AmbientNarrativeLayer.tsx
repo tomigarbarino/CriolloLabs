@@ -125,7 +125,7 @@ export function AmbientNarrativeLayer() {
         <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
             {/* MAIN ORB */}
             <motion.div
-                className={cn("absolute w-[500px] h-[500px] rounded-full mix-blend-screen transition-colors duration-700", targetState.color, targetState.blur)}
+                className={cn("absolute w-[500px] h-[500px] rounded-full transition-colors duration-700", targetState.color, targetState.blur)}
                 initial={false}
                 animate={{
                     left: targetState.x,
@@ -144,7 +144,7 @@ export function AmbientNarrativeLayer() {
 
             {/* SECONDARY ORB (Follower) */}
             <motion.div
-                className="absolute w-[300px] h-[300px] bg-accent-cyan/10 rounded-full blur-[80px] mix-blend-screen"
+                className="absolute w-[300px] h-[300px] bg-accent-cyan/10 rounded-full blur-[80px]"
                 animate={{
                     left: targetState.x,
                     top: targetState.y,
