@@ -38,6 +38,7 @@ const config: Config = {
       animation: {
         'float': 'float 6s ease-in-out infinite',
         'glow': 'glow 2s ease-in-out infinite alternate',
+        'gradient': 'gradient 3s ease infinite',
       },
       keyframes: {
         float: {
@@ -47,6 +48,11 @@ const config: Config = {
         glow: {
           '0%': { opacity: '0.5' },
           '100%': { opacity: '1' },
+        },
+        gradient: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
         },
       },
       backdropBlur: {

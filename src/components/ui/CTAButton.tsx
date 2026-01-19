@@ -53,7 +53,7 @@ export function CTAButton({
 
     const variantStyles = {
         primary: cn(
-            'bg-gradient-to-r from-accent-purple to-accent-orange text-white',
+            'bg-gradient-to-r from-accent-purple via-accent-orange to-accent-purple bg-[length:200%_auto] animate-gradient text-white',
             'hover:shadow-lg hover:shadow-accent-purple/30',
             'active:shadow-accent-purple/20'
         ),
