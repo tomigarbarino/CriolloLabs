@@ -1,184 +1,184 @@
 {
   "header": {
     "home": "Inicio",
-    "story": "Mi historia",
-    "builds": "Mis builds",
-    "work": "Qué hago",
-    "audience": "Para quién",
-    "process": "Cómo laburo",
-    "faq": "Preguntas",
-    "contact": "Hablemos"
+    "story": "Trayectoria",
+    "builds": "Casos de Uso",
+    "work": "Soluciones",
+    "audience": "Para Quién",
+    "process": "Metodología",
+    "faq": "FAQ",
+    "contact": "Diagnóstico"
   },
   "landing": {
     "hero": {
-      "eyebrow": "Criollo Labs · Product Engineering",
-      "headline": "Ingeniería de Producto. Sin humo.",
-      "subheadline": "Transformo problemas complejos en software simple y escalable. Vengo de abajo, aprendí en la trinchera y hoy construyo sistemas para quienes valoran la ejecución real.",
+      "eyebrow": "Criollo Labs · Tech Ally",
+      "headline": "Del caos operativo al sistema escalable.",
+      "subheadline": "Combino estándares de Big Tech con velocidad de startup. Transformo la complejidad en herramientas que te ahorran tiempo, reducen fricción y generan ROI medible.",
       "chips": {
-        "c1": "De Caos → Sistema",
-        "c2": "Velocidad de Startup",
-        "c3": "Calidad Artesanal"
+        "c1": "Caos → Sistema",
+        "c2": "ROI Medible",
+        "c3": "Estandares Big Tech"
       },
       "beats": {
         "b1": {
-          "headline": "Sin atajos.",
-          "sub": "Aprendí a fuerza de curiosidad y disciplina. Ese hambre se traduce en velocidad."
+          "headline": "Tu tiempo vale más que tareas manuales.",
+          "sub": "Si tu equipo pierde horas en Excel y WhatsApp, no es falta de esfuerzo. Es falta de sistema."
         },
         "b2": {
-          "headline": "El caos te cuesta plata.",
-          "sub": "Excel, WhatsApp y parches. Si no escala, te frena."
+          "headline": "El software debe trabajar para vos.",
+          "sub": "Automatización que libera 10h semanales. Performance 25% más rápida. Retención 20% mayor."
         },
         "b3": {
-          "headline": "Sistemas que dan paz.",
-          "sub": "Ordeno procesos y automatizo lo aburrido. Te devuelvo el control.",
-          "cta": "Contame tu caso (15 min)"
+          "headline": "Orden = Escalabilidad.",
+          "sub": "Convertí el caos en un activo estratégico con herramientas que escalan con tu negocio.",
+          "cta": "Diagnóstico gratuito (15 min)"
         }
       },
-      "ctaPrimary": "Ver qué construyo",
-      "ctaSecondary": "Hablemos",
-      "linkStory": "Mi historia"
+      "ctaPrimary": "Ver casos de uso",
+      "ctaSecondary": "Solicitar diagnóstico",
+      "linkStory": "Mi experiencia"
     },
     "story": {
-      "title": "Origen",
-      "subtitle": "Autodidacta por naturaleza. Constructor por vocación.",
-      "intro": "Soy Tomás. Criollo Labs es mi estudio: diseño, construyo y entrego yo.",
+      "title": "Experiencia",
+      "subtitle": "De la resolución de problemas al diseño de sistemas.",
+      "intro": "Soy Tomás Garbarino. Criollo Labs es mi operación: producto, código y entrega end-to-end.",
       "timeline": [
         {
           "year": "2016",
-          "title": "Mods de Minecraft",
-          "description": "Empecé a escribir Java sin saber siquiera qué era Java. Aprendí lógica modificando el juego por pura curiosidad."
+          "title": "Lógica pura: Mods de Minecraft",
+          "description": "Lección: Los mejores ingenieros resuelven problemas desde la raíz, no desde la superficie. Aprendí a pensar en sistemas antes de escribir una línea de código."
         },
         {
           "year": "2020",
-          "title": "Menús QR en pandemia",
-          "description": "Cuando todo cerró, abrí puertas digitales. Mi primer SaaS real que facturó y ayudó a negocios locales."
+          "title": "Entrega pragmática: SaaS de Menús QR",
+          "description": "Lección: En crisis, gana quien ejecuta rápido. Ayudé a 12 comercios a digitalizarse en plena pandemia. La velocidad es una ventaja competitiva."
         },
         {
           "year": "2022",
-          "title": "Consultoría Global",
-          "description": "El salto a las ligas mayores. Estándares de Silicon Valley, code reviews estrictos y arquitectura a escala."
+          "title": "Estándares de excelencia: Líder tecnológico de Cupertino",
+          "description": "Lección: La calidad no es negociable. Construí herramientas internas que ahorraron 10 horas semanales de trabajo manual a equipos globales. Los sistemas bien diseñados se pagan solos."
         },
         {
           "year": "2023",
-          "title": "Startup de IA (México)",
-          "description": "Me sumé a un producto de visión artificial. Del orden corporativo al caos hermoso de una startup. Crecimiento, velocidad y desafíos técnicos reales."
+          "title": "Ingeniería de producto compleja: Startup de IA (México)",
+          "description": "Lección: Performance = Retención. Reduje tiempos de carga 25% y aumenté la retención de usuarios 20%. El ROI técnico se traduce en ROI de negocio."
         },
         {
           "year": "2026",
-          "title": "El layoff",
-          "description": "El golpe necesario. Entendí que la seguridad no te la da un empleo, sino tu capacidad de construir."
+          "title": "Independencia estratégica",
+          "description": "Lección: La seguridad viene de tu capacidad de resolver problemas reales, no de un título. Aproveché el layoff para convertir mi expertise en un servicio tangible."
         },
         {
           "year": "Hoy",
-          "title": "CriolloLabs",
-          "description": "Capitalizo todo eso (lo técnico y lo de negocio) para ayudar a otros a ordenarse y crecer. Sin humo, con experiencia real."
+          "title": "Tech Ally: Criollo Labs",
+          "description": "Tu socio tecnológico. Tomo todo lo aprendido (Big Tech + Startup + SaaS) y lo convierto en sistemas que ordenan tu operación y escalan tu negocio."
         }
       ],
-      "closingTitle": "¿El resultado de todo esto?",
-      "closingDesc": "Un perfil híbrido: la velocidad del hacker y la calidad del ingeniero senior.",
-      "ctaProjects": "Ver proyectos",
-      "ctaContact": "Hablemos",
+      "closingTitle": "Mi trayectoria es tu garantía.",
+      "closingDesc": "Sé cómo pasar del caos al sistema porque ya lo hice en contextos de máxima exigencia: desde Silicon Valley hasta startups en crecimiento exponencial.",
+      "ctaProjects": "Ver casos de uso",
+      "ctaContact": "Solicitar diagnóstico",
       "cta": {
-        "miniAudit": "Pedir mini-diagnóstico"
+        "miniAudit": "Diagnóstico gratuito"
       }
     },
     "builds": {
       "controlTower": {
-        "eyebrow": "Product Demo",
+        "eyebrow": "Caso de Uso",
         "title": "Control Tower Dashboard",
-        "subtitle": "Unificá ventas, operaciones y métricas en un panel con alertas y exportes.",
-        "problemLabel": "Problema",
-        "problem": "Todo vive en Excel/WhatsApp y nadie sabe qué está pasando en tiempo real.",
-        "outcomeLabel": "Resultado",
-        "outcome": "Un panel único para decidir rápido: KPIs, alertas, actividad y reportes.",
-        "whatItDoesLabel": "Qué hace",
+        "subtitle": "Centralizá ventas, ops y métricas. Decisiones basadas en datos, no en intuición.",
+        "problemLabel": "El problema de negocio",
+        "problem": "Tu equipo vive entre Excel, WhatsApp y correos. No hay fuente única de verdad. Las decisiones se retrasan porque los datos están dispersos.",
+        "outcomeLabel": "ROI esperado",
+        "outcome": "Panel unificado que reduce 5-8h semanales de búsqueda manual. Alertas automáticas para decisiones críticas. Reportes listos para finanzas.",
+        "whatItDoesLabel": "Funcionalidades core",
         "bullets": [
-          "KPIs claros + tendencias por canal y período",
-          "Alertas: stock crítico, pagos fallidos y demoras operativas",
-          "Actividad reciente + búsqueda + filtros",
-          "Exportes y reportes para finanzas/ops"
+          "KPIs en tiempo real + tendencias históricas por canal",
+          "Alertas configurables: stock crítico, pagos fallidos, SLA incumplidos",
+          "Búsqueda y filtrado avanzado de actividad operativa",
+          "Exportes automáticos para contabilidad y reportes ejecutivos"
         ],
         "stackLabel": "Stack & Integraciones",
         "techLabel": "Tech",
         "integrationsLabel": "Integraciones típicas",
         "ctaBack": "← Volver",
-        "ctaWantThis": "Quiero algo así",
-        "ctaAudit": "Pedir mini-diagnóstico"
+        "ctaWantThis": "Necesito esto",
+        "ctaAudit": "Diagnóstico gratuito"
       },
       "whatsappFollowup": {
-        "eyebrow": "Product Demo",
+        "eyebrow": "Caso de Uso",
         "title": "WhatsApp Follow-Up System",
-        "subtitle": "Seguimiento simple y automático para no perder leads entre WhatsApp, notas y “después lo veo”.",
-        "problemLabel": "Problema",
-        "problem": "Los leads se enfrían porque no hay pipeline ni recordatorios claros. Todo queda en la cabeza.",
-        "outcomeLabel": "Resultado",
-        "outcome": "Un pipeline liviano + automations que te empujan a cerrar: seguimiento, agenda y próximos pasos.",
-        "whatItDoesLabel": "Qué hace",
+        "subtitle": "Pipeline de ventas que no depende de tu memoria. Cierre sistemático, no esporádico.",
+        "problemLabel": "El problema de negocio",
+        "problem": "Leads calientes se enfrían porque olvidás hacer seguimiento. No hay proceso claro entre el primer contacto y el cierre. Perdés plata por desorganización.",
+        "outcomeLabel": "ROI esperado",
+        "outcome": "Aumento del 15-25% en tasa de conversión. Reduce tiempo de ciclo de venta 30%. Sistema que trabaja por vos, no que te agrega carga manual.",
+        "whatItDoesLabel": "Funcionalidades core",
         "bullets": [
-          "Pipeline Kanban por estado (Nuevo → Interesado → Cerrado)",
-          "Recordatorios automáticos si no hubo respuesta en X horas",
-          "Ficha de lead con historial, próxima acción y notas",
-          "Agenda/turnos y mensajes plantilla para cerrar más rápido"
+          "Pipeline visual Kanban: Nuevo → Calificado → Propuesta → Cerrado",
+          "Recordatorios automáticos si no hubo contacto en X horas",
+          "Historial completo de conversación + próxima acción sugerida",
+          "Templates de mensajes y agenda integrada para agilizar cierre"
         ],
         "stackLabel": "Stack & Integraciones",
         "techLabel": "Tech",
         "integrationsLabel": "Integraciones típicas",
         "ctaBack": "← Volver",
-        "ctaWantThis": "Quiero algo así",
-        "ctaAudit": "Pedir mini-diagnóstico"
+        "ctaWantThis": "Necesito esto",
+        "ctaAudit": "Diagnóstico gratuito"
       },
       "backofficeAutopilot": {
-        "eyebrow": "Product Demo",
+        "eyebrow": "Caso de Uso",
         "title": "Backoffice Autopilot",
-        "subtitle": "Workflows que hacen el trabajo sucio: pagos → factura → mail → reporte. Con logs y control.",
-        "problemLabel": "Problema",
-        "problem": "Tareas repetitivas consumen horas: copiar/pegar, armar reportes, perseguir estados y errores.",
-        "outcomeLabel": "Resultado",
-        "outcome": "Automations 24/7 con observabilidad: sabés qué corrió, qué falló y por qué.",
-        "whatItDoesLabel": "Qué hace",
+        "subtitle": "Workflows que eliminan tareas manuales. Ahorrá 10h semanales en copiar/pegar.",
+        "problemLabel": "El problema de negocio",
+        "problem": "Tu equipo gasta horas en tareas repetitivas: generar facturas, enviar mails, actualizar planillas. Errores humanos generan fricción operativa.",
+        "outcomeLabel": "ROI esperado",
+        "outcome": "Ahorro documentado de 10h semanales por persona. Reducción de errores manuales en 40%. Estabilidad operativa 24/7 sin intervención humana.",
+        "whatItDoesLabel": "Funcionalidades core",
         "bullets": [
-          "Workflows por evento (pago aprobado, pedido creado, stock bajo)",
-          "Logs + reintentos + alertas de fallos",
-          "Conectores típicos (pagos, sheets, mail, slack)",
-          "Panel de ejecuciones y estados para auditar"
+          "Triggers automáticos: pago confirmado → factura + email + actualización ERP",
+          "Logs detallados + reintentos inteligentes + alertas de fallo",
+          "Conectores preconfigurados: Stripe, Sheets, SendGrid, Slack, Webhook genéricos",
+          "Panel de auditoría: qué se ejecutó, cuándo, estado y logs"
         ],
         "stackLabel": "Stack & Integraciones",
         "techLabel": "Tech",
         "integrationsLabel": "Integraciones típicas",
         "ctaBack": "← Volver",
-        "ctaWantThis": "Quiero algo así",
-        "ctaAudit": "Pedir mini-diagnóstico"
+        "ctaWantThis": "Necesito esto",
+        "ctaAudit": "Diagnóstico gratuito"
       },
       "perfUxAudit": {
-        "eyebrow": "Product Demo",
+        "eyebrow": "Caso de Uso",
         "title": "Performance & UX Audit",
-        "subtitle": "Diagnóstico + quick wins medibles para que tu producto cargue rápido y se sienta premium.",
-        "problemLabel": "Problema",
-        "problem": "Tu sitio carga lento, se siente “pesado” y la experiencia no convierte como debería.",
-        "outcomeLabel": "Resultado",
-        "outcome": "Un plan accionable con prioridades, before/after y cambios concretos para subir performance y claridad.",
-        "whatItDoesLabel": "Qué hace",
+        "subtitle": "Tu sitio lento está costándote conversiones. Diagnóstico accionable con quick wins medibles.",
+        "problemLabel": "El problema de negocio",
+        "problem": "Carga lenta = abandono. Tu producto se siente 'pesado' y no sabes por dónde empezar. Cada segundo de demora te cuesta usuarios y plata.",
+        "outcomeLabel": "ROI esperado",
+        "outcome": "Mejora de 25% en tiempos de carga. Aumento del 15-20% en retención. Checklist priorizado para que tu equipo ejecute con claridad.",
+        "whatItDoesLabel": "Funcionalidades core",
         "bullets": [
-          "Reporte de Web Vitals (LCP, CLS, INP) + Lighthouse",
-          "Lista priorizada: quick wins → cambios estructurales",
-          "Before/After con métricas y recomendaciones específicas",
-          "Checklist de entrega + handoff para mantenerlo"
+          "Análisis técnico: Web Vitals (LCP, CLS, INP) + Lighthouse Score",
+          "Plan de acción priorizado: quick wins inmediatas vs. refactors estructurales",
+          "Before/After con métricas concretas y recomendaciones específicas",
+          "Documentación + handoff para que tu equipo mantenga el estándar"
         ],
         "stackLabel": "Stack & Integraciones",
         "techLabel": "Tech",
         "integrationsLabel": "Integraciones típicas",
         "ctaBack": "← Volver",
-        "ctaWantThis": "Quiero algo así",
-        "ctaAudit": "Pedir mini-diagnóstico"
+        "ctaWantThis": "Necesito esto",
+        "ctaAudit": "Diagnóstico gratuito"
       }
     },
     "weeklyBuilds": {
-      "title": "Build in Public",
-      "subtitle": "De la idea al mercado en semanas, no meses.",
+      "title": "Casos de Uso Reales",
+      "subtitle": "Problemas de negocio que el software resuelve mejor que el esfuerzo manual.",
       "items": [
         {
           "title": "Control Tower Dashboard",
-          "description": "Unificá ventas, ops y métricas en un panel con alertas y exportes.",
+          "description": "Panel unificado de KPIs, alertas y reportes. Para negocios que sienten que 'el software les queda chico'.",
           "tech": [
             "Next.js",
             "TypeScript",
@@ -188,7 +188,7 @@
         },
         {
           "title": "WhatsApp Follow-Up System",
-          "description": "Pipeline simple + recordatorios automáticos para no perder leads. Seguimiento claro, sin esfuerzo.",
+          "description": "Pipeline de ventas con seguimiento automático. Conversion rate 20% mayor sin esfuerzo adicional.",
           "tech": [
             "Next.js",
             "TS",
@@ -199,7 +199,7 @@
         },
         {
           "title": "Backoffice Autopilot",
-          "description": "Workflows que ejecutan tareas repetitivas: pagos → factura → email → reporte. Con logs y monitoreo.",
+          "description": "Workflows que ahorran 10h semanales. Estabilidad operativa 40% mayor.",
           "tech": [
             "Node",
             "Webhooks",
@@ -209,7 +209,7 @@
         },
         {
           "title": "Performance & UX Audit",
-          "description": "Diagnóstico + quick wins medibles para que tu producto cargue rápido y se sienta premium.",
+          "description": "Diagnóstico técnico que mejora carga 25% y retención 20%. ROI medible en semanas.",
           "tech": [
             "Lighthouse",
             "Web Vitals",
@@ -219,158 +219,158 @@
         }
       ],
       "cta": {
-        "miniAudit": "Pedir mini-diagnóstico"
+        "miniAudit": "Solicitar diagnóstico"
       }
     },
     "services": {
-      "title": "Cómo te ayudo",
-      "subtitle": "Soluciones de alto impacto, bajo 'bloat'.",
+      "title": "Soluciones",
+      "subtitle": "Impacto medible, sin bloat técnico.",
       "card1": {
-        "title": "MVP Sprint (0→1)",
-        "desc": "Prototipo funcional en 7–14 días para validar sin quemar meses.",
-        "deliverable": "MVP deployado + backlog",
-        "idealFor": "Para validar ideas rápido",
+        "title": "MVP Sprint (Validación 0→1)",
+        "desc": "Prototipo funcional en 7–14 días. Validá mercado sin quemar capital ni tiempo en features innecesarias.",
+        "deliverable": "MVP deployado + backlog priorizado",
+        "idealFor": "Validación rápida de producto",
         "includes": [
-          "Diseño UX/UI simple",
-          "Desarrollo Next.js",
-          "Base de datos + Auth",
-          "Analytics integrado"
+          "Diseño UX/UI funcional (no decorativo)",
+          "Stack moderno: Next.js + TypeScript",
+          "Auth + DB configurada",
+          "Analytics desde día 1"
         ],
         "timeline": "7–14 días"
       },
       "card2": {
-        "title": "Sistemas a Medida (Para Negocios)",
-        "desc": "Centralizá operaciones, ventas y métricas en un solo lugar. Menos caos, más decisiones claras.",
-        "deliverable": "WebApp, Dashboard o Panel Admin",
-        "idealFor": "Para negocios en crecimiento",
+        "title": "Sistemas Empresariales a Medida",
+        "desc": "Centralizá ops, ventas y métricas. Menos caos, más decisiones basadas en datos. Para negocios que superaron las planillas.",
+        "deliverable": "Dashboard operativo o Panel Admin completo",
+        "idealFor": "Negocios en crecimiento que sienten fricción operativa",
         "includes": [
-          "Dashboard de métricas",
-          "Gestión de usuarios y roles",
-          "Reportes automáticos",
-          "Integración con tu ERP/CRM"
+          "Panel de métricas en tiempo real",
+          "Gestión de usuarios, roles y permisos",
+          "Reportes automáticos y exportables",
+          "Integración con ERP/CRM existente"
         ],
         "timeline": "3–6 semanas"
       },
       "card3": {
-        "title": "Automatización de Procesos",
-        "desc": "Bots que trabajan por vos. Conecto tus herramientas para que el software haga el trabajo repetitivo.",
-        "deliverable": "Workflows 24/7 con monitoreo",
-        "idealFor": "Para equipos operativos",
+        "title": "Automatización de Workflows",
+        "desc": "Eliminá tareas manuales. Ahorrá 10h semanales por persona. Workflows que operan 24/7 con observabilidad completa.",
+        "deliverable": "Sistema de automación con monitoreo",
+        "idealFor": "Equipos que gastan horas en copiar/pegar",
         "includes": [
-          "Bots de WhatsApp/Slack",
-          "Conexión de APIs",
-          "Procesamiento de Docs AI",
-          "Alertas de errores"
+          "Bots de WhatsApp/Slack/Email",
+          "Conexión de APIs y servicios externos",
+          "Procesamiento inteligente de documentos (AI)",
+          "Alertas automáticas de errores + logs"
         ],
         "timeline": "5–10 días"
       },
       "cta": {
-        "primary": "Me interesa",
-        "miniAudit": "Pedir mini-diagnóstico"
+        "primary": "Solicitar propuesta",
+        "miniAudit": "Diagnóstico gratuito"
       }
     },
     "audience": {
-      "title": "¿Para quién es esto?",
+      "title": "¿Para quién trabajo?",
       "cols": {
         "startups": {
-          "title": "Startups & Equipos ágiles",
+          "title": "Startups & Equipos Técnicos",
           "items": [
-            "Necesitan validar rápido (0→1)",
-            "Buscan velocidad de ejecución",
-            "Quieren evitar la deuda técnica inicial"
+            "Necesitan validar rápido sin deuda técnica",
+            "Buscan estándares de Big Tech con velocidad de startup",
+            "Valoran el ROI técnico (performance, mantenibilidad)"
           ]
         },
         "business": {
-          "title": "Founders y dueños-operadores",
+          "title": "Founders & Dueños Operativos",
           "items": [
-            "Tu negocio creció pero tus sistemas no",
-            "Perdés tiempo en tareas repetitivas",
-            "Querés datos, no sensaciones"
+            "El negocio creció pero los sistemas no escalaron",
+            "Perdés 10h+ semanales en tareas manuales",
+            "Querés métricas claras, no 'sensación' de crecimiento"
           ]
         }
       }
     },
     "process": {
-      "title": "Cómo trabajamos",
-      "subtitle": "Un sistema predecible: sabés qué pasa y cuándo.",
+      "title": "Metodología",
+      "subtitle": "Proceso predecible. Entregables concretos. Sin sorpresas.",
       "steps": [
         {
-          "title": "Diagnóstico (15 min)",
-          "description": "Sin compromiso. Entiendo tu contexto y te digo si puedo ayudarte (y cómo)."
+          "title": "Diagnóstico gratuito (15 min)",
+          "description": "Sin compromiso. Entiendo tu contexto operativo y te digo si puedo generar ROI (y cómo medirlo)."
         },
         {
-          "title": "Propuesta fija",
-          "description": "Alcance cerrado, precio cerrado. Sabés exactamente qué vas a recibir."
+          "title": "Propuesta de alcance fijo",
+          "description": "Precio cerrado, entregables claros, timeline definido. Sabés exactamente qué vas a recibir y cuándo."
         },
         {
-          "title": "Sprint de construcción",
-          "description": "Ejecución rápida con feedback. No desaparezco un mes: iteramos juntos."
+          "title": "Sprint de ejecución",
+          "description": "Desarrollo iterativo con checkpoints semanales. No desaparezco: ejecuto con feedback continuo."
         },
         {
-          "title": "Entrega y handover",
-          "description": "Te doy las llaves: video, documentación y todo listo para operar."
+          "title": "Entrega + Handover documentado",
+          "description": "Código, documentación, video walkthrough y acceso completo. Listo para operar desde día 1."
         }
       ]
     },
     "faq": {
-      "title": "Preguntas que siempre me hacen",
+      "title": "Preguntas Frecuentes",
       "q1": {
-        "q": "¿Cuánto tardás?",
-        "a": "Depende. Una revisión de CV puede estar en 48 horas. Un sistema simple, una o dos semanas."
+        "q": "¿Cuál es el timeline típico?",
+        "a": "MVP: 7-14 días. Sistema empresarial: 3-6 semanas. Automatización: 5-10 días. Todo depende del alcance, pero siempre con propuesta de precio cerrado."
       },
       "q2": {
-        "q": "¿Laburás remoto?",
-        "a": "Sí, todo remoto. Nos manejamos por WhatsApp, meet o como te quede cómodo."
+        "q": "¿Trabajás de forma remota?",
+        "a": "100% remoto. Nos sincronizamos por WhatsApp, Meet o la herramienta que uses. Comunicación clara, sin fricción."
       },
       "q3": {
-        "q": "¿Y si no sé bien qué necesito?",
-        "a": "Escribime igual. Charlamos 10 minutos y vemos si puedo ayudarte o no."
+        "q": "¿Y si no tengo claro qué necesito técnicamente?",
+        "a": "Normal. En el diagnóstico gratuito traduzco tu problema de negocio a solución técnica. Te llevás un plan aunque no trabajemos juntos."
       },
       "q4": {
-        "q": "¿Tenés paquetes o es a medida?",
-        "a": "Generalmente a medida. Escucho tu problema y te propongo algo que tenga sentido para vos."
+        "q": "¿Ofrecés paquetes fijos o todo es custom?",
+        "a": "Mayormente custom. Cada negocio tiene fricción específica. Prefiero entender tu contexto y armar una solución a medida con ROI claro."
       },
       "q5": {
-        "q": "¿Soy solo yo o una agencia?",
-        "a": "Soy un estudio unipersonal. Hablás conmigo, diseño yo, codeo yo. Sin teléfono descompuesto. Para cosas muy grandes, escalo con mi red de confianza."
+        "q": "¿Sos freelancer o agencia?",
+        "a": "Estudio unipersonal. Hablás conmigo, diseño yo, codifico yo. Sin intermediarios ni 'teléfono descompuesto'. Para proyectos grandes, escalo con especialistas de confianza."
       },
       "q6": {
-        "q": "¿Puedo escribirte aunque no tenga experiencia?",
-        "a": "Sí, obvio. Yo arranqué de cero también. Lo importante es tener ganas de mejorar."
+        "q": "¿Qué pasa si mi negocio no es tech?",
+        "a": "Mejor. Si sentís que Excel y WhatsApp ya no alcanzan, es exactamente el tipo de fricción que resuelvo. No necesitás ser tech para beneficiarte de sistemas ordenados."
       },
       "cta": {
-        "miniAudit": "Pedir mini-diagnóstico"
+        "miniAudit": "Solicitar diagnóstico"
       }
     },
     "contact": {
-      "title": "Empezá con claridad.",
-      "subtitle": "El mini-diagnóstico es gratis y te llevás valor aunque no trabajemos juntos.",
-      "trust": "Hablás conmigo: Tomás Garbarino. Sin intermediarios.",
+      "title": "Empezá con un diagnóstico gratuito.",
+      "subtitle": "15 minutos, sin compromiso. Te vas con un plan accionable aunque no trabajemos juntos.",
+      "trust": "Contacto directo: Tomás Garbarino. Sin intermediarios, sin call centers.",
       "contextual": {
-        "prefix": "Te interesa:",
-        "question": "¿Cómo lo estás resolviendo hoy?"
+        "prefix": "Estás evaluando:",
+        "question": "¿Cómo lo estás manejando actualmente? (Excel, manual, herramienta específica)"
       },
       "ctaWhatsApp": "WhatsApp",
       "ctaEmail": "Email",
       "audit": {
-        "title": "Mini-diagnóstico gratis",
-        "description": "Contame qué estás intentando ordenar (y qué te está frenando).",
+        "title": "Diagnóstico Gratuito",
+        "description": "Contame qué fricción operativa estás sintiendo y te digo si puedo generar ROI.",
         "name": "Tu nombre",
-        "profile": "Link a tu perfil o web",
-        "goal": "¿Qué querés lograr?",
-        "message": "Contame un poco más",
-        "submit": "Enviar",
-        "success": "¡Llegó! Te respondo pronto.",
+        "profile": "Link a tu web o LinkedIn",
+        "goal": "¿Qué problema querés resolver?",
+        "message": "Contexto adicional (equipo, herramientas actuales, fricción específica)",
+        "submit": "Solicitar diagnóstico",
+        "success": "¡Recibido! Te respondo en 24–48h con un plan inicial.",
         "proof": {
           "time": "15 min, sin compromiso",
-          "value": "Te llevás un plan aunque no trabajemos",
+          "value": "Plan accionable aunque no trabajemos",
           "speed": "Respuesta en 24–48h"
         },
-        "fallback": "Si preferís, mandame un mail directo"
+        "fallback": "¿Preferís email directo? Escribime a contacto@criollolabs.com"
       },
       "documentation": {
-        "title": "Lo voy contando acá",
-        "link": "Seguime"
+        "title": "Build in Public",
+        "link": "Ver en qué estoy trabajando"
       }
     }
   },
