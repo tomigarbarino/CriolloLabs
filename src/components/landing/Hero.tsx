@@ -141,10 +141,10 @@ export function Hero() {
                             </div>
 
                             <div className="flex items-center gap-6">
-                                <CTAButton href="/projects" variant="primary" size="lg" icon={<ArrowRight size={20} />}>
+                                <CTAButton href="/es/empresas?utm_source=site&utm_medium=cta&utm_campaign=empresas&utm_content=hero" variant="primary" size="lg" icon={<ArrowRight size={20} />}>
                                     {t('ctaPrimary')}
                                 </CTAButton>
-                                <CTAButton href="https://calendly.com/tomasgarbarino-dev" variant="ghost" size="lg">
+                                <CTAButton href="/es/carrera?utm_source=site&utm_medium=cta&utm_campaign=carrera&utm_content=hero" variant="ghost" size="lg">
                                     {t('ctaSecondary')}
                                 </CTAButton>
                             </div>
@@ -225,8 +225,8 @@ export function Hero() {
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-3 mt-4 w-full px-8 justify-center">
-                        <CTAButton href="/projects" variant="primary">{t('ctaPrimary')}</CTAButton>
-                        <CTAButton href="https://calendly.com/tomasgarbarino-dev" variant="outline">{t('ctaSecondary')}</CTAButton>
+                        <CTAButton href="/es/empresas?utm_source=site&utm_medium=cta&utm_campaign=empresas&utm_content=hero-mobile" variant="primary">{t('ctaPrimary')}</CTAButton>
+                        <CTAButton href="/es/carrera?utm_source=site&utm_medium=cta&utm_campaign=carrera&utm_content=hero-mobile" variant="outline">{t('ctaSecondary')}</CTAButton>
                     </div>
                 </div>
 

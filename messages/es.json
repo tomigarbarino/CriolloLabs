@@ -34,14 +34,14 @@
           "cta": "Diagnóstico gratuito (15 min)"
         }
       },
-      "ctaPrimary": "Ver casos de uso",
-      "ctaSecondary": "Solicitar diagnóstico",
+      "ctaPrimary": "Soy Empresa",
+      "ctaSecondary": "Quiero Mejorar mi Perfil",
       "linkStory": "Mi experiencia"
     },
     "story": {
       "title": "Experiencia",
-      "subtitle": "De la resolución de problemas al diseño de sistemas.",
-      "intro": "Soy Tomás Garbarino. Criollo Labs es mi operación: producto, código y entrega end-to-end.",
+      "subtitle": "Experiencia en resolver problemas reales con sistemas que funcionan.",
+      "intro": "Somos Criollo Labs. Un equipo con experiencia en producto, código y entrega end-to-end.",
       "timeline": [
         {
           "year": "2016",
@@ -55,27 +55,27 @@
         },
         {
           "year": "2022",
-          "title": "Estándares de excelencia: Líder tecnológico de Cupertino",
-          "description": "Lección: La calidad no es negociable. Construí herramientas internas que ahorraron 10 horas semanales de trabajo manual a equipos globales. Los sistemas bien diseñados se pagan solos."
+          "title": "Estándares de excelencia",
+          "description": "Experiencia en equipos con estándares de calidad altos, construyendo herramientas internas para productos usados por miles de usuarios. Los sistemas bien diseñados reducen trabajo manual y mejoran la eficiencia."
         },
         {
           "year": "2023",
-          "title": "Ingeniería de producto compleja: Startup de IA (México)",
-          "description": "Lección: Performance = Retención. Reduje tiempos de carga 25% y aumenté la retención de usuarios 20%. El ROI técnico se traduce en ROI de negocio."
+          "title": "Ingeniería de producto compleja",
+          "description": "Experiencia optimizando performance en startups de alto crecimiento. Mejoras técnicas medibles se traducen en mejor experiencia de usuario y retención."
         },
         {
           "year": "2026",
           "title": "Independencia estratégica",
-          "description": "Lección: La seguridad viene de tu capacidad de resolver problemas reales, no de un título. Aproveché el layoff para convertir mi expertise en un servicio tangible."
+          "description": "La seguridad viene de la capacidad de resolver problemas reales. Convertimos experiencia global en servicios concretos y accesibles."
         },
         {
           "year": "Hoy",
-          "title": "Tech Ally: Criollo Labs",
-          "description": "Tu socio tecnológico. Tomo todo lo aprendido (Big Tech + Startup + SaaS) y lo convierto en sistemas que ordenan tu operación y escalan tu negocio."
+          "title": "Criollo Labs",
+          "description": "Tu socio tecnológico. Combinamos experiencia en productos globales, startups y SaaS para crear sistemas que ordenan tu operación y escalan tu negocio."
         }
       ],
-      "closingTitle": "Mi trayectoria es tu garantía.",
-      "closingDesc": "Sé cómo pasar del caos al sistema porque ya lo hice en contextos de máxima exigencia: desde Silicon Valley hasta startups en crecimiento exponencial.",
+      "closingTitle": "Nuestra experiencia es tu garantía.",
+      "closingDesc": "Sabemos cómo pasar del caos al sistema porque ya lo hicimos en contextos de máxima exigencia: desde productos globales hasta startups en crecimiento exponencial.",
       "ctaProjects": "Ver casos de uso",
       "ctaContact": "Solicitar diagnóstico",
       "cta": {
@@ -226,41 +226,41 @@
       "title": "Soluciones",
       "subtitle": "Impacto medible, sin bloat técnico.",
       "card1": {
-        "title": "MVP Sprint (Validación 0→1)",
-        "desc": "Prototipo funcional en 7–14 días. Validá mercado sin quemar capital ni tiempo en features innecesarias.",
-        "deliverable": "MVP deployado + backlog priorizado",
+        "title": "Primera Versión Usable",
+        "desc": "Prototipo funcional en 7–14 días. Validá tu idea sin quemar capital ni tiempo en funciones innecesarias.",
+        "deliverable": "Aplicación funcionando + plan de próximos pasos",
         "idealFor": "Validación rápida de producto",
         "includes": [
-          "Diseño UX/UI funcional (no decorativo)",
-          "Stack moderno: Next.js + TypeScript",
-          "Auth + DB configurada",
-          "Analytics desde día 1"
+          "Diseño funcional y fácil de usar",
+          "Tecnología probada, segura y rápida (no hace falta que sepas código)",
+          "Seguridad y almacenamiento de datos incluidos",
+          "Medición de resultados desde el inicio"
         ],
         "timeline": "7–14 días"
       },
       "card2": {
         "title": "Sistemas Empresariales a Medida",
-        "desc": "Centralizá ops, ventas y métricas. Menos caos, más decisiones basadas en datos. Para negocios que superaron las planillas.",
-        "deliverable": "Dashboard operativo o Panel Admin completo",
+        "desc": "Centralizá operaciones, ventas y métricas. Menos caos, más decisiones basadas en datos. Para negocios que superaron las planillas.",
+        "deliverable": "Tablero operativo o panel de administración completo",
         "idealFor": "Negocios en crecimiento que sienten fricción operativa",
         "includes": [
-          "Panel de métricas en tiempo real",
+          "Tablero de métricas en tiempo real",
           "Gestión de usuarios, roles y permisos",
           "Reportes automáticos y exportables",
-          "Integración con ERP/CRM existente"
+          "Integración con tus sistemas de gestión y clientes existentes"
         ],
         "timeline": "3–6 semanas"
       },
       "card3": {
-        "title": "Automatización de Workflows",
-        "desc": "Eliminá tareas manuales. Ahorrá 10h semanales por persona. Workflows que operan 24/7 con observabilidad completa.",
-        "deliverable": "Sistema de automación con monitoreo",
-        "idealFor": "Equipos que gastan horas en copiar/pegar",
+        "title": "Automatización de Tareas",
+        "desc": "Eliminá tareas manuales y repetitivas. Procesos que operan 24/7 con seguimiento completo de lo que pasa.",
+        "deliverable": "Sistema de automatización con monitoreo",
+        "idealFor": "Equipos que pierden horas en copiar/pegar y tareas repetitivas",
         "includes": [
-          "Bots de WhatsApp/Slack/Email",
-          "Conexión de APIs y servicios externos",
-          "Procesamiento inteligente de documentos (AI)",
-          "Alertas automáticas de errores + logs"
+          "Automatización vía WhatsApp/Slack/Email",
+          "Conexiones automáticas entre tus herramientas",
+          "Procesamiento inteligente de documentos",
+          "Alertas automáticas de errores y registro completo"
         ],
         "timeline": "5–10 días"
       },
@@ -345,7 +345,7 @@
     "contact": {
       "title": "Empezá con un diagnóstico gratuito.",
       "subtitle": "15 minutos, sin compromiso. Te vas con un plan accionable aunque no trabajemos juntos.",
-      "trust": "Contacto directo: Tomás Garbarino. Sin intermediarios, sin call centers.",
+      "trust": "Contacto directo con el equipo. Sin intermediarios, sin call centers.",
       "contextual": {
         "prefix": "Estás evaluando:",
         "question": "¿Cómo lo estás manejando actualmente? (Excel, manual, herramienta específica)"

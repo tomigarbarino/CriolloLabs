@@ -1,5 +1,6 @@
 import { LandingHeader } from '@/components/landing/LandingHeader'
 import { Hero } from '@/components/landing/Hero'
+import { WhatWeSolve } from '@/components/landing/WhatWeSolve'
 import { Story } from '@/components/landing/Story'
 import { WeeklyBuilds } from '@/components/landing/WeeklyBuilds'
 import { Services } from '@/components/landing/Services'
@@ -15,6 +16,7 @@ export default function Home() {
       <LandingHeader />
       <main className="flex flex-col min-h-screen">
         <Hero />
+        <WhatWeSolve />
         <Story />
         <WeeklyBuilds />
         <Services />
