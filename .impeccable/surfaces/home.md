@@ -19,3 +19,8 @@ Replaces homepage GIFs with native 3D geometry, GSAP ScrollTrigger and three DOM
 
 ## Scroll revision verification — 2026-11-05
 Production build, TypeScript and Vercel deployment passed. Desktop SVGRenderer was visually checked at the scattered, assembling and assembled phases; GSAP scroll changed all three messages. The skip link navigates to #soluciones. The cloud browser explicitly disables WebGL, so these captures validate the vector fallback, not GPU shading or frame rate. Mobile layout has source review and separate text/art rows; device visual validation remains pending. A final rightward art adjustment reserves space beside the first heading.
+
+## Supporting sections revision — 2026-11-05
+Services now draw their divider traces with scroll. The method connects four stages with a responsive track. Monthly support includes a native SVG cycle controlled by scroll. FAQs use brief opacity feedback and the closing headline reveals an underline. No added pinned sections, autoplay loops or external dependencies. Interactive entrances use opacity only to keep pointer targets stable.
+
+Build and TypeScript passed. Desktop production checks verified divider growth, method track progression from 0 to 1, monthly orbit transformation, native FAQ opening and its downstream layout refresh. Responsive source reviewed; mobile visual verification remains pending.

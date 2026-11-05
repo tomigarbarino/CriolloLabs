@@ -27,3 +27,5 @@
 @media(max-width:900px){.steps{grid-template-columns:1fr;grid-auto-rows:1fr;gap:30px;margin-top:40px}.steps article{padding-left:66px;min-height:100px}.steps .number{position:absolute;left:0;top:0;margin:0}.steps h3{padding-top:4px}.steps p{max-width:54ch}.process-track{top:20px;bottom:calc((100% - 90px)/4 - 20px);left:19px;right:auto;width:2px;height:auto}.improvement-cycle{width:200px}}
 @media(max-width:600px){.service-row h3{gap:14px}.service-copy{padding-left:30px}.monthly-copy{margin-top:20px}.improvement-cycle{width:180px}.contact-action{gap:16px}.contact-stroke{bottom:-5px}}
 @media(prefers-reduced-motion:reduce){.faq details[open] p{animation:none}.contact-action:hover span,.contact-action:focus-visible span{transform:none}}
+
+.monthly-copy p+p{margin-top:18px}

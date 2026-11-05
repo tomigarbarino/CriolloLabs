@@ -21,7 +21,7 @@ export default function SectionMotion({ children }: { children: ReactNode }) {
             const scope = root.current!
             scope.querySelectorAll<HTMLElement>('[data-enter]').forEach((el) => {
               gsap.from(el, {
-                y: 26,
+                y: el.matches('details, a, button') ? 0 : 26,
                 opacity: 0,
                 duration: 0.65,
                 ease: 'power2.out',
@@ -66,20 +66,18 @@ export default function SectionMotion({ children }: { children: ReactNode }) {
                   : { scaleY: 1, duration: 1, ease: 'none' },
                 0
               )
-              scope
-                .querySelectorAll('.steps .number')
-                .forEach((number, i) =>
-                  sequence.to(
-                    number,
-                    {
-                      backgroundColor: '#6631a0',
-                      color: '#ffffff',
-                      borderColor: '#6631a0',
-                      duration: 0.12,
-                    },
-                    i * 0.27
-                  )
+              scope.querySelectorAll('.steps .number').forEach((number, i) =>
+                sequence.to(
+                  number,
+                  {
+                    backgroundColor: '#6631a0',
+                    color: '#ffffff',
+                    borderColor: '#6631a0',
+                    duration: 0.12,
+                  },
+                  i * 0.27
                 )
+              )
             }
             const monthly = scope.querySelector('.monthly')
             if (monthly) {
@@ -130,12 +128,12 @@ export default function SectionMotion({ children }: { children: ReactNode }) {
               }
             }
             const onToggle = () => ScrollTrigger.refresh()
-          scope.addEventListener('toggle', onToggle, true)
-          scope.addEventListener('focusin', onFocus)
+            scope.addEventListener('toggle', onToggle, true)
+            scope.addEventListener('focusin', onFocus)
             return () => {
-            scope.removeEventListener('focusin', onFocus)
-            scope.removeEventListener('toggle', onToggle, true)
-          }
+              scope.removeEventListener('focusin', onFocus)
+              scope.removeEventListener('toggle', onToggle, true)
+            }
           },
           root.current
         )
