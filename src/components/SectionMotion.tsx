@@ -92,21 +92,7 @@ export default function SectionMotion({ children }: { children: ReactNode }) {
                   scrub: 0.7,
                 },
               })
-              gsap.fromTo(
-                scope.querySelector('.cycle-core'),
-                { scale: 0.85 },
-                {
-                  scale: 1.08,
-                  svgOrigin: '120 120',
-                  ease: 'none',
-                  scrollTrigger: {
-                    trigger: monthly,
-                    start: 'top 85%',
-                    end: 'bottom 25%',
-                    scrub: 0.6,
-                  },
-                }
-              )
+              // Keep the central mark at the SVG's native center; only the outer orbit moves.
             }
             const contact = scope.querySelector('.contact-section')
             if (contact)
