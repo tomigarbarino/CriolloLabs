@@ -6,25 +6,25 @@ const contact = 'https://www.facebook.com/61560108969186/'
 const problems = [
   [
     '01',
-    'Menos carga manual',
-    'Pedidos, documentos o reportes que hoy se vuelven a copiar. Conectamos herramientas y simplificamos el recorrido de la información.',
+    'Menos carga manual',
+    'Pedidos, documentos o reportes que hoy se vuelven a copiar. Conectamos herramientas y simplificamos el recorrido de la información.',
   ],
   [
     '02',
-    'Más control de la operación',
-    'Tareas y pendientes repartidos entre mensajes y planillas. Diseñamos una herramienta para saber qué falta, quién lo tiene y cómo avanza.',
+    'Más control de la operación',
+    'Tareas y pendientes repartidos entre mensajes y planillas. Diseñamos una herramienta para saber qué falta, quién lo tiene y cómo avanza.',
   ],
   [
     '03',
-    'Una experiencia más simple',
-    'Procesos digitales que complican al equipo o al cliente. Mejoramos el producto para que completar una tarea requiera menos pasos.',
+    'Una experiencia más simple',
+    'Procesos digitales que complican al equipo o al cliente. Mejoramos el producto para que completar una tarea requiera menos pasos.',
   ],
 ]
 const steps = [
-  ['Entender', 'Revisamos un proceso, sus usuarios y dónde se pierde tiempo.'],
-  ['Priorizar', 'Acordamos una mejora concreta, su alcance, precio y forma de medirla.'],
-  ['Implementar', 'Diseñamos, desarrollamos y validamos con las personas que lo usan.'],
-  ['Acompañar', 'Si el proceso lo necesita, seguimos con mantenimiento y mejoras mensuales.'],
+  ['Entender', 'Revisamos un proceso, sus usuarios y dónde se pierde tiempo.'],
+  ['Priorizar', 'Acordamos una mejora concreta, su alcance, precio y forma de medirla.'],
+  ['Implementar', 'Diseñamos, desarrollamos y validamos con las personas que lo usan.'],
+  ['Acompañar', 'Si el proceso lo necesita, seguimos con mantenimiento y mejoras mensuales.'],
 ]
 
 export default function Home() {
@@ -53,9 +53,9 @@ export default function Home() {
         <SectionMotion>
           <section id="soluciones" className="section wrap">
             <h2 data-enter>
-              El trabajo que hoy te frena
+              El trabajo que hoy te frena
               <br />
-              puede funcionar mejor.
+              puede funcionar mejor.
             </h2>
             <div className="cards">
               {problems.map(([n, title, description]) => (
@@ -73,15 +73,15 @@ export default function Home() {
             </div>
             <p className="section-note">
               Herramientas internas, integraciones, mejoras de producto y automatización con IA
-              cuando aporta valor.
+              cuando aporta valor.
             </p>
           </section>
           <section id="proceso" className="section process">
             <div className="wrap">
               <h2 data-enter>
-                Una mejora a la vez.
+                Una mejora a la vez.
                 <br />
-                Con criterio de producto.
+                Con criterio de producto.
               </h2>
               <div className="steps">
                 <div className="process-track" aria-hidden="true">
@@ -100,9 +100,9 @@ export default function Home() {
           <section className="section wrap monthly">
             <div>
               <h2 data-enter>
-                La mejora continúa
+                La mejora continúa
                 <br />
-                cuando el negocio cambia.
+                cuando el negocio cambia.
               </h2>
               <figure className="improvement-cycle">
                 <svg viewBox="0 0 240 240" role="presentation" aria-hidden="true">
@@ -131,52 +131,52 @@ export default function Home() {
                     <circle cx="120" cy="120" r="42" fill="none" stroke="#c8bdd3" />
                   </g>
                 </svg>
-                <figcaption>Observar · Priorizar · Mejorar</figcaption>
+                <figcaption>Observar · Priorizar · Mejorar</figcaption>
               </figure>
             </div>
             <div data-enter className="monthly-copy">
-              <p className="intro">Un servicio mensual con trabajo concreto.</p>
+              <p className="intro">Un servicio mensual con trabajo concreto.</p>
               <p>
                 Revisión del proceso, mantenimiento de lo implementado y mejoras priorizadas.
-                Acordamos capacidad, canales y tiempos de atención antes de empezar.
+                Acordamos capacidad, canales y tiempos de atención antes de empezar.
               </p>
               <p>
                 La implementación se cotiza por separado. El acompañamiento mensual se propone
-                cuando existe una necesidad recurrente.
+                cuando existe una necesidad recurrente.
               </p>
             </div>
           </section>
           <section className="section wrap">
             <h2 data-enter>
-              No necesitás saber de tecnología.
+              No necesitás saber de tecnología.
               <br />
-              Necesitás conocer tu operación.
+              Necesitás conocer tu operación.
             </h2>
             <p data-enter className="body-copy">
               Podemos revisar procesos de distribución y comercio, servicios de instalación y
               mantenimiento, administración de alquileres, estudios contables o educación. La
-              primera conversación sirve para entender si podemos ayudarte.
+              primera conversación sirve para entender si podemos ayudarte.
             </p>
             <div className="faq">
               <details data-enter>
-                <summary>¿Qué incluye la charla gratuita?</summary>
+                <summary>¿Qué incluye la charla gratuita?</summary>
                 <p>
                   Veinte minutos para entender un proceso y evaluar una oportunidad concreta. No
-                  incluye una auditoría completa ni una implementación gratuita.
+                  incluye una auditoría completa ni una implementación gratuita.
                 </p>
               </details>
               <details data-enter>
-                <summary>¿Cuánto cuesta y cuánto tarda?</summary>
+                <summary>¿Cuánto cuesta y cuánto tarda?</summary>
                 <p>
                   Depende del alcance, las herramientas existentes y los accesos necesarios. Después
-                  de revisar el proceso, presentamos una propuesta con entregables, precio y plazos.
+                  de revisar el proceso, presentamos una propuesta con entregables, precio y plazos.
                 </p>
               </details>
               <details data-enter>
-                <summary>¿Hace falta reemplazar todos nuestros sistemas?</summary>
+                <summary>¿Hace falta reemplazar todos nuestros sistemas?</summary>
                 <p>
                   Primero evaluamos lo que ya usás. A veces alcanza con conectar herramientas o
-                  simplificar un paso; otras veces conviene desarrollar una solución a medida.
+                  simplificar un paso; otras veces conviene desarrollar una solución a medida.
                 </p>
               </details>
             </div>
@@ -184,16 +184,16 @@ export default function Home() {
           <section id="contacto" className="contact-section">
             <div className="wrap contact-inner">
               <h2 data-enter>
-                ¿Qué tarea te gustaría
+                ¿Qué tarea te gustaría
                 <br />
                 <span className="contact-emphasis">
-                  dejar de repetir?
+                  dejar de repetir?
                   <span className="contact-stroke" aria-hidden="true" />
                 </span>
               </h2>
               <p data-enter>
-                Contanos qué hace tu empresa, qué proceso te consume tiempo y qué herramientas usás
-                hoy.
+                Contanos qué hace tu empresa, qué proceso te consume tiempo y qué herramientas
+                usás hoy.
               </p>
               <a
                 data-enter
@@ -202,12 +202,12 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Conversemos sobre tu proceso<span aria-hidden="true">↗</span>
+                Conversemos sobre tu proceso<span aria-hidden="true">↗</span>
               </a>
               <p className="micro">
-                Por ahora, esta conversación se abre en Messenger.
+                Por ahora, esta conversación se abre en Messenger.
                 <br />
-                Charla inicial sin cargo · Implementación y servicio mensual por separado.
+                Charla inicial sin cargo · Implementación y servicio mensual por separado.
               </p>
             </div>
           </section>
@@ -218,7 +218,7 @@ export default function Home() {
           <Image src="/logo.svg" alt="" width={30} height={30} />
           <span>Criollo Labs</span>
         </a>
-        <p>Software para mejorar tu operación.</p>
+        <p>Software para mejorar tu operación.</p>
         <a href={contact} target="_blank" rel="noopener noreferrer">
           Facebook
         </a>

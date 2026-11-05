@@ -4,19 +4,19 @@ import { useEffect, useRef, useState } from 'react'
 
 const chapters = [
   {
-    title: 'Tu negocio creció.',
-    accent: 'Que tus procesos lo acompañen.',
-    text: 'Software a medida para conectar lo que hoy resolvés entre planillas, mensajes y tareas manuales.',
+    title: 'Tu negocio creció.',
+    accent: 'Que tus procesos lo acompañen.',
+    text: 'Software a medida para conectar lo que hoy resolvés entre planillas, mensajes y tareas manuales.',
   },
   {
-    title: 'Las piezas ya están.',
-    accent: 'Hagamos que trabajen juntas.',
-    text: 'Entendemos tu operación y conectamos herramientas, personas e información en un proceso claro.',
+    title: 'Las piezas ya están.',
+    accent: 'Hagamos que trabajen juntas.',
+    text: 'Entendemos tu operación y conectamos herramientas, personas e información en un proceso claro.',
   },
   {
-    title: 'Menos fricción.',
-    accent: 'Más espacio para avanzar.',
-    text: 'Diseñamos, implementamos y acompañamos la mejora. Con alcance acordado y resultados que podamos medir.',
+    title: 'Menos fricción.',
+    accent: 'Más espacio para avanzar.',
+    text: 'Diseñamos, implementamos y acompañamos la mejora. Con alcance acordado y resultados que podamos medir.',
   },
 ]
 
@@ -181,7 +181,7 @@ export default function ScrollExperience() {
             0.88
           )
           signal.visible = p > 0.55
-          sculpture.scale.setScalar(innerWidth < 700 ? 1 : Math.min(.76, innerWidth / 1775))
+          sculpture.scale.setScalar(innerWidth < 700 ? 1 : Math.min(0.76, innerWidth / 1775))
           camera.position.set(0, 0, innerWidth < 700 ? 11 : 13 - p * 1.1)
           camera.lookAt(0, 0, 0)
           renderer.render(scene, camera)

@@ -29,3 +29,7 @@
 @media(prefers-reduced-motion:reduce){.faq details[open] p{animation:none}.contact-action:hover span,.contact-action:focus-visible span{transform:none}}
 
 .monthly-copy p+p{margin-top:18px}
+
+/* Keep paragraph endings readable; NBSP pairs also cover browsers without pretty wrapping. */
+main p,main figcaption,.footer p{ text-wrap:pretty; }
+h3,.faq summary{ text-wrap:balance; }
