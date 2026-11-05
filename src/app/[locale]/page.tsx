@@ -2,7 +2,8 @@ import Image from 'next/image'
 import ScrollExperience from '@/components/ScrollExperience'
 import SectionMotion from '@/components/SectionMotion'
 
-const contact = 'https://www.facebook.com/61560108969186/'
+const contact =
+  'https://wa.me/5491121925947?text=Hola%20Criollo%2C%20quiero%20revisar%20un%20proceso%20de%20mi%20empresa.'
 const problems = [
   [
     '01',
@@ -202,10 +203,10 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Conversemos sobre tu proceso<span aria-hidden="true">↗</span>
+                Contanos por WhatsApp<span aria-hidden="true">↗</span>
               </a>
               <p className="micro">
-                Por ahora, esta conversación se abre en Messenger.
+                Se abre WhatsApp con un mensaje listo para completar.
                 <br />
                 Charla inicial sin cargo · Implementación y servicio mensual por separado.
               </p>
@@ -220,7 +221,7 @@ export default function Home() {
         </a>
         <p>Software para mejorar tu operación.</p>
         <a href={contact} target="_blank" rel="noopener noreferrer">
-          Facebook
+          WhatsApp
         </a>
         <small>© {new Date().getFullYear()} Criollo Labs</small>
       </footer>
