@@ -25,22 +25,37 @@ export default function ScrollExperience(){
     const [T,{gsap},{ScrollTrigger}]=await Promise.all([import('three'),import('gsap'),import('gsap/ScrollTrigger')])
     if(disposed||current!==generation||preference.matches)return
     gsap.registerPlugin(ScrollTrigger)
-    const renderer=new T.WebGLRenderer({alpha:true,antialias:true,powerPreference:'low-power'})
-    renderer.setPixelRatio(Math.min(devicePixelRatio,innerWidth<700?1.2:1.6))
-    renderer.setClearColor(0,0);renderer.outputColorSpace=T.SRGBColorSpace
-    renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.5
+    const releases:Array<()=>void>=[]
+    cleanup=()=>{releases.splice(0).reverse().forEach(release=>release())}
+    let renderer:InstanceType<typeof T.WebGLRenderer>|import('three/examples/jsm/renderers/SVGRenderer.js').SVGRenderer
+    let webgl=true
+    try{
+     const gpu=new T.WebGLRenderer({alpha:true,antialias:true,powerPreference:'low-power'})
+     gpu.setPixelRatio(Math.min(devicePixelRatio,innerWidth<700?1.2:1.6))
+     gpu.setClearColor(0,0);gpu.toneMapping=T.ACESFilmicToneMapping;gpu.toneMappingExposure=1.2
+     renderer=gpu;releases.push(()=>gpu.dispose())
+    }catch{
+     const {SVGRenderer}=await import('three/examples/jsm/renderers/SVGRenderer.js')
+     if(disposed||current!==generation||preference.matches)return
+     renderer=new SVGRenderer();renderer.setQuality('high');renderer.setClearColor(new T.Color(0xe8dcf5),1);webgl=false
+    }
+    renderer.outputColorSpace=T.SRGBColorSpace
+    host.dataset.renderer=webgl?'webgl':'svg'
+    releases.push(()=>{renderer.domElement.remove();delete host.dataset.renderer})
     host.appendChild(renderer.domElement)
     const scene=new T.Scene(),camera=new T.PerspectiveCamera(36,1,.1,60),sculpture=new T.Group()
     scene.add(sculpture)
-    scene.add(new T.HemisphereLight(0xffffff,0x635179,3))
-    const key=new T.DirectionalLight(0xfff3e9,6);key.position.set(-3,6,8);scene.add(key)
-    const edge=new T.DirectionalLight(0xbfa0ff,4);edge.position.set(6,-2,2);scene.add(edge)
+    scene.add(webgl?new T.HemisphereLight(0xffffff,0x635179,2):new T.AmbientLight(0xffffff,.7))
+    const key=new T.DirectionalLight(0xfff3e9,webgl?4:1.4);key.position.set(-3,6,8);scene.add(key)
+    const edge=new T.DirectionalLight(0xbfa0ff,webgl?3:.7);edge.position.set(6,-2,2);scene.add(edge)
     const materials=[new T.MeshStandardMaterial({color:0x7040b8,roughness:.25,metalness:.28}),new T.MeshStandardMaterial({color:0xe9dff4,roughness:.3,metalness:.12}),new T.MeshStandardMaterial({color:0xed793f,roughness:.28,metalness:.18})]
+    releases.push(()=>materials.forEach(m=>m.dispose()))
     const objects:Array<{mesh:InstanceType<typeof T.Mesh>;scatter:InstanceType<typeof T.Vector3>;spin:InstanceType<typeof T.Euler>;target:InstanceType<typeof T.Vector3>;angle:number}>=[]
     const count=18
     for(let layer=0;layer<2;layer++)for(let i=0;i<count;i++){
      const angle=i/count*Math.PI*2
-     const geometry=new T.TorusGeometry(2.05,.32,12,16,Math.PI*2/count*.92)
+     const geometry=new T.TorusGeometry(2.05,.32,webgl?12:6,webgl?16:4,Math.PI*2/count*.92)
+     releases.push(()=>geometry.dispose())
      const mesh=new T.Mesh(geometry,materials[i===3||i===12?2:layer])
      const target=new T.Vector3(0,0,layer===0?-.44:.44)
      const spread=1.2+Math.sin(i*4.7+layer)*.6
@@ -49,7 +64,8 @@ export default function ScrollExperience(){
      sculpture.add(mesh);objects.push({mesh,scatter,spin,target,angle})
     }
     // A single copper signal crosses the assembled system with scroll, never on an idle loop.
-    const signal=new T.Mesh(new T.SphereGeometry(.19,20,12),materials[2]);sculpture.add(signal)
+    const signal=new T.Mesh(new T.SphereGeometry(.19,webgl?20:8,webgl?12:6),materials[2]);sculpture.add(signal)
+    releases.push(()=>signal.geometry.dispose())
     const state={progress:0}
     let visible=true,lastPhase=-1
     const render=()=>{
@@ -67,26 +83,27 @@ export default function ScrollExperience(){
      const next=p<.32?0:p<.72?1:2
      if(lastPhase!==next){lastPhase=next;setPhase(next)}
     }
-    const resize=()=>{const w=host.clientWidth,h=host.clientHeight;if(!w||!h)return;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();render()}
-    const observer=new ResizeObserver(resize);observer.observe(host)
-    const visibility=new IntersectionObserver(([e])=>{visible=e.isIntersecting;if(visible)render()});visibility.observe(root)
-    const onVisibility=()=>{if(!document.hidden)render()};document.addEventListener('visibilitychange',onVisibility)
-    const onLost=(e:Event)=>{e.preventDefault();cleanup();cleanup=()=>{};setStill(true);setReady(false)};renderer.domElement.addEventListener('webglcontextlost',onLost)
+    const resize=()=>{const w=host.clientWidth,h=host.clientHeight;if(!w||!h)return;if(renderer instanceof T.WebGLRenderer)renderer.setSize(w,h,false);else renderer.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix();render()}
+    const observer=new ResizeObserver(resize);observer.observe(host);releases.push(()=>observer.disconnect())
+    const visibility=new IntersectionObserver(([e])=>{visible=e.isIntersecting;if(visible)render()});visibility.observe(root);releases.push(()=>visibility.disconnect())
+    const onVisibility=()=>{if(!document.hidden)render()};document.addEventListener('visibilitychange',onVisibility);releases.push(()=>document.removeEventListener('visibilitychange',onVisibility))
+    const onLost=(e:Event)=>{e.preventDefault();cleanup();cleanup=()=>{};setStill(true);setReady(false)};renderer.domElement.addEventListener('webglcontextlost',onLost);releases.push(()=>renderer.domElement.removeEventListener('webglcontextlost',onLost))
     const tween=gsap.to(state,{progress:1,ease:'none',onUpdate:render,scrollTrigger:{trigger:root,start:'top top',end:'bottom bottom',scrub:.65,invalidateOnRefresh:true}})
+    releases.push(()=>{tween.scrollTrigger?.kill();tween.kill()})
     resize();setReady(true)
-    cleanup=()=>{tween.scrollTrigger?.kill();tween.kill();observer.disconnect();visibility.disconnect();document.removeEventListener('visibilitychange',onVisibility);renderer.domElement.removeEventListener('webglcontextlost',onLost);objects.forEach(o=>o.mesh.geometry.dispose());signal.geometry.dispose();materials.forEach(m=>m.dispose());renderer.dispose();renderer.domElement.remove()}
    }catch{if(!disposed&&current===generation){cleanup();setStill(true);setReady(false)}}
   }
   void setup();preference.addEventListener('change',setup)
   return()=>{disposed=true;preference.removeEventListener('change',setup);cleanup()}
  },[])
  return <section ref={section} className={`scroll-experience ${still?'experience-static':''}`} aria-label="De procesos dispersos a una operación conectada">
+  <h1 className="sr-only">Software a medida para mejorar tu operación — Criollo Labs</h1>
   <div className="experience-stage">
    <div className="experience-art" ref={mount} aria-hidden="true"/>
    {!ready&&<div className="experience-fallback" aria-hidden="true"><span/><span/><span/></div>}
    <div className="experience-copy wrap">
     {chapters.map((c,i)=><div key={c.title} className={`experience-chapter ${phase===i?'chapter-active':''}`} aria-hidden={!still&&phase!==i}>
-     {i===0?<h1>{c.title}<br/><span>{c.accent}</span></h1>:<h2>{c.title}<br/><span>{c.accent}</span></h2>}
+     <h2>{c.title}<br/><span>{c.accent}</span></h2>
      <p>{c.text}</p>
     </div>)}
     <div className="experience-actions"><a className="button" href="#contacto">Revisemos tu proceso</a><a className="text-link" href="#soluciones">Ver soluciones</a></div>
