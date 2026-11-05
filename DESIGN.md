@@ -168,3 +168,6 @@ The opening section uses native sticky positioning without intercepting scrollin
 The mobile layout places text above the scene and shortens the sequence. Mobile visual validation remains pending; responsive source rules are not a substitute for device testing. Current contact opens Facebook with visible disclosure. Discovery remains a separate draft until storage and server configuration are ready.
 
 Validation: production build and TypeScript pass. Desktop SVG fallback confirmed through all three scroll chapters and the skip action. WebGL appearance and mobile/device performance remain unverified because the review browser has WebGL disabled and no viewport emulation.
+
+## Supporting section motion
+The opening sculpture remains the focal moment. Supporting sections use native DOM and SVG with the existing GSAP dependency: service divider traces follow scroll, the four-step method connects numbered stages, and a monthly improvement orbit expresses recurrence. FAQ answers and the contact action have brief state feedback. There is no new pinned section or idle animation loop. All text renders visibly before enhancement; reduced motion leaves the static layout. Media-query changes revert GSAP styles, focus reveals pending content, and FAQ toggles refresh scroll measurements.
