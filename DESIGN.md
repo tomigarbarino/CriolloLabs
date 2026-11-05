@@ -160,5 +160,9 @@ Secondary hero navigation is a 14px underlined link with a 5px underline offset.
 - Don't treat the illustrative workflow as verified customer evidence.
 - Don't claim mobile visual validation from responsive source rules alone.
 
-## Motion update
-Two exact process diagrams in public/motion, produced by scripts/create-motion.py. PNG is default; GIF plays on explicit action with pause and a 4.32 second stop, stops offscreen or when document hides. Logo greeting runs once and is disabled for reduced motion. User requested interactive discovery; not activated until private storage and server configuration are available. Current contact label is Conversemos sobre tu proceso, temporarily opens Facebook with visible disclosure.
+## Scroll-driven experience
+The homepage uses a native Three.js sculpture, controlled by GSAP ScrollTrigger. Two segmented rings move from scattered pieces into a connected form over three narrative chapters. Camera position, object assembly and a copper signal respond to scroll; no GIF is rendered on the homepage. Geometry is generated in code and does not represent a measured customer result.
+
+The opening section uses native sticky positioning without intercepting scrolling. Text stays in a separate DOM layer. Primary actions remain available and a skip link exits the sequence. Three.js is dynamically imported; pixel density is capped and rendering pauses when the scene is offscreen or the document is hidden. Reduced-motion preferences and WebGL failure show static content. Geometries, materials, observers and scroll triggers are disposed on unmount.
+
+The mobile layout places text above the scene and shortens the sequence. Mobile visual validation remains pending; responsive source rules are not a substitute for device testing. Current contact opens Facebook with visible disclosure. Discovery remains a separate draft until storage and server configuration are ready.
