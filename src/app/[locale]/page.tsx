@@ -1,9 +1,8 @@
 import Image from 'next/image'
 import ScrollExperience from '@/components/ScrollExperience'
 import SectionMotion from '@/components/SectionMotion'
+import ContactLink from '@/components/ContactLink'
 
-const contact =
-  'https://wa.me/5491121925947?text=Hola%20Criollo%2C%20quiero%20revisar%20un%20proceso%20de%20mi%20empresa.'
 const problems = [
   [
     '01',
@@ -75,6 +74,9 @@ export default function Home() {
             <p className="section-note">
               Herramientas internas, integraciones, mejoras de producto y automatización con IA
               cuando aporta valor.
+            </p>
+            <p className="section-note">
+              <a href="/es/demo">Probá un ejemplo interactivo <span aria-hidden="true">↗</span></a>
             </p>
           </section>
           <section id="proceso" className="section process">
@@ -196,15 +198,9 @@ export default function Home() {
                 Contanos qué hace tu empresa, qué proceso te consume tiempo y qué herramientas
                 usás hoy.
               </p>
-              <a
-                data-enter
-                className="button contact-action"
-                href={contact}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <ContactLink data-enter className="button contact-action" source="web-contacto">
                 Contanos por WhatsApp<span aria-hidden="true">↗</span>
-              </a>
+              </ContactLink>
               <p className="micro">
                 Se abre WhatsApp con un mensaje listo para completar.
                 <br />
@@ -220,9 +216,7 @@ export default function Home() {
           <span>Criollo Labs</span>
         </a>
         <p>Software para mejorar tu operación.</p>
-        <a href={contact} target="_blank" rel="noopener noreferrer">
-          WhatsApp
-        </a>
+        <ContactLink source="web-footer">WhatsApp</ContactLink>
         <small>© {new Date().getFullYear()} Criollo Labs</small>
       </footer>
     </>
