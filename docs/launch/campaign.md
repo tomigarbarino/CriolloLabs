@@ -1,6 +1,6 @@
 # Campaña exploratoria — Criollo Labs
 
-Estado: **borrador de Meta creado, apagado y no publicado**, según el estado informado para esta revisión. Cuenta en ARS y tarjeta lista. Esto no acredita entrega, cobros ni resultados. Esta tanda tiene seis archivos generados y comprobados; la carga de los activos y la vista previa en Meta siguen pendientes. **USD 200 es el presupuesto propuesto, no gasto autorizado por este documento.**
+Estado: **borrador de Meta creado, apagado y no publicado**, según el estado informado para esta revisión. Cuenta en ARS. Esto no acredita entrega, cobros ni resultados. Esta tanda tiene seis archivos generados y comprobados; la carga de los activos y la vista previa en Meta siguen pendientes. **USD 200 es el presupuesto propuesto, no gasto autorizado por este documento.**
 
 ## Oferta y pregunta comercial
 
@@ -140,9 +140,21 @@ Guardar datos identificables, chats y oportunidades sólo en el registro privado
 
 Los límites de gasto son barreras operativas, no un cálculo de tamaño muestral. No hay predicciones de conversiones, costos ni retorno. La reserva puede quedar íntegra; pausar es una decisión válida cuando la evidencia no justifica seguir.
 
+## Estado verificado del borrador · 5/11/2026
+
+El despliegue de copy `8ff1066e32346e97f5f74346e0d6eea693b426ae` terminó exitosamente. En el sitio público, QA de escritorio, se probaron los enlaces A/B: el destino de WhatsApp apunta al número correcto, conserva las UTMs y utiliza el mensaje nuevo. Esto verifica el enlace preparado, no un mensaje enviado ni una consulta recibida. Se guardó una captura del contacto público. El intento de cambiar el viewport no se aplicó y siguió en 1920 px; esta revisión no acredita QA móvil del último copy.
+
+En Meta se guardó el anuncio **«Criollo | A tiempo | v2»**, con `utm_campaign=automatizacion_pyme_v2` y `utm_content=a_tiempo`. La atribución guardada es por concepto, sin precisión de formato. El intento de cargar A devolvió **«Error al subir»** aunque el archivo figura en la biblioteca; no hay imagen final aplicada ni B creado. No dar por terminada la carga por ver el archivo en la biblioteca. La documentación de la extensión de Chrome exige habilitar **Allow access to file URLs** para acceder a archivos locales; esa intervención del usuario es el bloqueo humano actual de preparación. El usuario debe abrir manualmente la administración de extensiones de Chrome y habilitar ese permiso en los detalles de la extensión de control del navegador; la política del navegador bloqueó abrir chrome://extensions desde la herramienta, sin alternativa aplicada. Después corresponde reintentar, aplicar el activo y comprobar la vista previa real.
+
+El conjunto fue apagado explícitamente (`false`) y la campaña continúa sin publicar. El público visible es Argentina amplio, 18+, Advantage+; no es una segmentación final ni una identificación verificada de dueños o distribuidores.
+
+Se guardó un presupuesto **total de pauta de ARS 50.000, no diario**, con calendario del **6/11/2026 a las 19:13 al 13/11/2026 a las 19:13, GMT-3**: siete días. Es configuración de borrador, no autorización de gasto. Revisar fechas al activar si la preparación demora.
+
+Referencia de planificación observada por coordinación: [BNA, Personas](https://bna.com.ar/Personas), dólar venta **ARS 1.570**, 5/11/2026 a las 15:01. Con esa referencia, USD 50 equivalen a ARS 78.500; ARS 50.000 de pauta equivalen aproximadamente a USD 31,85 y dejan ARS 28.500 como margen planificado para cargos dentro de esa referencia de USD 50. El margen no acredita cobertura de impuestos, cotización de cobro ni cargos reales. No hay autorización de costo total ni de gasto por estar guardado este borrador.
+
 ## Pendientes concretos
 
-Los seis archivos de esta tanda están generados y comprobados. Con distribuidores B2B documentado como hipótesis primaria, queda preparar el registro de consultas entrantes; cargar las cuatro adaptaciones A/B en el borrador y revisar sus vistas previas en Meta; verificar destino y atribución; acordar topes ARS y calendario; revisar el borrador en comité y obtener autorización de activación. C/D permanecen como reserva en feed. La carga de activos, la vista previa en Meta, la publicación y la ejecución no se dan por completadas.
+Los seis archivos de esta tanda están generados y comprobados. Con distribuidores B2B documentado como hipótesis primaria y el recorrido público A/B probado, queda habilitar el permiso de archivos de la extensión; aplicar los activos A/B, crear B y revisar las vistas previas por ubicación; confirmar público y capacidad de respuesta; preparar el registro de consultas entrantes y revisar calendario y límite de costo total. Pedir aprobación de lanzamiento/gasto únicamente cuando activos y previews estén listos; no solicitarla ahora por adelantado. C/D permanecen como reserva en feed. La carga de activos, la vista previa en Meta, la publicación y la ejecución no se dan por completadas.
 
 
 ## Entrega al equipo de marketing · 5/11/2026
