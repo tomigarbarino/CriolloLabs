@@ -69,9 +69,11 @@ El CTA de plataforma debe llevar al sitio. Verificar la opción disponible en la
 
 ## Mercado de la primera ronda
 
-Las dos hipótesis comerciales siguen abiertas: **distribuidores B2B** e **instalación/mantenimiento**. El registro actual es **0/5 conversaciones reales en cada una**; no hay un segmento ganador. Aplicar el plan de [validación](validation.md) y elegir un mercado con evidencia sobre el problema, comprador, adopción y próximo paso. Si falta evidencia para elegir, continuar las conversaciones antes de activar.
+Las dos hipótesis comerciales siguen abiertas: **distribuidores B2B** e **instalación/mantenimiento**. El registro actual es **0/5 conversaciones reales en cada una**; no hay un segmento ganador. **La primera pauta se prepara con distribuidores B2B como hipótesis primaria**, por coherencia con el piloto de seguimiento de pedidos y el ejemplo de carga desde mensajes. Es una decisión operativa reversible, no demanda validada.
 
-La primera ronda paga usa **un solo mercado y dos conceptos**. No repartir USD 200 entre los dos mercados y los cuatro conceptos; las adaptaciones de formato no son experimentos independientes. Si se prueba después el segundo mercado o se incorpora C/D, abrir otra versión y registrar la razón. La comparación entre rondas no es una comparación controlada entre sectores.
+La pauta exploratoria puede obtener las consultas con las que se aplica el [plan de validación](validation.md). Cinco conversaciones por sector es un método propuesto de aprendizaje, no un requisito de diez llamadas antes de gastar ni un compromiso de agenda del usuario. Esta decisión permite avanzar marketing y aprender de casos reales sin imponer entrevistas previas. El lenguaje amplio de A/B admite autoselección; registrar sector, rol y ejemplo concreto al calificar cada consulta. Si la segmentación disponible en Meta no permite identificar fiablemente distribuidores o dueños, documentar la limitación y no presentar esa audiencia como verificada.
+
+La primera ronda paga usa **una hipótesis primaria de mercado y dos conceptos**. La pertenencia real al sector se confirma en las consultas; una entrega amplia no es una prueba controlada entre mercados. No repartir USD 200 entre los dos mercados y los cuatro conceptos; las adaptaciones de formato no son experimentos independientes. Si se prueba después el segundo mercado o se incorpora C/D, abrir otra versión y registrar la razón. La comparación entre rondas no es una comparación controlada entre sectores.
 
 ## Variantes y UTMs
 
@@ -129,7 +131,7 @@ Guardar datos identificables, chats y oportunidades sólo en el registro privado
 
 ## Revisión del comité y reglas de pausa
 
-1. **Antes de activar:** revisión de mensaje y oferta, legibilidad de las cuatro adaptaciones A/B, elección documentada de mercado, enlaces y atribución, destino, WhatsApp, identidad de cuenta, disponibilidad para responder, fechas y límites ARS. El borrador apagado permite preparar esta revisión sin publicar.
+1. **Antes de activar:** revisión de mensaje y oferta, legibilidad de las cuatro adaptaciones A/B, hipótesis primaria documentada, enlaces y atribución, destino y WhatsApp funcionando, identidad de cuenta, capacidad para responder, fechas y presupuesto acotado aprobado en ARS. Las conversaciones previas no son un gate de activación. El borrador apagado permite preparar esta revisión sin publicar.
 2. **Pausa inmediata por fallo:** destino o contacto roto, pieza equivocada, promesa no respaldada, problema de privacidad, cobro o gasto fuera del límite acordado, o imposibilidad de atender. Registrar fecha, impacto y corrección; verificar antes de reanudar.
 3. **Revisión al gastar el primer tramo de USD 50 equivalente o terminar su ventana:** mostrar gasto y entrega por concepto, consultas y calificación, errores, datos faltantes y ejemplos anonimizados de necesidades. Si hay cero consultas, revisar entrega, mensaje, sitio y contacto antes de concluir que no hay demanda. Si hay mensajes pero ninguno califica, revisar pertinencia de audiencia, oferta y razones de descarte. No liberar el segundo tramo sólo para «darle más tiempo».
 4. **Segundo tramo:** aprobar una razón concreta para continuar o corregir. Si existe una falla que impide aprender, pausar y resolverla. Mantener la versión al continuar sin cambios; versionar si cambia la hipótesis. Al completar USD 100 equivalentes acumulados, detener y revisar antes de tocar la reserva.
@@ -140,7 +142,7 @@ Los límites de gasto son barreras operativas, no un cálculo de tamaño muestra
 
 ## Pendientes concretos
 
-Los seis archivos de esta tanda están generados y comprobados. Queda completar las conversaciones de los dos mercados y documentar la elección; cargar las cuatro adaptaciones A/B en el borrador y revisar sus vistas previas en Meta; verificar destino y atribución; acordar topes ARS y calendario; revisar el borrador en comité y obtener autorización de activación. C/D permanecen como reserva en feed. La carga de activos, la vista previa en Meta, la publicación y la ejecución no se dan por completadas.
+Los seis archivos de esta tanda están generados y comprobados. Con distribuidores B2B documentado como hipótesis primaria, queda preparar el registro de consultas entrantes; cargar las cuatro adaptaciones A/B en el borrador y revisar sus vistas previas en Meta; verificar destino y atribución; acordar topes ARS y calendario; revisar el borrador en comité y obtener autorización de activación. C/D permanecen como reserva en feed. La carga de activos, la vista previa en Meta, la publicación y la ejecución no se dan por completadas.
 
 
 ## Entrega al equipo de marketing · 5/11/2026

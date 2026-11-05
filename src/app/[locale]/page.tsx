@@ -204,7 +204,8 @@ export default function Home() {
               <p className="micro">
                 Se abre WhatsApp con un mensaje listo para completar.
                 <br />
-                Charla inicial sin cargo · Implementación y servicio mensual por separado.
+                Charla de 20 minutos sin cargo. La implementación se cotiza aparte; el acompañamiento
+                mensual se propone si hace falta.
               </p>
             </div>
           </section>

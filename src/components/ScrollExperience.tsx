@@ -4,9 +4,9 @@ import { useEffect, useRef, useState } from 'react'
 
 const chapters = [
   {
-    title: 'Tu negocio creció.',
-    accent: 'Que tus procesos lo acompañen.',
-    text: 'Software a medida para conectar lo que hoy resolvés entre planillas, mensajes y tareas manuales.',
+    title: 'Menos tareas repetidas.',
+    accent: 'Más tiempo para tu negocio.',
+    text: 'Creamos software a medida para automatizar tareas como pasar pedidos a una planilla, confirmar turnos o armar reportes.',
   },
   {
     title: 'Las piezas ya están.',
