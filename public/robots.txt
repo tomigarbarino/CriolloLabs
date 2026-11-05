@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://criolloabs.com/sitemap.xml
+Disallow: /api/
+Sitemap: https://criollo-labs.vercel.app/es/sitemap.xml
