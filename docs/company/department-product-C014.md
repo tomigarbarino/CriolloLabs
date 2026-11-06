@@ -1,6 +1,6 @@
 # Producto C014 — WEB01
 
-> WEB02 en curso: versión inglesa de esta misma experiencia autorizada por el fundador. Ver sección WEB02 al final; WEB01 se conserva como entrega histórica.
+> WEB02 ENTREGADO: versión inglesa de esta misma experiencia publicada y verificada. Ver sección WEB02 al final; WEB01 se conserva como entrega histórica.
 
 6/11/2026, Buenos Aires. Responsable: Ingeniería y Producto. [Ticket y aceptación](landing-presupuestos-ticket.md).
 
@@ -57,6 +57,10 @@ Lock WEB01 liberado. Chief puede usar la versión española desde ahora en conve
 
 **QA local:** build/types/lint aprobados; ruta inglesa 2.43kB y primera carga JS95kB (no medición de Core Web Vitals). Ocho pruebas de contacto/atribución y cinco HTTP de idioma/metadatos/rutas/redirects/404/sitemap/robots aprobadas. Navegador sobre `next start`, sin HMR: cuatro pasos ES/EN y reinicio, Enter, foco final, FAQ; cero errores de consola observados. 1280px escritorio y390/320px móviles, sin desplazamiento horizontal; botones demo44px o más. Reduced-motion emulado: media query true, animación none. Dos variantes A/B conservadas EN→ES→EN→hrefMessenger, token ajeno excluido. Fallback POST vacío a API conserva503 deliberado y destino comercial. Evidencia privada `operations/landing-english-20261106`. Ajuste final: logo inglés vuelve al contenido mediante ancla para conservar query.
 
-**Publicación:** pendiente de build final del ajuste de navegación y comprobación pública. Conector Vercel devuelve403 para el equipo; CLI existente comprobó proyecto/equipo correctos sin crear acceso, token o cuenta.
+**Publicación verificada — ENTREGADO:** [versión inglesa utilizable](https://criollo-labs.vercel.app/en/quote-follow-up), código [5e7d2ee](https://github.com/tomigarbarino/CriolloLabs/commit/5e7d2ee) en master. Deployment `dpl_C7uEMWnzmyydXV3B41fAYzfLqG9f`, target production, `READY`, alias estable comprobado. Build final/types/lint y13pruebas locales aprobadas. Repetidas cinco pruebas HTTP contra producción: inglés/español200, `lang`/canonical/hreflang correctos, /en→ruta inglesa, español/redirects/404 y sitemap/robots sin regresión observada.
+
+Navegador público: /en con UTMs abrió inglés, cuatro pasos hasta trabajo coordinado, reset, cero errores de consola observados; cambio EN→ES→EN con A/B conservado hasta refMessenger y token ajeno excluido. Móvil público inspeccionado y guardado; escritorio1280 y320/390/reduced-motion/Enter/foco verificados en build local. Click real del CTA abrió Messenger con página/ref correctos; apareció login. No se inició sesión ni se envió un mensaje, no recepción/conversión acreditadas. La pantalla externa de Meta observada estaba en español; su idioma depende del proveedor/sesión, no de los textos de la landing. No afirmar Core Web Vitals o mejora comercial medidos.
+
+Conector Vercel devolvió403 para el equipo; CLI existente comprobó proyecto/equipo correctos y publicó, sin crear acceso, token o cuenta. Lock WEB02 liberado tras entrega al Chief. No cambió el alcance comercial ni se distribuyó material a prospectos por esta tarea.
 
 **Handoff comercial preparado para Chief:** compartir con prospectos UK pertinentes que pidan un ejemplo o describan presupuestos sin seguimiento. Texto inglés de apoyo: “Here’s an illustrative example of how an enquiry, a quote and the job handover could stay connected. Where does follow-up tend to get lost in your process?” No enviarlo por esta tarea ni alterar los hilos ya iniciados. Mantener enfoque reply-first acordado; no atribuir visitas, respuestas o conversiones sin fuente.

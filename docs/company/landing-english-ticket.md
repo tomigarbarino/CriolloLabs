@@ -1,6 +1,6 @@
 # WEB02 — misma experiencia en inglés británico
 
-6/11/2026. Autorización directa del fundador: verificar, publicar y coordinar con Chief para prospección UK. Estado: EN CURSO. Lock único de release web comunicado a Chief; raíz concurrente preservada. Rama `codex/quote-follow-up-en`, base07b7ae1.
+6/11/2026. Autorización directa del fundador: verificar, publicar y coordinar con Chief para prospección UK. **Estado: ENTREGADO.** [URL inglesa](https://criollo-labs.vercel.app/en/quote-follow-up), código5e7d2ee en master, production READY y recorrido público verificados. [Reporte y límites](department-product-C014.md#web02--versión-inglesa-para-prospección-británica). Lock único de release web coordinado con Chief; raíz concurrente preservada. Rama `codex/quote-follow-up-en`, base07b7ae1.
 
 ## Alcance y propuesta
 
