@@ -2,6 +2,8 @@
 
 > WEB02 ENTREGADO: versión inglesa de esta misma experiencia publicada y verificada. Ver sección WEB02 al final; WEB01 se conserva como entrega histórica.
 
+> WEB03: [medición UK y disparador de mejora acordados con Chief](landing-uk-measurement-WEB03.md). Investigación READONLY terminada; aplicación sin cambios hasta feedback/defecto real. Sales conserva fuente comercial, sin otro CRM/servicio/scheduler.
+
 6/11/2026, Buenos Aires. Responsable: Ingeniería y Producto. [Ticket y aceptación](landing-presupuestos-ticket.md).
 
 ## Control de integración
