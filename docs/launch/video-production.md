@@ -31,10 +31,10 @@ No eliminar silenciosamente el registro ni presentarlo como versión vigente. Un
 | Recurso | Procedencia | Estado al corte |
 | --- | --- | --- |
 | Remotion adaptado | [Documentación oficial de AI skills](https://www.remotion.dev/docs/ai/skills); upstream informado a2824c67f8b4585c294a8101db9f9f0ad3c643f8 | **Instalación verificada**: remotion-best-practices, nombre visible [Remotion Video Studio](https://chatgpt.com/skills?skill_id=6aed1ae223388191b860838d79717f55). Bundle oficial adaptado de 61 archivos, sin mapas ni metadatos duplicados. Son instrucciones; no acredita runtime Remotion instalado. |
-| marketing-video-director | Guía propia solicitada para dirección, demostración, movimiento y revisión de anuncios | Creada y validadores aprobados; incluye scripts/check_storyboard.py y referencias Criollo/fuentes/ejemplo de 18 s. Cinco casos de borde PASS. Evaluación independiente en proceso y **guardado pendiente**; no declarar instalación persistente todavía. |
+| marketing-video-director | Guía propia solicitada para dirección, demostración, movimiento y revisión de anuncios | **Instalación y ruta remota verificadas**: [Marketing Video Director](https://chatgpt.com/skills?skill_id=6aed1bb09b908191a382a9aa20e8dc87). Validadores, cinco casos de borde y evaluación independiente PASS. Incluye scripts/check_storyboard.py y referencias Criollo/fuentes/ejemplo de 18 s. |
 | Marketingskills video v2.4.0 | Material revisado por coordinación | Referencia de principios; no instalar el paquete completo por defecto ni afirmar que se instaló. |
 
-No se produjo un video nuevo ni se alcanzó 100/100. La adopción de estas guías no cambia por sí misma el estado de Meta ni resuelve el puntaje. El agente de documentación registra resultados que reciba; no instala recursos ni opera Meta desde este rol.
+Ambas instalaciones están verificadas. Son instrucciones/workflow y un comprobador; **no se instaló runtime Remotion ni se produjo un video/render nuevo**. Meta sigue en 93; no se alcanzó 100/100. La evaluación independiente validó un storyboard JSON de 18 s sin errores/advertencias y respetó Meta primero, cero gasto y no publicación. La guía incorpora escenas, movimiento por objeto, ejemplos ilustrativos, QA en teléfono/reproducción completa, ffprobe y atribución; su checklist no acredita esas verificaciones en un video todavía no producido. La adopción de estas guías no cambia por sí misma el estado de Meta ni resuelve el puntaje. El agente de documentación registra resultados que reciba; no instala recursos ni opera Meta desde este rol.
 
 ## Criterios para la próxima propuesta
 
@@ -56,7 +56,7 @@ La nueva producción no queda aprobada por cumplir un checklist: el usuario rech
 ## Secuencia de continuación
 
 1. Confirmar alcance de la recomendación de mezcla imagen/video en Meta y la vía nativa que realmente esté disponible.
-2. Registrar guardado y evaluación final de marketing-video-director cuando coordinación los confirme; la instalación de Remotion ya está verificada.
+2. Usar las dos guías ya instaladas para preparar un resultado revisable dentro del alcance autorizado; comprobar las dependencias de producción antes de prometer un render.
 3. Preparar una propuesta concreta de proceso, escenas y movimiento, respetando que el MP4 anterior fue descartado.
 4. Revisar la propuesta y el resultado visual antes de aplicarlo a un borrador.
 5. Tras cualquier aplicación, repetir QA completo y comprobar el score real; si sigue 93 o la tarjeta comprende otros conjuntos, documentarlo.
