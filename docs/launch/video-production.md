@@ -17,6 +17,7 @@ El score observado en Meta es **93**. La recomendación restante ofrece **+7 por
 | Edit media | No se encontró Turn Into Video | No se observó esa opción en esa pantalla/cuenta; no demuestra que Meta carezca de ella en todos los casos. |
 | Edición por grupo | Opciones Cambiar, Recortar, texto y sticker | No se encontró allí una conversión aplicable a video. |
 | MP4 externo anterior | URL import sin confirmación; transferencia quedó «Subiendo el video» | No hubo confirmación final de selección/asignación. Camino descartado por decisión creativa posterior del usuario. |
+| Previews nativos en contenido A | Meta mostró previews de 3.375 s (476×848) y 3.041 s (356×634) | Vistos dentro del editor, pero DownloadMedia falló por timeout; no descargados ni creados como anuncio independiente. Score sigue en 93. |
 
 No intentar eludir políticas del navegador ni afirmar capacidades de Meta no observadas. Si cambia la configuración de ubicaciones, revisar de nuevo asignaciones: ya hubo un reseteo de medios al activar recomendaciones.
 
@@ -34,7 +35,11 @@ No eliminar silenciosamente el registro ni presentarlo como versión vigente. Un
 | marketing-video-director | Guía propia solicitada para dirección, demostración, movimiento y revisión de anuncios | **Instalación y ruta remota verificadas**: [Marketing Video Director](https://chatgpt.com/skills?skill_id=6aed1bb09b908191a382a9aa20e8dc87). Validadores, cinco casos de borde y evaluación independiente PASS. Incluye scripts/check_storyboard.py y referencias Criollo/fuentes/ejemplo de 18 s. |
 | Marketingskills video v2.4.0 | Material revisado por coordinación | Referencia de principios; no instalar el paquete completo por defecto ni afirmar que se instaló. |
 
-Ambas instalaciones están verificadas. Son instrucciones/workflow y un comprobador; **no se instaló runtime Remotion ni se produjo un video/render nuevo**. Meta sigue en 93; no se alcanzó 100/100. La evaluación independiente validó un storyboard JSON de 18 s sin errores/advertencias y respetó Meta primero, cero gasto y no publicación. La guía incorpora escenas, movimiento por objeto, ejemplos ilustrativos, QA en teléfono/reproducción completa, ffprobe y atribución; su checklist no acredita esas verificaciones en un video todavía no producido. La adopción de estas guías no cambia por sí misma el estado de Meta ni resuelve el puntaje. El agente de documentación registra resultados que reciba; no instala recursos ni opera Meta desde este rol.
+Ambas instalaciones son instrucciones/workflow y un comprobador, no runtime de Remotion. El prototipo alternativo se compiló y renderizó después de corregir README/fuente; Chromium 153 se extrajo temporalmente con brotli y un preload de `Node os.networkInterfaces` se limitó a loopback. No se cambió la red real ni se hicieron compras. Se generaron `criollo-vertical.mp4` (1080×1920) y `criollo-feed.mp4` (1080×1350), ambos H.264, 30 fps, 540 frames y 18.000 s; ffprobe verificó sus propiedades. El código y lockfile, sin `node_modules`, están en `Criollo-motion-v3-source.zip`. Los tres archivos se guardaron para revisión y no se aplicaron a Meta.
+
+La revisión visual cubrió frames 135, 270 y 450 del vertical, hoja de contacto de 36 frames cada 0,5 s y frame 450 del feed. El frame 270 comunica el recorrido mensaje→fila y marca UI/datos como ejemplo; el 450 muestra legible «Charla de 20 min sin cargo · implementación aparte». La jerarquía y contraste fueron buenos en los fotogramas observados; no se vieron claims cuantificados. No se vio la película completa en reproducción real ni un preview dentro de Meta, por lo que no se aprueba la pieza final. No se alcanzó 100/100: Meta sigue en 93, +7 por mezcla de formatos, con recomendación que refiere a cuatro conjuntos.
+
+En el contenido A, la superficie de destino mostró sugerencias de información del sitio como Onitsuka Tiger, Catalogue, Saucony, Necklaces y Rings, más otras. No se aplicaron; la configuración de contenido marcaba 0/3 y estaba desactivada. Queda pendiente comprobar origen/cache antes de activar cualquier sugerencia; no se trataron como información web actual confirmada. La animación nativa está ON, pero no satisface por sí sola la recomendación de mezcla. Campaña/padres siguen OFF, sin publicación ni gasto.
 
 ## Criterios para la próxima propuesta
 
@@ -55,11 +60,9 @@ La nueva producción no queda aprobada por cumplir un checklist: el usuario rech
 
 ## Secuencia de continuación
 
-1. Confirmar alcance de la recomendación de mezcla imagen/video en Meta y la vía nativa que realmente esté disponible.
-2. Usar las dos guías ya instaladas para preparar un resultado revisable dentro del alcance autorizado; comprobar las dependencias de producción antes de prometer un render.
-3. Preparar una propuesta concreta de proceso, escenas y movimiento, respetando que el MP4 anterior fue descartado.
-4. Revisar la propuesta y el resultado visual antes de aplicarlo a un borrador.
-5. Tras cualquier aplicación, repetir QA completo y comprobar el score real; si sigue 93 o la tarjeta comprende otros conjuntos, documentarlo.
-6. Sólo con calidad requerida, activos y QA completos, presentar la decisión concreta de gasto/condiciones. Mantener borradores y padres OFF hasta autorización.
+1. Verificar el origen/cache de las sugerencias de información del sitio antes de activar contenido; confirmar el alcance de +7 en los cuatro conjuntos.
+2. Completar QA audiovisual de los dos MP4 y revisar un preview real en Meta antes de cualquier aplicación.
+3. No activar la campaña ni los padres; el usuario exige 100/100 y el score observado sigue 93.
+4. Después de calidad requerida y QA, presentar la decisión concreta de gasto/condiciones. El presupuesto ARS 50.000 lifetime, 6–13/11/2026, no cambió; revisar fechas antes de cualquier activación.
 
 Este documento no promete ejecución futura ni seguimiento fuera de una sesión activa.
