@@ -14,6 +14,11 @@ Esta actualización prevalece sobre las referencias históricas posteriores al v
 - Campaña y conjunto permanecían OFF en la última verificación; esta sesión no publicó anuncios ni activó gasto. Presupuesto sin cambios: **ARS 50.000 total lifetime**, del 6 al 13/11/2026.
 - Pendientes: comprobar guardado y previews por ubicación, adaptar horizontal/cuadrado, actualizar UTM de V (aún v_ejemplos), revisar recomendaciones pertinentes y volver a medir el score. Las sugerencias ajenas de productos del sitio siguen sin aplicarse.
 
+
+## Corte final de formatos — 6/11/2026
+
+Se guardaron los MP4 cuadrado 1080×1080 y horizontal 1920×1080, junto con fuente y lockfile reproducibles, en [251f169](https://github.com/tomigarbarino/CriolloLabs/commit/251f169c198663ed89cd9598dda1534d1dd90b61). Ambos: H.264, 30 fps, 18 s. Coordinación revisó fotogramas de ambos y corrigió el ancho de texto del producto en cuadrado antes del render final. Los nuevos archivos están en GitHub; las URLs del sitio respondieron 404 en la última comprobación, por lo que el despliegue permanece pendiente. No fueron cargados a Meta. El bloqueo de guardado del anuncio y último score 93/100 siguen vigentes.
+
 ## Registro del corte anterior (histórico)
 
 Corte: 6 de noviembre de 2026. Responsable de documentación: agente de documentación, a partir de verificaciones enviadas por coordinación y del ticket [#6](https://github.com/tomigarbarino/CriolloLabs/issues/6). Contexto general en [work-log.md](work-log.md).

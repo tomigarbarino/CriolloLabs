@@ -1,5 +1,16 @@
 # Criollo Labs · motion prototype
 
+## Current status — 2026-11-06
+
+Four compositions are available: CriolloVertical (1080×1920), CriolloFeed (1080×1350), CriolloSquare (1080×1080), and CriolloLandscape (1920×1080). All render 540 frames at 30 fps (18 seconds). The user approved continuing with this v3 concept. Vertical/feed uploaded successfully to Meta's media library, but the ad wizard has not been saved. The vertical completed technical browser playback without error. Square/landscape passed sampled visual review and technical validation; their site deployment remains unverified (last HTTP response 404). Meta score last observed: 93/100. No ads published or spending enabled.
+
+```sh
+npx remotion render src/index.tsx CriolloSquare out/criollo-square.mp4
+npx remotion render src/index.tsx CriolloLandscape out/criollo-landscape.mp4
+```
+
+For authoritative campaign status, see [work log](../../docs/launch/work-log.md). The following prototype notes describe the earlier cut.
+
 Editable Remotion composition in `src/Video.tsx` with 9:16 (`CriolloVertical`) and 4:5 (`CriolloFeed`) registrations. Runtime dependencies are pinned to Remotion 4.0.541. All copy, field highlights, data flights, status chip, and CTA use deterministic frame-based animations.
 
 ## Timeline
