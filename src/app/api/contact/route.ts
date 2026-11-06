@@ -5,7 +5,7 @@ export async function POST(request: Request) {
   return NextResponse.json(
     {
       success: false,
-      message: 'El formulario no está habilitado. Contactanos por WhatsApp.',
+      message: 'El formulario no está habilitado. Contactanos por Messenger.',
       contactUrl: getContactUrl({
         source: 'web-formulario',
         searchParams: new URL(request.url).searchParams,

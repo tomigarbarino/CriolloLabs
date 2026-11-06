@@ -199,10 +199,10 @@ export default function Home() {
                 usás hoy.
               </p>
               <ContactLink data-enter className="button contact-action" source="web-contacto">
-                Contanos por WhatsApp<span aria-hidden="true">↗</span>
+                Contanos por Messenger<span aria-hidden="true">↗</span>
               </ContactLink>
               <p className="micro">
-                Se abre WhatsApp con un mensaje listo para completar.
+                Se abre el chat con Criollo Labs en Messenger. Puede pedirte iniciar sesión en Facebook.
                 <br />
                 Charla de 20 minutos sin cargo. La implementación se cotiza aparte; el acompañamiento
                 mensual se propone si hace falta.
@@ -217,7 +217,7 @@ export default function Home() {
           <span>Criollo Labs</span>
         </a>
         <p>Software para mejorar tu operación.</p>
-        <ContactLink source="web-footer">WhatsApp</ContactLink>
+        <ContactLink source="web-footer">Messenger</ContactLink>
         <small>© {new Date().getFullYear()} Criollo Labs</small>
       </footer>
     </>

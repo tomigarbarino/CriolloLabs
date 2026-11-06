@@ -1,4 +1,4 @@
-export const WHATSAPP_PHONE = '5491121925947'
+export const MESSENGER_PAGE_ID = '320363084498026'
 export const CONTACT_MESSAGE =
   'Hola Criollo, quiero consultar por una tarea que repetimos en mi empresa y coordinar la charla gratuita de 20 minutos.'
 
@@ -10,7 +10,7 @@ const attributionKeys = [
   'utm_term',
 ] as const
 
-// Attribution is readable message text, never executable markup or stored tracking.
+// A referral is not proof that a message was sent or its source was received.
 function cleanAttribution(value: string) {
   return value
     .slice(0, 240)
@@ -27,7 +27,6 @@ type ContactOptions = {
 }
 
 export function getContactUrl({
-  message = CONTACT_MESSAGE,
   source,
   searchParams = '',
 }: ContactOptions = {}) {
@@ -42,6 +41,7 @@ export function getContactUrl({
     if (value) attribution.push(`${key}: ${value}`)
   }
 
-  const text = attribution.length ? `${message}\n\n${attribution.join('\n')}` : message
-  return `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(text)}`
+  const destination = new URL(`https://m.me/${MESSENGER_PAGE_ID}`)
+  if (attribution.length) destination.searchParams.set('ref', attribution.join('; ').slice(0, 500))
+  return destination.toString()
 }
