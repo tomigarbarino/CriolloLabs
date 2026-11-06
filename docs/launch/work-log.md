@@ -46,10 +46,10 @@ El commit documental 6241cac02adefeeffda5036d8b48f6fca979f521 quedó obsoleto po
 
 | Responsable durante la sesión | Próxima acción | Terminado cuando |
 | --- | --- | --- |
-| Coordinación / operación Meta | Comprobar alcance de la tarjeta +7 y encontrar una vía nativa disponible sin reactivar el video descartado | Existe un video aplicable, o queda documentada una limitación concreta del flujo observado; no una conclusión universal. |
-| Dirección de video | Preparar un concepto centrado en un proceso concreto y una demostración legible | Brief, escenas y movimiento explican una operación, con aprobación de calidad; no sólo placas animadas. |
-| Coordinación de skills | Conservar los localizadores verificados y aplicar el workflow sólo dentro del alcance autorizado | Instalación y evaluación ya confirmadas; no confundir instrucciones/comprobador con runtime de render ni video nuevo. |
-| QA | Revisar medios, variantes IA, asignaciones, identidades, texto, enlaces y previews tras la configuración definitiva | Evidencia de revisión actual, sin reciclar QA anterior. |
+| Coordinación / operación Meta | Verificar origen/cache de sugerencias de sitio y alcance de la tarjeta +7 en cuatro conjuntos | Sugerencias ajenas aclaradas antes de activar; recomendación y score comprobados sin reactivar el video descartado. |
+| Dirección de video | Completar QA audiovisual del prototipo de pedidos | Reproducción completa y lectura en placements revisadas; aprobación creativa explícita sigue pendiente. |
+| Coordinación de skills | Conservar los localizadores verificados y la fuente del prototipo | Instalación verificada; no confundir instrucciones/workflow con runtime Remotion. Los archivos de video no se aplicaron a Meta. |
+| QA | Revisar reproducción completa y preview real en Meta antes de cualquier aplicación | Evidencia audiovisual y preview actual; score Meta verificado después de cambios. |
 | Agente de documentación | Registrar novedades y enlazar documentos en #6; en la próxima revisión autorizada, reconciliar campaign.md, operating-charter.md y cuerpos históricos de tickets con este corte | Registro durable enlazado y, cuando se amplíe el alcance, textos históricos reconciliados sin perder trazabilidad. Esos otros archivos no se modificaron en esta entrega. |
 | Usuario / coordinación | Resolver aprobación final de gasto y condiciones cuando exista un resultado revisable | Alcance autorizado, importe total, calendario y capacidad de responder explícitos. El puntaje 100 no sustituye esa decisión. |
 
