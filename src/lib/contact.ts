@@ -26,10 +26,18 @@ type ContactOptions = {
   searchParams?: string | URLSearchParams
 }
 
-export function getContactUrl({
-  source,
-  searchParams = '',
-}: ContactOptions = {}) {
+export function getDemoUrl(searchParams: string | URLSearchParams = '') {
+  const params = new URLSearchParams(searchParams)
+  const attribution = new URLSearchParams()
+  for (const key of attributionKeys) {
+    const value = cleanAttribution(params.get(key) ?? '')
+    if (value) attribution.set(key, value)
+  }
+  const query = attribution.toString()
+  return query ? `/es/demo?${query}` : '/es/demo'
+}
+
+export function getContactUrl({ source, searchParams = '' }: ContactOptions = {}) {
   const params = new URLSearchParams(searchParams)
   const attribution: string[] = []
   const cleanSource = source ? cleanAttribution(source) : ''

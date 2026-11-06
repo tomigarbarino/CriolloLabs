@@ -2,12 +2,14 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import ProcessDemo from '@/components/ProcessDemo'
 import ContactLink from '@/components/ContactLink'
+import BudgetLink from '@/components/BudgetLink'
 import styles from '@/styles/demo.module.css'
 
 export const metadata: Metadata = {
   title: 'Probá un proceso más simple | Criollo Labs',
   description:
     'Una demo interactiva con datos ficticios: recibí una solicitud, asignala, registrá un avance y cerrala.',
+  alternates: { canonical: 'https://criollo-labs.vercel.app/es/demo' },
 }
 
 export default function DemoPage({ params }: { params: { locale: string } }) {
@@ -43,6 +45,11 @@ export default function DemoPage({ params }: { params: { locale: string } }) {
           </p>
         </div>
         <ProcessDemo />
+        <p className={styles.back}>
+          <BudgetLink>
+            ¿Tu problema empieza al cotizar? Mirá el ejemplo de seguimiento de presupuestos →
+          </BudgetLink>
+        </p>
         <section className={styles.contact} aria-labelledby="demo-contacto">
           <div>
             <p className={styles.eyebrow}>Ahora, tu operación</p>
@@ -52,9 +59,14 @@ export default function DemoPage({ params }: { params: { locale: string } }) {
               forma de trabajar.
             </p>
           </div>
-          <ContactLink className="button" source="demo-proceso">
-            Hablemos de tu proceso <span aria-hidden="true">↗</span>
-          </ContactLink>
+          <div>
+            <ContactLink className="button" source="demo-proceso">
+              Hablemos de tu proceso <span aria-hidden="true">↗</span>
+            </ContactLink>
+            <p className="micro">
+              Se abre Messenger de Criollo Labs. Puede pedirte iniciar sesión en Facebook.
+            </p>
+          </div>
         </section>
       </main>
       <footer className={`wrap ${styles.footer}`}>

@@ -2,6 +2,13 @@ import Image from 'next/image'
 import ScrollExperience from '@/components/ScrollExperience'
 import SectionMotion from '@/components/SectionMotion'
 import ContactLink from '@/components/ContactLink'
+import DemoLink from '@/components/DemoLink'
+import BudgetLink from '@/components/BudgetLink'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  alternates: { canonical: 'https://criollo-labs.vercel.app/es' },
+}
 
 const problems = [
   [
@@ -42,6 +49,7 @@ export default function Home() {
         </a>
         <nav aria-label="Principal">
           <a href="#soluciones">Soluciones</a>
+          <BudgetLink>Presupuestos</BudgetLink>
           <a href="#proceso">Cómo trabajamos</a>
           <a className="button small" href="#contacto">
             Hablemos
@@ -72,11 +80,19 @@ export default function Home() {
               ))}
             </div>
             <p className="section-note">
+              <BudgetLink>
+                ¿Quién sigue los presupuestos que enviás? Probá el recorrido de consulta a trabajo
+                coordinado <span aria-hidden="true">↗</span>
+              </BudgetLink>
+            </p>
+            <p className="section-note">
               Herramientas internas, integraciones, mejoras de producto y automatización con IA
               cuando aporta valor.
             </p>
             <p className="section-note">
-              <a href="/es/demo">Probá un ejemplo interactivo <span aria-hidden="true">↗</span></a>
+              <DemoLink>
+                Probá un ejemplo interactivo <span aria-hidden="true">↗</span>
+              </DemoLink>
             </p>
           </section>
           <section id="proceso" className="section process">
@@ -202,10 +218,11 @@ export default function Home() {
                 Contanos por Messenger<span aria-hidden="true">↗</span>
               </ContactLink>
               <p className="micro">
-                Se abre el chat con Criollo Labs en Messenger. Puede pedirte iniciar sesión en Facebook.
+                Se abre el chat con Criollo Labs en Messenger. Puede pedirte iniciar sesión en
+                Facebook.
                 <br />
-                Charla de 20 minutos sin cargo. La implementación se cotiza aparte; el acompañamiento
-                mensual se propone si hace falta.
+                Charla de 20 minutos sin cargo. La implementación se cotiza aparte; el
+                acompañamiento mensual se propone si hace falta.
               </p>
             </div>
           </section>
