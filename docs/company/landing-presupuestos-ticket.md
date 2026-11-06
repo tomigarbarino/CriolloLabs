@@ -2,6 +2,8 @@
 
 6/11/2026. Responsable: Ingeniería y Producto. Chief conserva estrategia y autoridad operativa.
 
+**Estado: ENTREGADO.** Código22141ab en master, producción READY y recorrido público verificados. [Reporte de entrega, uso comercial y límites](department-product-C014.md#publicación--entregado).
+
 ## Objetivo y diagnóstico
 
 Entregar una landing comercial específica en `/es/seguimiento-presupuestos`, con demo local y contacto Messenger vigente. Encaje: instalación/mantenimiento y coordinación de pedidos, presentes en la oferta y prospección C010/C014. No implica demanda validada ni resultados de clientes.

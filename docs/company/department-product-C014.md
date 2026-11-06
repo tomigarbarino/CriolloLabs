@@ -35,6 +35,12 @@ Chief puede compartir el caso cuando el prospecto mencione presupuestos que qued
 
 Idioma exacto: español. C014 incluye prospectos británicos; no presentar esta URL como material inglés. Siguiente prioridad propuesta: localizar esta misma experiencia, verificando idioma de documento, contenido, demo y contacto de punta a punta. No generar páginas casi idénticas por sector. Medición comercial: conversación calificada comprobada en fuente y objeciones reales; no inferir conversión por clic.
 
-## Publicación
+## Publicación — ENTREGADO
 
-Build final aprobado con tipos/lint, 17 páginas generadas; ruta nueva 3.26kB / 95.9kB JS inicial. Humo sobre `next start` (sin HMR), en pestaña nueva: cuatro transiciones, reinicio y cero errores de consola. Los errores durante Fast Refresh no se reprodujeron en el build de producción. Canonical, sitemap y robots comprobados por HTTP local. Release público pendiente de comprobación; el lock se libera al terminar las verificaciones públicas.
+Build final aprobado con tipos/lint, 17 páginas generadas; ruta nueva 3.26kB / 95.9kB JS inicial. Humo sobre `next start` (sin HMR), en pestaña nueva: cuatro transiciones, reinicio y cero errores de consola. Los errores durante Fast Refresh no se reprodujeron en el build de producción.
+
+Código publicado en `master`: [22141ab](https://github.com/tomigarbarino/CriolloLabs/commit/22141ab). [Landing utilizable](https://criollo-labs.vercel.app/es/seguimiento-presupuestos). Deployment `dpl_GsYENbgPRGpPTUnSTG6jvjJJFeu7`, target production, `READY`, alias estable confirmado por CLI. Sólo el paquete aislado sobre ec51290; trabajo ajeno de raíz conservado.
+
+Comprobación pública del 6/11 aproximadamente 11:17 Buenos Aires: portada, landing, demo, sitemap y robots HTTP200; canonical correcto en las tres páginas, sin noindex observado. Landing y demo incorporadas al sitemap. Navegador público: cuatro acciones hasta coordinado, cero errores de consola en ese recorrido, CTA final abre Messenger con página320363084498026 y ref del caso/UTMs. Apareció login Messenger; **no se inició sesión ni envió un mensaje**, no se acredita recepción. Repetidas ambas variantes A/B en navegación pública portada→demo→CTA, y enlace a caso específico con UTMs; token ajeno excluido. Interfaz pública móvil inspeccionada y guardada; escritorio y breakpoints también verificados en build local. Logs de errores de este deployment consultados sin registros encontrados en alcance; no prueba ausencia global de fallos.
+
+Lock WEB01 liberado. Chief puede usar la versión española desde ahora en conversaciones pertinentes. La localización inglesa queda siguiente prioridad; no se amplió el release por ese trabajo. No se modificaron campaña, destinatarios, estrategia ni presupuesto. Ningún resultado de conversión o posicionamiento SEO afirmado.
