@@ -7,7 +7,7 @@ const nextConfig = {
     return [
       ...['work/:path*', 'builds/:path*', 'services', 'empresas', 'carrera'].map(path => ({ source: `/:locale(es|en)/${path}`, destination: '/es', permanent: false })),
       { source: '/:locale(es|en)/contact', destination: '/es#contacto', permanent: false },
-      { source: '/en', destination: '/es', permanent: false },
+      { source: '/en', destination: '/en/quote-follow-up', permanent: false },
     ]
   },
   transpilePackages: ['three'],

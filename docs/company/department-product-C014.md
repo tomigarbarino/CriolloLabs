@@ -1,5 +1,7 @@
 # Producto C014 — WEB01
 
+> WEB02 en curso: versión inglesa de esta misma experiencia autorizada por el fundador. Ver sección WEB02 al final; WEB01 se conserva como entrega histórica.
+
 6/11/2026, Buenos Aires. Responsable: Ingeniería y Producto. [Ticket y aceptación](landing-presupuestos-ticket.md).
 
 ## Control de integración
@@ -44,3 +46,17 @@ Código publicado en `master`: [22141ab](https://github.com/tomigarbarino/Crioll
 Comprobación pública del 6/11/2026, Buenos Aires: portada, landing, demo, sitemap y robots HTTP200; canonical correcto en las tres páginas, sin noindex observado. Landing y demo incorporadas al sitemap. Navegador público: cuatro acciones hasta coordinado, cero errores de consola en ese recorrido, CTA final abre Messenger con página320363084498026 y ref del caso/UTMs. Apareció login Messenger; **no se inició sesión ni envió un mensaje**, no se acredita recepción. Repetidas ambas variantes A/B en navegación pública portada→demo→CTA, y enlace a caso específico con UTMs; token ajeno excluido. Interfaz pública móvil inspeccionada y guardada; escritorio y breakpoints también verificados en build local. Logs de errores de este deployment consultados sin registros encontrados en alcance; no prueba ausencia global de fallos.
 
 Lock WEB01 liberado. Chief puede usar la versión española desde ahora en conversaciones pertinentes. La localización inglesa queda siguiente prioridad; no se amplió el release por ese trabajo. No se modificaron campaña, destinatarios, estrategia ni presupuesto. Ningún resultado de conversión o posicionamiento SEO afirmado.
+
+## WEB02 — versión inglesa para prospección británica
+
+6/11/2026. [Ticket](landing-english-ticket.md). Chief confirmó exclusividad del lock WEB02 y canal vigente. Rama `codex/quote-follow-up-en` desde master07b7ae1 en worktree aislado; raíz/pipeline/Meta preservados. Localización completa, no cambio de estrategia. Sin servicio pago, dependencia o compromiso económico nuevo; coste de modelo no medido.
+
+**Experiencia:** `/en/quote-follow-up`, inglés británico: enquiries/quotes/bespoke software. Mismo proceso ficticio de instalación de portón, cuatro acciones, historial y reinicio, criterios de control humano y próximos pasos. Mensajes visibles, accesibles, FAQ, navegación y metadatos traducidos. Selector recíproco ES/EN mantiene UTMs permitidas. La versión inglesa no enlaza la portada española como si fuera inglesa ni afirma oficina/clientes/resultados UK. Contacto Messenger de marca, con aviso de posible login; no agenda ni mensaje preparado prometidos.
+
+**Implementación:** plantilla server `BudgetLanding` y textos `budget-copy` compartidos; `BudgetDemo` recibe sólo textos del idioma activo. `SiteDocument` conserva estilos/marca. Layout español raíz bajo `[locale]`, entrada `/` en `(entry)` y layout inglés independiente `(english)` con `lang=en`; ambas versiones siguen estáticas, sin leer headers para decidir idioma. Middleware deja pasar sólo la ruta inglesa publicada y conserva next-intl es; `/en` redirige a la nueva experiencia. Canonical propio, hreflang es-AR/en-GB recíprocos, Open Graph en_GB y sitemap. API y mensajes históricos fuera del alcance.
+
+**QA local:** build/types/lint aprobados; ruta inglesa 2.43kB y primera carga JS95kB (no medición de Core Web Vitals). Ocho pruebas de contacto/atribución y cinco HTTP de idioma/metadatos/rutas/redirects/404/sitemap/robots aprobadas. Navegador sobre `next start`, sin HMR: cuatro pasos ES/EN y reinicio, Enter, foco final, FAQ; cero errores de consola observados. 1280px escritorio y390/320px móviles, sin desplazamiento horizontal; botones demo44px o más. Reduced-motion emulado: media query true, animación none. Dos variantes A/B conservadas EN→ES→EN→hrefMessenger, token ajeno excluido. Fallback POST vacío a API conserva503 deliberado y destino comercial. Evidencia privada `operations/landing-english-20261106`. Ajuste final: logo inglés vuelve al contenido mediante ancla para conservar query.
+
+**Publicación:** pendiente de build final del ajuste de navegación y comprobación pública. Conector Vercel devuelve403 para el equipo; CLI existente comprobó proyecto/equipo correctos sin crear acceso, token o cuenta.
+
+**Handoff comercial preparado para Chief:** compartir con prospectos UK pertinentes que pidan un ejemplo o describan presupuestos sin seguimiento. Texto inglés de apoyo: “Here’s an illustrative example of how an enquiry, a quote and the job handover could stay connected. Where does follow-up tend to get lost in your process?” No enviarlo por esta tarea ni alterar los hilos ya iniciados. Mantener enfoque reply-first acordado; no atribuir visitas, respuestas o conversiones sin fuente.

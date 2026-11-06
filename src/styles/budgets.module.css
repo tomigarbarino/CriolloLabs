@@ -7,6 +7,22 @@
   justify-content: space-between;
   gap: 20px;
   min-height: 104px;
+  flex-wrap: wrap;
+}
+.header nav .language {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  text-decoration: underline;
+  font-size: 13px;
+}
+.flowStep {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+}
+.flowStep > span {
+  color: var(--violet);
 }
 .hero {
   padding-top: 54px;
@@ -48,9 +64,6 @@
   flex-wrap: wrap;
   font-size: 14px;
   font-weight: 600;
-}
-.overview span:nth-child(even) {
-  color: var(--violet);
 }
 .section {
   border-top: 1px solid var(--line);
@@ -322,6 +335,18 @@
   }
 }
 @media (max-width: 600px) {
+  .header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    gap: 10px;
+  }
+  .header nav {
+    gap: 12px;
+    margin-left: auto;
+  }
+  .flowStep {
+    gap: 12px;
+  }
   .header {
     min-height: 85px;
   }

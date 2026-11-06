@@ -26,6 +26,20 @@ type ContactOptions = {
   searchParams?: string | URLSearchParams
 }
 
+export const budgetPaths = {
+  es: '/es/seguimiento-presupuestos',
+  en: '/en/quote-follow-up',
+} as const
+export type BudgetLocale = keyof typeof budgetPaths
+
+export function getBudgetUrl(
+  locale: BudgetLocale = 'es',
+  searchParams: string | URLSearchParams = ''
+) {
+  const query = getDemoUrl(searchParams).split('?')[1]
+  return query ? `${budgetPaths[locale]}?${query}` : budgetPaths[locale]
+}
+
 export function getDemoUrl(searchParams: string | URLSearchParams = '') {
   const params = new URLSearchParams(searchParams)
   const attribution = new URLSearchParams()

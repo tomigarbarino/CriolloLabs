@@ -1,38 +1,30 @@
 'use client'
 
-import { useEffect, useState, type ReactNode } from 'react'
-import { getDemoUrl } from '@/lib/contact'
+import { useEffect, useState, type ComponentPropsWithoutRef } from 'react'
+import { getBudgetUrl, type BudgetLocale } from '@/lib/contact'
 
-const path = '/es/seguimiento-presupuestos'
 export default function BudgetLink({
-  children,
-  className,
-}: {
-  children: ReactNode
-  className?: string
-}) {
-  const [href, setHref] = useState(path)
-  function refresh() {
-    const query = getDemoUrl(window.location.search).split('?')[1]
-    const next = query ? `${path}?${query}` : path
-    setHref(next)
-    return next
-  }
+  locale = 'es',
+  onClick,
+  onAuxClick,
+  ...props
+}: Omit<ComponentPropsWithoutRef<'a'>, 'href'> & { locale?: BudgetLocale }) {
+  const [href, setHref] = useState(() => getBudgetUrl(locale))
   useEffect(() => {
-    refresh()
-  }, [])
+    setHref(getBudgetUrl(locale, window.location.search))
+  }, [locale])
   return (
     <a
-      className={className}
+      {...props}
       href={href}
       onClick={(event) => {
-        event.currentTarget.href = refresh()
+        event.currentTarget.href = getBudgetUrl(locale, window.location.search)
+        onClick?.(event)
       }}
       onAuxClick={(event) => {
-        event.currentTarget.href = refresh()
+        event.currentTarget.href = getBudgetUrl(locale, window.location.search)
+        onAuxClick?.(event)
       }}
-    >
-      {children}
-    </a>
+    />
   )
 }

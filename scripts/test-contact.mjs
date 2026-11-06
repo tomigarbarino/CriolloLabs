@@ -1,12 +1,45 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { getContactUrl, getDemoUrl, MESSENGER_PAGE_ID } from '../src/lib/contact.ts'
+import { getContactUrl, getDemoUrl, getBudgetUrl, MESSENGER_PAGE_ID } from '../src/lib/contact.ts'
 
 test('contact always targets the commercial page, including without JavaScript attribution', () => {
   const url = new URL(getContactUrl())
   assert.equal(url.origin, 'https://m.me')
   assert.equal(url.pathname, `/${MESSENGER_PAGE_ID}`)
   assert.equal(url.search, '')
+})
+
+test('language changes preserve campaign variants through English and Spanish to commercial contact', () => {
+  assert.equal(getBudgetUrl(), '/es/seguimiento-presupuestos')
+  assert.equal(getBudgetUrl('en'), '/en/quote-follow-up')
+  for (const variant of ['a_tiempo', 'b_repeticion']) {
+    const input = new URLSearchParams({
+      utm_source: 'meta',
+      utm_content: variant,
+      token: 'excluded',
+      next: 'https://other.example',
+    })
+    const english = new URL(getBudgetUrl('en', input), 'https://criollo.example')
+    const spanish = new URL(getBudgetUrl('es', english.search), english)
+    assert.equal(english.pathname, '/en/quote-follow-up')
+    assert.equal(spanish.pathname, '/es/seguimiento-presupuestos')
+    assert.deepEqual(
+      [...english.searchParams],
+      [
+        ['utm_source', 'meta'],
+        ['utm_content', variant],
+      ]
+    )
+    assert.equal(spanish.search, english.search)
+    for (const entry of [english, spanish]) {
+      const contact = new URL(
+        getContactUrl({ source: 'quote-follow-up-contact', searchParams: entry.search })
+      )
+      assert.equal(contact.pathname, `/${MESSENGER_PAGE_ID}`)
+      assert.ok(contact.searchParams.get('ref').includes(variant))
+      assert.ok(!contact.href.includes('excluded'))
+    }
+  }
 })
 
 test('A and B keep distinct bounded referral values without promising a prepared message', () => {
