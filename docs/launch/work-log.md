@@ -1,5 +1,21 @@
 # Registro de trabajo — Criollo Labs
 
+## Actualización vigente — video de pedidos v3
+
+Esta actualización prevalece sobre las referencias históricas posteriores al video descartado y al prototipo sin aprobar.
+
+- El usuario aprobó continuar con la nueva pieza de pedidos («mucho mejor») e incorporarla al borrador. El MP4 anterior v2 sigue descartado.
+- Se reutilizó el borrador vacío ID 120256043999600496 y se verificó su nuevo nombre **Criollo | V pedidos | v3**. No se asignó el archivo rechazado.
+- Vertical 1080×1920 y feed 1080×1350, ambos de 18 s, están publicados como archivos en el sitio mediante [bbbd612](https://github.com/tomigarbarino/CriolloLabs/commit/bbbd6127c16cc9bb31ad2c7fca437e1841735db1). Esto no publica anuncios. Se verificó reproducción técnica del vertical hasta currentTime=18, ended=true y sin error.
+- El usuario completó la verificación de acceso. La carga por **Biblioteca multimedia → Add Media → Add Video** terminó correctamente para ambos archivos; se observaron «Carga finalizada» y sus filas en la cuenta publicitaria.
+- En el asistente del anuncio se seleccionaron el vertical y el feed con proporción Original. Se llegó a **Mejoras de contenido Advantage+**, pero **no se confirmó Listo ni el guardado final**. No confundir archivos subidos con medios aplicados al anuncio.
+- La revisión automática del navegador bloqueó tanto el cambio de mejoras como una lectura posterior del editor por riesgo de perder edición multimedia sin guardar. No se navegó ni se intentó eludir el bloqueo. Próximo paso humano: guardar el modal actual con **Listo**, sin publicar, y confirmar para retomar la verificación.
+- Último score observado: **93/100**. No se comprobó ningún aumento. La recomendación +7 menciona cuatro conjuntos; requiere verificar alcance real después de guardar.
+- Campaña y conjunto permanecían OFF en la última verificación; esta sesión no publicó anuncios ni activó gasto. Presupuesto sin cambios: **ARS 50.000 total lifetime**, del 6 al 13/11/2026.
+- Pendientes: comprobar guardado y previews por ubicación, adaptar horizontal/cuadrado, actualizar UTM de V (aún v_ejemplos), revisar recomendaciones pertinentes y volver a medir el score. Las sugerencias ajenas de productos del sitio siguen sin aplicarse.
+
+## Registro del corte anterior (histórico)
+
 Corte: 6 de noviembre de 2026. Registro reconciliado por el agente de documentación a partir de los documentos del repositorio, tickets [#1](https://github.com/tomigarbarino/CriolloLabs/issues/1), [#6](https://github.com/tomigarbarino/CriolloLabs/issues/6), [#8](https://github.com/tomigarbarino/CriolloLabs/issues/8) y verificaciones informadas por coordinación en la sesión actual.
 
 Este registro describe hechos, decisiones y pendientes; no acredita clientes, resultados ni ejecución continua. El agente lo actualiza cuando coordinación comunica novedades durante una ejecución. No queda monitoreando ni trabajando después del turno.
