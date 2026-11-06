@@ -1,5 +1,13 @@
 # Registro de trabajo — Criollo Labs
 
+## Continuidad de compañía y último bloqueo
+
+Se añadió el [manual de compañía](../company/README.md), con visión, estrategia, fichas de agentes, objetivos y economía. Se actualizó operating-charter para reemplazar instrucciones obsoletas sobre permisos y carga de imágenes. Las metas comerciales son propuestas de planificación; no se registraron ventas ni nuevos resultados de campaña.
+
+Después del bloqueo de revisión automática descrito abajo, el acceso a la pestaña también falló por timeout de control del navegador (Emulation.setFocusEmulationEnabled). No se guardaron cambios de ubicaciones ni se verificó otro puntaje en esos intentos. El fundador compartió el aviso de incompatibilidad del video con Columna derecha; el ajuste pendiente debe preservar esa ubicación para imágenes. Se entregó un prompt para retomar desde Codex Desktop, sin confirmación de ejecución.
+
+En esta actualización sólo se modificó documentación. Último score verificado: **93/100**. Estado actual de Meta, guardado del modal y despliegue de formatos adicionales requieren nueva comprobación.
+
 ## Actualización vigente — video de pedidos v3
 
 Esta actualización prevalece sobre las referencias históricas posteriores al video descartado y al prototipo sin aprobar.

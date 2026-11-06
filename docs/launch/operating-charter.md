@@ -24,37 +24,57 @@ El agente puede recomendar conservar, corregir o descartar una hipótesis y prep
 
 No ampliar presupuesto, contratar servicios ni agendar llamadas por inferencia. Las dudas rutinarias se resuelven con criterio; las decisiones reservadas al usuario se consultan una vez que exista una propuesta concreta. Una autorización previa válida no se vuelve a pedir dentro de su alcance.
 
-## Decisiones actuales
+## Organización y objetivos
 
-La primera comparación creativa es **A: beneficio de tiempo** frente a **B: dolor de repetición**. Hay cuatro conceptos y seis archivos: A/B en feed y stories; C pedidos y D turnos sólo en feed de reserva. No producir más variantes por defecto. La carga y la vista previa en Meta permanecen pendientes. La generación introdujo pequeñas diferencias decorativas entre A/B; la lectura será exploratoria, sin atribuir causalidad sólo al titular.
+El [manual de compañía](../company/README.md) es la entrada para visión, estrategia, equipo, objetivos y economía. Las [fichas de agentes](../company/team.md) asignan responsabilidades y límites. No confundir roles permanentes con agentes actualmente ejecutándose.
 
-El presupuesto propuesto es **USD 200: USD 50 + USD 50 + USD 100 de reserva**. Cuenta en ARS. No equivale a gasto autorizado. Mantener el borrador de Meta apagado hasta completar las verificaciones y resolver la autorización de activación/gasto. No ampliar límites ni liberar la reserva automáticamente. El borrador tiene ARS 50.000 de pauta total, no diaria, y siete días del 6/11/2026 19:13 al 13/11/2026 19:13 GMT-3; revisar fechas si se demora. La referencia BNA venta del 5/11/2026 15:01 es ARS 1.570: USD 50 = ARS 78.500, con ARS 28.500 de margen planificado sobre la pauta, sin garantía de cobertura de cargos reales. Sigue pendiente la aprobación del costo total. Ver [campaña](campaign.md).
+## Estado vigente de preparación
 
-## Primer mercado: foco de preparación, pendiente de validación
+El [registro de trabajo](work-log.md) contiene la evidencia y precedencia del estado de campaña. Esta sección reemplaza el antiguo tablero de este mandato, que todavía describía permisos y carga PNG ya resueltos; la historia permanece en Git.
 
-**Decisión operativa: preparar la primera pauta con distribuidores B2B como hipótesis primaria.** Es un orden de trabajo reversible: la oferta ya define seguimiento de pedidos y el concepto C ilustra una entrada concreta —copiar pedidos desde mensajes a una planilla—. Esa coherencia permite preparar un único recorrido y un diagnóstico sin ampliar el alcance. No demuestra que distribuidores tenga más demanda ni mejores costes que instalación/mantenimiento.
+- A/B con imágenes y animación nativa existen como borradores. V pedidos v3 reutiliza un borrador vacío; el archivo v2 rechazado no se reutiliza.
+- Vertical/feed v3 están subidos a la biblioteca de Meta; falta comprobar el guardado final y previews actuales. Cuadrado/horizontal están en GitHub; verificar su disponibilidad en el sitio y carga a Meta antes de afirmarlas.
+- Último score comprobado: 93/100. El fundador exige 100/100 antes de avanzar. La recomendación +7 menciona cuatro conjuntos: comprobar alcance real, no modificar campañas ajenas por el puntaje.
+- Campaña y conjunto estaban apagados en la última comprobación; no se activó gasto en las últimas intervenciones.
+- El aviso de Columna derecha indica que el video no se entrega allí. Preservar esa ubicación para anuncios con imagen; revisar el estado real antes de aplicar cambios.
+- El último bloqueo operativo fue un timeout al tomar control de la pestaña de Meta. Ya se entregó un prompt de continuidad para Codex Desktop; no hay evidencia de que Desktop haya completado el ajuste.
+- No pedir de nuevo habilitar acceso a archivos de la extensión: ese permiso se comprobó y las cargas se resolvieron anteriormente.
 
-La evidencia actual es **0/5 conversaciones registradas en cada hipótesis**. Las cinco conversaciones por sector del [plan de validación](validation.md) son un método de aprendizaje propuesto, no una condición obligatoria antes de invertir ni un compromiso de diez llamadas del usuario. La primera pauta puede generar las consultas con las que se valida la hipótesis. Se elige este camino para avanzar marketing y aprender de consultas reales sin imponer trabajo previo de agenda. Mantener instalación/mantenimiento como alternativa y revisar el foco con lo recibido.
+## Capital, mercado y capacidad
 
-El lenguaje amplio de A/B permite que las personas se autoseleccionen. Registrar sector, rol y ejemplo de tarea en la consulta; no deducirlos de la audiencia configurada. Si Meta no permite una segmentación fiable, documentar esa limitación y no afirmar que identifica distribuidores o dueños. La pauta será una exploración con hipótesis primaria, no una prueba controlada de un sector. El gate de activación es un presupuesto acotado aprobado en ARS, recorrido funcionando, QA completo y capacidad de responder; no diez entrevistas previas. Las llamadas que requieran al usuario necesitan acordar su tiempo; calificar por conversación escrita cuando alcance.
+El bucket de USD 200 sigue siendo un marco de planificación, no un saldo confirmado ni una asignación por agente. Borrador de Meta: ARS 50.000 totales compartidos, lifetime, del 6 al 13/11/2026. No ampliar ni liberar reservas por inferencia; revisar autorización ya otorgada y vigencia de fechas antes de cualquier activación. No reutilizar tipos de cambio históricos para decidir gasto actual.
 
-## Tablero de verdad y ejecución
+Distribuidores B2B es la hipótesis primaria y servicios de instalación/mantenimiento la alternativa. No se acredita demanda ganadora. Las cinco conversaciones por hipótesis son una meta de aprendizaje, no diez llamadas obligatorias del fundador. A/B mantienen lenguaje amplio y las consultas deben aportar sector, rol y un caso concreto. Ver [validación](validation.md).
 
-“Terminado” exige un resultado y su evidencia; “preparado” no significa publicado, entregado o validado. Los responsables de abajo son funciones del agente coordinador mientras trabaja, no promesas de actividad fuera de sesión.
+La recurrencia mensual es un objetivo de compañía, sujeto a necesidad real, alcance y capacidad definidos. No prometer disponibilidad ilimitada. La contratación, el tiempo del fundador y cualquier nuevo compromiso se rigen por las autorizaciones de arriba y la [oferta](offer.md).
 
-| Frente | Estado comprobable al corte | Responsable agente | Próxima acción | Criterio de terminado |
-| --- | --- | --- | --- | --- |
-| Oferta | Definida en documentos; sin demanda acreditada | Coordinación comercial | Mantener alineado el mensaje amplio con el piloto acotado de pedidos/solicitudes | Oferta, anuncio y diagnóstico describen el mismo paso comercial; cualquier desvío queda explícito. |
-| Creativos | Cuatro conceptos, seis archivos generados y comprobados; A/B primera ronda, C/D reserva | Arte y copy | Verificar los cuatro A/B al cargarlos en el borrador | Activos correctos asociados a su variante, texto legible y condiciones visibles en las ubicaciones de Meta; evidencia de preview guardada. |
-| Meta | A renombrado «Criollo &#124; A tiempo &#124; v2» y UTM de concepto guardada; upload de A con «Error al subir», sin imagen final ni B creado. Conjunto apagado explícitamente; campaña sin publicar | Operación de campaña | Usuario abre manualmente la administración de extensiones de Chrome y habilita Allow access to file URLs; abrir chrome://extensions desde la herramienta fue bloqueado por política, sin workaround; luego aplicar activos, crear B y revisar previews manteniendo apagado. Público actual Argentina, 18+, Advantage+, pendiente de revisión | Borrador revisable con destino, variantes y configuración documentados; ninguna activación implícita. |
-| Recorrido y atribución | Deploy 8ff1066e32346e97f5f74346e0d6eea693b426ae exitoso; QA público de escritorio de enlaces A/B (sin QA móvil nuevo acreditado): número correcto, UTMs conservadas y mensaje nuevo. A en Meta guarda automatizacion_pyme_v2/a_tiempo | Performance | Verificar coherencia de las URLs definitivas tras crear B; conservar atribución por concepto si no se diferencia formato | Enlaces finales reconciliados con cada anuncio; no confundir apertura con mensaje enviado. |
-| Mercado | Distribuidores: 0/5; instalación/mantenimiento: 0/5 | Investigación comercial | Preparar registro para consultas entrantes de pauta, con sector, rol y caso concreto; mantener guion opcional | Registro listo para calificar y un criterio de revisión documentado. Las cinco conversaciones por hipótesis son una meta propuesta de aprendizaje, no un gate de activación. Sólo actualizar contadores con conversaciones reales. |
-| Capital | USD 200 propuestos; borrador guardado con ARS 50.000 de pauta total y siete días. Costo total no autorizado; margen de cargos sólo planificado | Performance/capital | Con activos y previews listos, presentar costo total acotado y calendario actualizado para decisión | Usuario aprueba importe, alcance y calendario; el registro identifica exactamente qué se autorizó. Hasta entonces, sin gasto. |
-| Pipeline | No hay evidencia comercial registrada aquí que permita afirmar ventas | Coordinación comercial | Preparar registro de consultas, calificación, propuestas y cobros | Cada oportunidad tiene fuente, estado, próximo paso y responsable; cifras agregadas reconciliables, sin datos identificables públicos. |
-| Continuidad | Sin seguimiento autónomo garantizado al cerrar sesión | Agente coordinador | Actualizar tablero y registrar la próxima acción al cerrar | Estado, evidencia, bloqueo real y próximo trabajo quedan legibles; no afirmar que algo seguirá ejecutándose. |
+## Contrato mínimo de cada ticket
 
-## Cadencia y regla de cierre
+Cada ticket debe contener:
 
-En cada sesión: leer el estado vigente, ejecutar lo delegado que no dependa de una decisión reservada, verificar el resultado y actualizar el tablero. Si hay un bloqueo, avanzar las tareas independientes. Escalar sólo la decisión que efectivamente impide continuar, con recomendación concreta.
+- Problema y resultado esperado.
+- Responsable único y revisor; rol y agente ejecutor cuando se asigne.
+- Alcance y exclusiones; archivos o recursos de escritura exclusivos.
+- Entradas, dependencias y autorización aplicable.
+- Criterio de aceptación verificable y evidencia esperada.
+- Métrica comercial u operativa que ayuda a mover; si no aplica, explicar para qué sirve.
+- Presupuesto autorizado y tiempo humano requerido, o “sin gasto / sin tiempo humano comprometido”.
+- Estado, bloqueo, próxima acción y responsable del siguiente paso.
 
-La intervención humana inmediata es habilitar el permiso de archivos de la extensión; no se solicita aún aprobación de lanzamiento. Después corresponde aplicar A/B y completar previews manteniendo el conjunto apagado. El recorrido público ya fue probado. La prioridad operativa es dejar el borrador A/B revisable, preparar la calificación de consultas entrantes y ordenar la decisión del primer tramo en ARS. El criterio comercial sigue siendo consultas calificadas, propuestas y pilotos pagos, con costes y límites de atribución explícitos; clics o interés genérico no acreditan demanda. Las reglas de pausa y revisión de [campaign.md](campaign.md) y los criterios de [offer.md](offer.md) siguen vigentes.
+Estados: pendiente → preparado → en ejecución → en revisión → terminado. Bloqueado requiere causa, responsable de desbloqueo y trabajo independiente posible; descartado requiere motivo y evidencia preservada. “Terminado” nunca significa sólo que un agente respondió.
+
+## Revisión y traspaso
+
+Coordinación elige tareas, asigna un escritor por archivo y evita dos operadores sobre el mismo editor. Los agentes reciben contexto mínimo, alcance, evidencia requerida y condición de parada. El revisor comprueba el resultado antes de integrar. No escalar de modelo ni crear más agentes si una tarea directa alcanza.
+
+Para documentos: leer original, preparar cambio, comprobar que no se perdió contenido requerido, guardar con control de versión y verificar lectura posterior. Tras la sobrescritura accidental del registro y su restauración, documentation_luna prepara cambios para revisión; la escritura remota requiere reasignación explícita de coordinación.
+
+Para código y activos: conservar fuente reproducible, revisar lo que importa y distinguir commit, despliegue y comportamiento comprobado. Para Meta: distinguir archivo subido, medio asignado, borrador guardado y anuncio publicado.
+
+## Cadencia y cierre
+
+Al iniciar una sesión: leer manual, registro y ticket; verificar hechos volátiles antes de actuar. Ejecutar lo ya autorizado y avanzar tareas independientes cuando haya bloqueos. Consultar únicamente la decisión que impide seguir, con recomendación concreta y consecuencias.
+
+Al cerrar: actualizar evidencia, estado, responsable y siguiente acción; marcar hechos sin verificar. No prometer monitoreo ni trabajo posterior sin una automatización realmente creada. Las métricas de compañía están en [objetivos](../company/objectives.md); las del experimento se interpretan con sus límites de atribución.
+
+El próximo paso de campaña es recuperar acceso funcional, comprobar guardado y previews de V, reconciliar medios/UTMs y revisar el puntaje manteniendo los padres apagados. No afirmar que una nueva documentación resolvió el bloqueo técnico.
