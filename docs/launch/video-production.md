@@ -1,5 +1,25 @@
 # Producción de video — Criollo Labs
 
+## Estado vigente verificado en Meta — 5/11/2026 (Buenos Aires)
+
+Esta sección prevalece sobre los cortes históricos de abajo. Verificación en Codex Desktop sobre la cuenta **383581847766303**, campaña **120256043323150496** y conjunto **120256043323160496**.
+
+- **Puntuación real de campaña: 100/100**, con «Estás usando nuestra configuración recomendada» y «No hay recomendaciones adicionales disponibles» en el editor del conjunto y de la campaña. El resumen de cuenta también mostraba 100. Es puntuación de configuración/recomendaciones; no acredita entrega ni rendimiento comercial.
+- Al abrir Desktop no había modal multimedia pendiente: V3 ya tenía los videos aplicados. No se atribuye su guardado inicial a esta sesión. Campaña inicialmente 99; la recomendación vigente era **+1 por Contenido multimedia flexible en 1 anuncio**. Se aplicó en V3 y Meta confirmó «Se aplicaron tus cambios». La antigua tarjeta +7/cuatro conjuntos ya no apareció; no se modificaron otros conjuntos.
+- Se cambió únicamente `utm_content=v_ejemplos` por **`utm_content=v_pedidos_v3`**, preservando `utm_source=meta&utm_medium=paid_social&utm_campaign=automatizacion_pyme_v2`. Meta mostró **«Se guardaron todos los cambios»**.
+- V3: editor individual de Feed de Facebook confirmó **criollo-pedidos-v3-feed.mp4**, 1080×1350, 18 s; Stories de Instagram confirmó **criollo-pedidos-v3-vertical.mp4**, 1080×1920, 18 s. Se revisaron previews de feed, Stories y columna derecha.
+- La **Columna derecha de Facebook ya tenía una personalización de imagen `C-pedidos-feed.png` (1122×1402)**. Su preview se generó. No se sustituyó por video ni se desactivó esa ubicación a nivel de conjunto. El indicador del editor mostraba compatibilidad con las ubicaciones seleccionadas y no reapareció el aviso anterior de una ubicación incompatible.
+- A/B se conservaron: A **120256043323140496**, B **120256043743660496**. Se verificaron `A-tiempo-feed.png` y `B-repeticion-story.png` en editores individuales; UTMs a_tiempo/b_repeticion intactas. No se editaron sus creativos ni ubicaciones.
+- **Campaña OFF, conjunto OFF y V3 OFF**, todos en borrador. A/B conservan sus interruptores individuales ON bajo padres OFF; no se publicaron ni activaron campañas.
+- **ARS 50.000 TOTAL lifetime del único conjunto**, compartido por los tres anuncios. Meta indica «No gastarás más de $50.000,00 durante el tiempo que dure tu conjunto de anuncios». Inicio **6/11/2026 19:13**, fin **13/11/2026 19:13**, GMT−3. Sin cambios de presupuesto ni calendario.
+- Enlaces al sitio y destacados del sitio permanecen desactivados. Sugerencias de productos ajenos no aplicadas.
+- Square y landscape: sus URLs públicas devolvieron **HTTP 404** en esta sesión. No se cargaron ni asignaron: se preservaron los formatos feed/vertical ya adecuados y la imagen requerida para columna derecha. No se desplegó ni regeneró video.
+- **Límite de QA:** el reproductor de Meta permitió iniciar y pausar reproducción y mover el control a 17,99/18 s, sin error multimedia informado. Las capturas no bastan para certificar lectura de cada transición ni reproducción integral y legibilidad de todas las variantes Advantage+. El 100/100 no reemplaza ese QA ni autoriza lanzamiento.
+- Evidencia local: `evidence/2026-11-05-meta/campaign-100-saved.jpg`, `campaign-off-100.jpg` y `budget-schedule-off.jpg` en el workspace de Desktop. Las capturas de preview son muestras, no certificado audiovisual completo.
+
+## Historial conservado — cortes anteriores
+
+
 ## Actualización vigente — video de pedidos v3
 
 Esta actualización prevalece sobre las referencias históricas posteriores al video descartado y al prototipo sin aprobar.
