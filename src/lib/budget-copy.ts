@@ -44,6 +44,16 @@ const es = {
   demoTitle: 'Probalo con un presupuesto ficticio.',
   demoIntro:
     'Cuatro decisiones muestran dónde se puede ordenar el proceso. El precio, el contacto con el cliente y la fecha de trabajo siguen bajo control del equipo.',
+  offer: {
+    title: 'Un prototipo de tu seguimiento de presupuestos',
+    text: 'Adaptamos un único recorrido para revisar cómo entra un presupuesto, quién lo sigue y cómo se cierra.',
+    deliverable:
+      'Prototipo navegable con datos ficticios, campos y estados acordados, una revisión del recorrido y una guía breve.',
+    limit:
+      'Es una etapa de diseño y validación. No incluye almacenamiento de datos reales, acceso multiusuario, integraciones ni mensajes automáticos. La implementación operativa se evalúa aparte.',
+    conditions: 'Primero revisamos tu caso y acordamos alcance, precio y entrega por escrito.',
+    action: 'Pedir una propuesta de prototipo',
+  },
   requirementsEyebrow: 'Para llevarlo a tu empresa',
   requirementsTitle: ['Empezamos con un proceso.', 'Y con lo que ya usan.'],
   requirementsIntro:
@@ -216,6 +226,16 @@ const en: typeof es = {
   demoTitle: 'Try it with a fictional quote.',
   demoIntro:
     'Four decisions show where the process could become clearer. Pricing, customer contact and the job date remain under your team’s control.',
+  offer: {
+    title: 'A prototype of your quote follow-up process',
+    text: 'We adapt a single process to review how a quote comes in, who follows it up and how it is closed.',
+    deliverable:
+      'A clickable prototype with fictional data, agreed fields and stages, one review of the process and a short guide.',
+    limit:
+      'This is a design and validation stage. It does not include storing real data, multi-user access, integrations or automated messages. An operational implementation is assessed separately.',
+    conditions: 'We review your case first, then agree the scope, price and delivery in writing.',
+    action: 'Request a prototype proposal',
+  },
   requirementsEyebrow: 'Bringing it to your business',
   requirementsTitle: ['Start with one process.', 'And the tools you already use.'],
   requirementsIntro:

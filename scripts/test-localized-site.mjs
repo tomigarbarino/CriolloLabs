@@ -31,6 +31,26 @@ for (const [path, lang, title] of [
     assert.ok(!response.headers.get('x-robots-tag')?.includes('noindex'))
     assert.ok(html.includes('https://m.me/320363084498026'))
     assert.ok(html.includes(lang === 'en' ? 'Reset demo' : 'Reiniciar demo'))
+    const offer = html.match(
+      /<section[^>]+aria-labelledby="prototype-offer"[^>]*>([\s\S]*?)<\/section>/
+    )?.[1]
+    assert.ok(offer, 'prototype offer must be present in server-rendered content')
+    assert.ok(
+      offer.includes(
+        lang === 'en' ? 'Request a prototype proposal' : 'Pedir una propuesta de prototipo'
+      )
+    )
+    assert.ok(
+      offer.includes(
+        lang === 'en'
+          ? 'It does not include storing real data'
+          : 'No incluye almacenamiento de datos reales'
+      )
+    )
+    assert.ok(offer.includes(lang === 'en' ? 'in writing' : 'por escrito'))
+    assert.ok(offer.includes('https://m.me/320363084498026'))
+    const offerText = offer.replace(/<[^>]*>/g, ' ')
+    assert.doesNotMatch(offerText, /\b(?:USD|GBP)\b|[$£]|\b\d+\b/)
     assert.ok(
       html.includes(
         lang === 'en' ? 'You may need to log in to Facebook.' : 'Puede pedirte iniciar sesión en'

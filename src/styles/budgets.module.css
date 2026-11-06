@@ -74,6 +74,29 @@
 .section h2 {
   max-width: 850px;
 }
+.offerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+.offerGrid p {
+  color: var(--muted);
+  margin: 0 0 22px;
+}
+.offerDetails {
+  border-left: 1px solid var(--line);
+  padding-left: 32px;
+}
+@media (max-width: 800px) {
+  .offerGrid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .offerDetails {
+    border-left: 0;
+    padding-left: 0;
+  }
+}
 .comparison {
   display: grid;
   grid-template-columns: 1fr 1fr;

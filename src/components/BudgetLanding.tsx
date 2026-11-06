@@ -119,6 +119,25 @@ export default function BudgetLanding({ locale }: { locale: BudgetLocale }) {
           <p className={styles.sectionIntro}>{copy.demoIntro}</p>
           <BudgetDemo copy={copy.demo} contactHref={`#${ids.contact}`} />
         </section>
+        <section className={`wrap ${styles.section}`} aria-labelledby="prototype-offer">
+          <div className={styles.offerGrid}>
+            <div>
+              <h2 id="prototype-offer">{copy.offer.title}</h2>
+              <p>{copy.offer.text}</p>
+            </div>
+            <div className={styles.offerDetails}>
+              <p>{copy.offer.deliverable}</p>
+              <p>{copy.offer.limit}</p>
+              <p>{copy.offer.conditions}</p>
+              <ContactLink
+                className="button"
+                source={english ? 'quote-follow-up-contact' : 'presupuestos-contacto'}
+              >
+                {copy.offer.action} <span aria-hidden="true">↗</span>
+              </ContactLink>
+            </div>
+          </div>
+        </section>
         <section className={styles.requirements} aria-labelledby="getting-started">
           <div className={`wrap ${styles.requirementsGrid}`}>
             <div>
